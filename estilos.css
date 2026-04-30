@@ -1,0 +1,312 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    background-color: #f6f6f6;
+}
+body{
+    background-color: rgb(141, 145, 146); /* color sólido */
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #000;
+}
+
+header a,
+.miguel-btm {
+    color: #c92828;
+}
+
+/* Estilo solo para el logo */
+.encabezado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.encabezado img {
+    display: block;
+    width: 120px;
+    height: auto;
+}
+.miguel{
+    position: static;
+}
+.miguel-btm{
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    position: static;
+}
+.carros-menu{
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #000;
+    transition: right 0.2s ease;
+    padding-top: 50px;
+}
+.carros-menu ul{
+    list-style: none;
+    padding: 0px;
+}
+.carros-menu ul li{
+    padding: 15px;
+    text-align: center;
+}
+.carros-menu ul li a{
+   color: #b34343;
+   text-decoration: none;
+   display: block;
+}
+.carros-menu ul li a:hover{
+    background-color: #333;
+}
+.carros-menu.active{
+    right: 0;
+}
+.video1{
+    position: relative;
+    width: 95%;
+    max-width: 1200px;
+        height: 88vh;
+    overflow: hidden;
+    background-color: #f6f6f6;
+    margin: 10px auto;
+}
+.atras1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    background-color: transparent;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #000;
+    position: relative;
+    z-index: 2;
+}
+h2{ 
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/* HERO VIDEO */
+.hero{
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    color: rgb(216, 11, 11);
+}
+
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* TEXTO */
+.hero-content{
+    max-width: 500px;
+}
+
+.hero h1{
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: rgb(216, 10, 10);
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PRECIO */
+.price{
+    font-size: 30px;
+    font-weight: bold;
+}
+/* HERO */
+.hero{
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    color: white;
+}
+
+.bg-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* TEXTO */
+.hero-content{
+    max-width: 500px;
+}
+
+.hero h1{
+    font-size: 40px;
+}
+
+/* BOTON */
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* PRECIO */
+.price{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ANIMACION */
+.fade{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: aparecer 1.0s ease forwards;
+}
+
+@keyframes aparecer{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MENU */
+.carros-menu{
+    display: none;
+}
+
+.carros-menu.active{
+    display: block;
+}
+
+/* SLIDER */
+.slider{
+    display: flex;
+    overflow: hidden;
+    height: 400px;
+}
+
+.slider img{
+    width: 400%;
+    display: none;
+}
+
+.slider img.active{
+    display: block;
+}
+/* SECCION AUTOS */
+.autos{
+    padding: 40px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.autos h2{
+    margin-bottom: 30px;
+}
+
+/* GRID */
+.grid-autos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD AUTO */
+.auto img{
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.auto img:hover{
+    transform: scale(1.05);
+}
+
+.auto p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* BOTON */
+.miguel-btm{
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* MENU OCULTO */
+.carros-menu{
+    display: none;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* CUANDO ESTA ACTIVO */
+.carros-menu.active{
+    display: block;
+}
+
+/* LINKS */
+.carros-menu ul{
+    list-style: none;
+    padding: 0;
+}
+
+.carros-menu li{
+    margin: 10px 0;
+}
+
+.carros-menu a{
+    color: white;
+    text-decoration: none;
+}
