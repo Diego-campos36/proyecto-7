@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<header class="header">
+<body>
+
+
+
+
+
+<main class="logins">
+
+<div class="login">
+    <h1>Crear Cuenta</h1>
+
+    <form id="registroForm">
+
+        <input type="text" id="nombre" placeholder="Nombre Completo" required>
+
+        <input type="email" id="correo" placeholder="Correo Electronico" required>
+
+        <input type="text" id="usuario" placeholder="Usuario" required>
+
+        <input type="password" id="password" placeholder="Contraseña" required>
+
+        <input type="password" id="confirmar" placeholder="Confirmar Contraseña" required>
+
+        <!-- NUEVO -->
+        <input type="date" id="fecha" required>
+
+        <button type="submit">Registrarse</button>
+
+        <p id="mensaje">Ya te has registrado correctamente</p>
+
+        <p>¿Ya tienes cuenta?</p>
+        <button type="button" onclick="window.location.href='login.php'">Iniciar Sesión</button>
+    </heater>
+    </form>
+</div>
+
+</main>
+
+<footer>
+    <p>careout</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

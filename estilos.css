@@ -10,6 +10,10 @@ body{
 body{
     background-color: rgb(141, 145, 146); /* color sólido */
 }
+body{
+    margin:0;
+    padding-top:70px;
+}
 header {
     display: flex;
     align-items: center;
@@ -18,10 +22,6 @@ header {
     background-color: #000;
 }
 
-header a,
-.miguel-btm {
-    color: #c92828;
-}
 
 /* Estilo solo para el logo */
 .encabezado {
@@ -29,70 +29,15 @@ header a,
     align-items: center;
     gap: 10px;
 }
-
+.logo img{
+    cursor: pointer;
+}
 .encabezado img {
     display: block;
     width: 120px;
     height: auto;
 }
-.miguel{
-    position: static;
-}
-.miguel-btm{
-    font-size: 30px;
-    cursor: pointer;
-    border: none;
-    background: none;
-    position: static;
-}
-.carros-menu{
-    position: fixed;
-    right: -250px;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #000;
-    transition: right 0.2s ease;
-    padding-top: 50px;
-}
-.carros-menu ul{
-    list-style: none;
-    padding: 0px;
-}
-.carros-menu ul li{
-    padding: 15px;
-    text-align: center;
-}
-.carros-menu ul li a{
-   color: #b34343;
-   text-decoration: none;
-   display: block;
-}
-.carros-menu ul li a:hover{
-    background-color: #333;
-}
-.carros-menu.active{
-    right: 0;
-}
-.video1{
-    position: relative;
-    width: 95%;
-    max-width: 1200px;
-        height: 88vh;
-    overflow: hidden;
-    background-color: #f6f6f6;
-    margin: 10px auto;
-}
-.atras1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    background-color: transparent;
-}
+
 header {
     display: flex;
     align-items: center;
@@ -216,15 +161,6 @@ h2{
     }
 }
 
-/* MENU */
-.carros-menu{
-    display: none;
-}
-
-.carros-menu.active{
-    display: block;
-}
-
 /* SLIDER */
 .slider{
     display: flex;
@@ -282,7 +218,7 @@ h2{
 
 /* MENU OCULTO */
 .carros-menu{
-    display: none;
+    display: flex;
     background: #222;
     position: absolute;
     top: 60px;
@@ -309,4 +245,199 @@ h2{
 .carros-menu a{
     color: white;
     text-decoration: none;
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 30px;
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    z-index:1000;
+}
+
+.logo img{
+    height:40px;
+}
+
+.carros-menu ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.carros-menu ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.carros-menu ul li a:hover{
+    color:red;
+}
+
+.hamburger{
+    display:flex;
+    font-size:28px;
+    color:white;
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .carros-menu{
+        position:absolute;
+        top:60px;
+        right:0;
+        background:black;
+        width:200px;
+        display:none;
+        flex-direction:column;
+    }
+
+    .carros-menu ul{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .carros-menu.active{
+        display:flex;
+    }
+
+    .hamburger{
+        display:block;
+    }
+}
+/*css para acceder*/
+.registro {
+  text-align:center;
+  padding: 150px;
+  background-color: #1f4d74;
+  animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
+}
+
+.registro h2 {
+  font-size: 40px;
+  color: var(--AZUL);
+}
+.registro p {
+  color: #010002;
+  margin-bottom: 330px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+.carda {
+  background-color: rgb(176, 184, 207);
+  width: 200%;
+  max-width: 320px; /* tamaño por defecto en pantallas grandes */
+  text-decoration: none;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align:center
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Layout general */
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+/* HEADER Y FOOTER */
+header, footer{
+    text-align:center;
+    padding:10px;
+    background:#fff;
+}
+
+/* CONTENEDOR LOGIN */
+.logins{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("  ") no-repeat center/cover;
+}
+
+/* CAJA */
+.login{
+    width:90%;
+    max-width:350px;
+    padding:30px;
+    border-radius:15px;
+
+    background: rgba(28, 121, 175, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    color:white;
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,0,0,0.2);
+}
+
+/* INPUTS */
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    border-bottom:2px solid white;
+    background:transparent;
+    color:white;
+}
+
+input:focus{
+    outline:none;
+    border-bottom:2px solid #00c3ff;
+}
+
+/* DATE */
+input[type="date"]{
+    border:2px solid white;
+    border-radius:20px;
+}
+
+/* BOTONES */
+button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:none;
+    border-radius:10px;
+    background:#00aaff;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#0088cc;
+}
+
+/* MENSAJE */
+#mensaje{
+    margin-top:10px;
+    color:lightgreen;
+    display:none;
 }
