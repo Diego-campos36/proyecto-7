@@ -313,61 +313,84 @@ h2{
     }
 }
 /*css para acceder*/
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* SECCIÓN REGISTRO */
 .registro {
-  text-align:center;
-  padding: 150px;
+  text-align: center;
+  padding: 100px 20px;
   background-image: url("registro.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 
-
-    .registro h2 {
-  font-weight: 600; /* más grueso */
-  letter-spacing: 2px; /* espacio entre letras */
+/* TEXTOS */
+.registro h1 {
+  font-weight: 600;
+  letter-spacing: 2px;
   color: #798d06;
-
+  margin-bottom: 10px;
 }
 
 .registro p {
   font-weight: 300;
   color: #798d06;
-  
-}    
+  margin-bottom: 40px;
+}
 
+/* CARDS */
 .cards {
   display: flex;
   justify-content: center;
-  gap: 200px;
+  gap: 40px;
   flex-wrap: wrap;
 }
-.carda img {
-  width: 110%;      /* ocupa todo el ancho de la card */
-  height: 180px;    /* altura fija */
-  object-fit: cover; /* recorta sin deformar */
-  border-radius: 20px;
-  margin-bottom: 25px;
-}
+
+/* CARD INDIVIDUAL */
 .carda {
   background-color: rgb(176, 184, 207);
-  width: 400%;
-  max-width: 420px; /* tamaño por defecto en pantallas grandes */
-  text-decoration: none;
-  padding: 50px;
+  width: 300px; /* tamaño real */
+  padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  text-align:center
-}
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
 }
 
+.carda:hover {
+  transform: scale(1.05);
+}
+
+/* IMAGEN */
+.carda img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+/* TITULOS */
+.carda h3 {
+  margin-bottom: 10px;
+}
+
+/* LINKS */
+.carda a {
+  display: inline-block;
+  text-decoration: none;
+  background: #1f4d74;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
 /* Layout general */
 body{
     display:flex;
@@ -484,4 +507,66 @@ button:hover{
 .miniaturas img:hover {
     opacity: 1;
     transform: scale(1.05);
+}
+.hero-carrusel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* capa oscura */
+.slide::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+/* texto */
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+}
+
+.texto h1 {
+    font-size: 60px;
+}
+
+.texto p {
+    font-size: 20px;
+}
+
+/* botón */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: white;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 10px;
 }
