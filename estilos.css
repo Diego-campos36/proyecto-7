@@ -19,7 +19,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    background-color: #000;
+    background-color: #856c1d;
 }
 
 
@@ -316,30 +316,44 @@ h2{
 .registro {
   text-align:center;
   padding: 150px;
-  background-color: #1f4d74;
+  background-image: url("registro.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   animation: Aparicion 0.8s ease-out forwards; /*animacion para aperecer NO BORRAR*/
 }
 
-.registro h2 {
-  font-size: 40px;
-  color: var(--AZUL);
+
+    .registro h2 {
+  font-weight: 600; /* más grueso */
+  letter-spacing: 2px; /* espacio entre letras */
+  color: #798d06;
+
 }
+
 .registro p {
-  color: #010002;
-  margin-bottom: 330px;
-}
+  font-weight: 300;
+  color: #798d06;
+  
+}    
 
 .cards {
   display: flex;
   justify-content: center;
-  gap: 150px;
+  gap: 200px;
   flex-wrap: wrap;
 }
-
+.carda img {
+  width: 110%;      /* ocupa todo el ancho de la card */
+  height: 180px;    /* altura fija */
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
 .carda {
   background-color: rgb(176, 184, 207);
-  width: 200%;
-  max-width: 320px; /* tamaño por defecto en pantallas grandes */
+  width: 400%;
+  max-width: 420px; /* tamaño por defecto en pantallas grandes */
   text-decoration: none;
   padding: 50px;
   border-radius: 15px;
@@ -361,12 +375,7 @@ body{
     min-height:100vh;
 }
 
-/* HEADER Y FOOTER */
-header, footer{
-    text-align:center;
-    padding:10px;
-    background:#fff;
-}
+
 
 /* CONTENEDOR LOGIN */
 .logins{
@@ -374,9 +383,11 @@ header, footer{
     display:flex;
     justify-content:center;
     align-items:center;
+  background-image: url("registro.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                url("  ") no-repeat center/cover;
 }
 
 /* CAJA */
@@ -440,4 +451,37 @@ button:hover{
     margin-top:10px;
     color:lightgreen;
     display:none;
+}
+.carrusel {
+    width: 100%;
+    text-align: center;
+}
+
+.principal img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.miniaturas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.miniaturas img {
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.miniaturas img:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }

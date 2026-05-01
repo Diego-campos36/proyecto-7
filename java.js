@@ -53,3 +53,6 @@ fetch("header.html")
         menu.classList.toggle("active");
     });
 });
+function cambiarImagen(img) {
+    document.getElementById("imgPrincipal").src = img.src;
+}

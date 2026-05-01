@@ -32,11 +32,21 @@
 
 <!-- HERO -->
 <section class="hero">
+<section class="carrusel">
 
-    <video autoplay muted loop playsinline class="bg-video">
-        <source src="video.mp4" type="video/mp4">
-    </video>
+    <!-- Imagen principal -->
+    <div class="principal">
+        <img id="imgPrincipal" src="carro,ciudad de frente.jpeg">
+    </div>
 
+    <!-- Miniaturas -->
+    <div class="miniaturas">
+        <img src="carro negro de lado.jpeg" onclick="cambiarImagen(this)">
+        <img src="carro negro de frente.jpeg" onclick="cambiarImagen(this)">
+        <img src="carro negro desde arriba.jpeg" onclick="cambiarImagen(this)">
+    </div>
+
+</section>
     <div class="hero-content fade">
         <p>Bienvenido</p>
         <h1>esta pagina vende automoviles"careout premiun"</h1>
