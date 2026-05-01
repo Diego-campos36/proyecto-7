@@ -67,3 +67,107 @@ function cambiarSlide() {
 }
 
 setInterval(cambiarSlide, 4000);
+const btn = document.getElementById("btn-menu");
+const nav = document.getElementById("nav");
+
+btn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+function filtrar(tipo) {
+    const autos = document.querySelectorAll(".card-auto");
+
+    autos.forEach(auto => {
+        if (tipo === "all") {
+            auto.style.display = "block";
+        } else {
+            if (auto.getAttribute("data-tipo") === tipo) {
+                auto.style.display = "block";
+            } else {
+                auto.style.display = "none";
+            }
+        }
+    });
+}
+const botones = document.querySelectorAll(".btn-filtro");
+const autos = document.querySelectorAll(".card-auto");
+
+botones.forEach(boton => {
+    boton.addEventListener("click", () => {
+
+        // BOTÓN ACTIVO
+        botones.forEach(b => b.classList.remove("active"));
+        boton.classList.add("active");
+
+        const filtro = boton.getAttribute("data-filtro");
+
+        autos.forEach(auto => {
+            const tipo = auto.getAttribute("data-tipo");
+
+            if (filtro === "all" || tipo === filtro) {
+                auto.classList.remove("hide");
+                auto.classList.add("show");
+            } else {
+                auto.classList.remove("show");
+                auto.classList.add("hide");
+            }
+        });
+
+    });
+});
+const modal = document.getElementById("modal-auto");
+const cerrar = document.getElementById("cerrar-modal");
+const imgModal = document.getElementById("img-modal");
+
+// ABRIR modal al click en autos
+document.querySelectorAll(".card-auto").forEach(auto => {
+    auto.addEventListener("click", () => {
+        modal.style.display = "block";
+    });
+});
+
+// CERRAR modal
+cerrar.onclick = () => {
+    modal.style.display = "none";
+};
+
+// CLICK FUERA DEL MODAL
+window.onclick = (e) => {
+    if (e.target == modal) {
+        modal.style.display = "none";
+    }
+};
+
+// CAMBIAR FOTO
+function cambiarFoto(img) {
+    imgModal.src = img.src;
+}
+const modal = document.getElementById("modal-auto");
+const cerrar = document.getElementById("cerrar-modal");
+
+const imgModal = document.getElementById("img-modal");
+const tituloModal = document.getElementById("titulo-modal");
+const precioModal = document.getElementById("precio-modal");
+
+// ABRIR MODAL DESDE AUTOS
+document.querySelectorAll(".card-auto").forEach(auto => {
+    auto.addEventListener("click", () => {
+
+        imgModal.src = auto.getAttribute("data-img");
+        tituloModal.textContent = auto.getAttribute("data-titulo");
+        precioModal.textContent = auto.getAttribute("data-precio");
+
+        modal.style.display = "block";
+    });
+});
+
+// CERRAR
+cerrar.onclick = () => {
+    modal.style.display = "none";
+};
+
+// CLICK FUERA
+window.onclick = (e) => {
+    if (e.target == modal) {
+        modal.style.display = "none";
+    }
+};

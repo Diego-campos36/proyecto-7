@@ -8,26 +8,31 @@
 </head>
 <body>
 
-<header class="header">
+ <header class="header">
+    <div class="header-container">
 
-<div id="header">
-    <div class="logo">
-    <a href="careout.html">
-        <img src="portada careout.jpeg" alt="logo">
-    </a>
-</div>
+        <div class="logo">
+            <a href="careout.html">
+                <img src="portada careout.jpeg" alt="logo">
+            </a>
+        </div>
 
-    <nav id="carros-menu" class="carros-menu">
-        <ul>
-            <li><a href="pag1.html">ACCEDER</a></li>
-            <li><a href="pag2.html">COMPRAR ▼</a></li>
-            <li><a href="pag3.html">SERVICIOS ▼</a></li>
-            <li><a href="pag4.html">CONTACTO ▼</a></li>
-        </ul>
-    </nav>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="pag1.html">Acceder</a></li>
+                <li><a href="pag2.html">Comprar</a></li>
+                <li><a href="pag3.html">Servicios</a></li>
+                <li><a href="pag4.html">Contacto</a></li>
+            </ul>
+        </nav>
 
-    <div class="hamburger" id="miguel-btm">&#9776;</div>
-</header>
+        <div class="hamburger" id="btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
 </header>
 
 <!-- HERO -->
@@ -49,12 +54,12 @@
 </section>
     <div class="hero-content fade">
         <p>Bienvenido</p>
-        <h1>esta pagina vende automoviles"careout premiun"</h1>
+        <h1>"EL MOMENTO ES HOY "</h1>
         <a href="#" class="btn">Conoce más</a>
     </div>
 
     <div class="price fade">
-        Crea tu cuenta 
+        CONOCE MAS SOBRE NUESTRA PAGINA
     </div>
 
 </section>
@@ -67,28 +72,134 @@
 </section>
 <section class="autos">
 
-    <h2>DESTACADOS</h2>
+    <h2 class="titulo">Autos Destacados</h2>
 
+    <!-- FILTROS -->
+    <div class="filtros">
+        <button class="btn-filtro active" data-filtro="all">Todos</button>
+        <button class="btn-filtro" data-filtro="suv">SUV</button>
+        <button class="btn-filtro" data-filtro="deportivo">Deportivos</button>
+        <button class="btn-filtro" data-filtro="sedan">Sedan</button>
+    </div>
+
+    <!-- AUTOS -->
     <div class="grid-autos">
-        <div class="auto">
-            <img src="camaro.png">
-            <p>Auto 1</p>
-        </div>
+<div class="card-auto" data-tipo="deportivo"
+     data-img="camaro.png"
+     data-titulo="Chevrolet Camaro"
+     data-precio="$750,000">
 
-        <div class="auto">
+    <img src="camaro.png">
+    <div class="info">
+        <h3>Camaro</h3>
+        <p class="precio">$750,000</p>
+    </div>
+
+</div>
+
+        <div class="card-auto"onclick="abrirAuto()" data-tipo="suv">
             <img src="camioneta.png">
-            <p>Auto 2</p>
+            <div class="info">
+                <h3>SUV</h3>
+                <p class="precio">$620,000</p>
+            </div>
         </div>
 
-        <div class="auto">
+        <div class="card-auto" onclick="abrirAuto()" data-tipo="sedan">
             <img src="deportivo.png">
-            <p>Auto 3</p>
+            <div class="info">
+                <h3>Sedan</h3>
+                <p class="precio">$500,000</p>
+            </div>
         </div>
+
     </div>
 
 </section>
-<h2>Bienvenido a careout</h2>
+<footer class="footer-pro">
 
+    <div class="footer-top">
+
+        <!-- Marca -->
+        <div class="footer-box">
+            <h2>CareOut</h2>
+            <p>Innovación en movimiento. Descubre autos que se adaptan a tu estilo de vida.</p>
+        </div>
+
+        <!-- Navegación -->
+        <div class="footer-box">
+            <h3>Navegación</h3>
+            <ul>
+                <li><a href="pag1.html">Acceder</a></li>
+                <li><a href="pag2.html">Comprar</a></li>
+                <li><a href="pag3.html">Servicios</a></li>
+                <li><a href="pag4.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes -->
+        <div class="footer-box">
+            <h3>Síguenos</h3>
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt=""></a>
+                <a href="#"><img src="instagram.png" alt=""></a>
+                <a href="#"><img src="youtube.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="footer-box">
+            <h3>Ubicación</h3>
+            <iframe 
+                src="https://www.google.com/maps?q=Zamora,Michoacan&output=embed"
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 CareOut | Todos los derechos reservados</p>
+    </div>
+
+</footer>
+ 
+
+</div>
 <script src="java.js"></script>
+</div>
+<div id="modal-auto" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" id="cerrar-modal">&times;</span>
+
+        <div class="modal-body">
+
+            <div class="modal-img">
+                <img id="img-modal" src="camaro.png">
+                <div class="galeria">
+                    <img src="camaro.png" onclick="cambiarFoto(this)">
+                    <img src="camaro2.png" onclick="cambiarFoto(this)">
+                    <img src="camaro3.png" onclick="cambiarFoto(this)">
+                </div>
+            </div>
+
+            <div class="modal-info">
+                <h2 id="titulo-modal">Chevrolet Camaro</h2>
+                <p>
+                    Auto deportivo con motor V8, alto rendimiento y diseño aerodinámico.
+                    Ideal para velocidad y estilo.
+                </p>
+
+                <h3 class="precio">$750,000 MXN</h3>
+
+                <button class="btn-cotizar">Cotizar</button>
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 </body>

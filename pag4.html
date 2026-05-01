@@ -1,1 +1,160 @@
-<h1 contacto></h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Estudiantil</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-container">
+
+        <div class="logo">
+            <a href="careout.html">
+                <img src="portada careout.jpeg" alt="logo">
+            </a>
+        </div>
+
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="pag1.html">Acceder</a></li>
+                <li><a href="pag2.html">Comprar</a></li>
+                <li><a href="pag3.html">Servicios</a></li>
+                <li><a href="pag4.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger" id="btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+</header>
+
+<section id="nosotros" class="seccion">
+
+    <h2 class="titulo">Sobre Nosotros</h2>
+
+    <p class="descripcion">
+        Somos el <strong>Equipo 7</strong> del CBT No. 52, un grupo de estudiantes
+        enfocados en el desarrollo de soluciones digitales innovadoras.
+        Nuestro proyecto consiste en la creación de una página web dedicada
+        al mundo de los automóviles.
+    </p>
+
+    <p class="descripcion">
+        En este sitio compartimos información relevante, diseños atractivos
+        y contenido de interés sobre distintos modelos de carros, combinando
+        nuestra pasión por la tecnología con el ámbito automotriz.
+    </p>
+
+    <p class="descripcion">
+        Aplicamos nuestros conocimientos en desarrollo web para construir
+        una plataforma funcional, moderna y fácil de usar, trabajando de
+        manera colaborativa para lograr un proyecto de calidad.
+    </p>
+
+    <h3 class="subtitulo">Integrantes del equipo</h3>
+
+    <div class="equipo">
+
+        <div class="card">
+            <h4>Jefe de equipo</h4>
+            <p>Diego Emmanuel Alemán Campos</p>
+        </div>
+
+        <div class="card">
+            <h4>Integrante</h4>
+            <p>Luis Jesús Guerrero</p>
+        </div>
+
+        <div class="card">
+            <h4>Integrante</h4>
+            <p>Alan Pulido Becerra</p>
+        </div>
+
+        <div class="card">
+            <h4>Integrante</h4>
+            <p>Oscar</p>
+        </div>
+
+        <div class="card">
+            <h4>Integrante</h4>
+            <p>Jazmín Magdaleno</p>
+        </div>
+
+    </div>
+
+</section>
+<section id="contacto" class="seccion">
+    <h2>Contáctanos</h2>
+
+    <form onsubmit="mensaje(event)">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer class="footer-pro">
+
+    <div class="footer-top">
+
+        <!-- Marca -->
+        <div class="footer-box">
+            <h2>CareOut</h2>
+            <p>Innovación en movimiento. Descubre autos que se adaptan a tu estilo de vida.</p>
+        </div>
+
+        <!-- Navegación -->
+        <div class="footer-box">
+            <h3>Navegación</h3>
+            <ul>
+                <li><a href="pag1.html">Acceder</a></li>
+                <li><a href="pag2.html">Comprar</a></li>
+                <li><a href="pag3.html">Servicios</a></li>
+                <li><a href="pag4.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes -->
+        <div class="footer-box">
+            <h3>Síguenos</h3>
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt=""></a>
+                <a href="#"><img src="instagram.png" alt=""></a>
+                <a href="#"><img src="youtube.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="footer-box">
+            <h3>Ubicación</h3>
+            <iframe 
+                src="https://www.google.com/maps?q=Zamora,Michoacan&output=embed"
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 CareOut | Todos los derechos reservados</p>
+    </div>
+
+</footer>
+
+<script>
+function mensaje(e){
+    e.preventDefault();
+    alert("Mensaje enviado correctamente");
+}
+</script>
+
+</body>
+</html>
