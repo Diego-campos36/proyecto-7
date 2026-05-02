@@ -325,7 +325,7 @@ h2{
 .registro {
   text-align: center;
   padding: 100px 20px;
-  background-image: url("registro.jpeg");
+  background-image: url("registro.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -406,7 +406,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-  background-image: url("registro.jpeg");
+  background-image: url("registro.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
