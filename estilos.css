@@ -1133,3 +1133,161 @@ footer {
     from {transform: scale(0.8);}
     to {transform: scale(1);}
 }
+/* ========================= */
+/*  AJUSTES PARA CELULAR */
+/* ========================= */
+@media (max-width: 768px){
+
+    /* HEADER */
+    .header-container{
+        padding: 10px 20px;
+    }
+
+    .logo img{
+        height: 40px;
+    }
+
+    /* MENU */
+    .nav{
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        width: 200px;
+        height: 100vh;
+        background: black;
+        transition: 0.3s;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav.active{
+        right: 0;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    /* HERO */
+    .hero{
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero h1{
+        font-size: 24px;
+    }
+
+    .price{
+        font-size: 18px;
+    }
+
+    /* CARRUSEL */
+    .principal img{
+        height: 250px;
+    }
+
+    .miniaturas img{
+        width: 80px;
+        height: 50px;
+    }
+
+    /* AUTOS */
+    .grid-autos{
+        grid-template-columns: 1fr;
+    }
+
+    /* MODAL */
+    .modal-body{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-img img{
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer-top{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+/* ========================= */
+/* 📱 RESPONSIVE REGISTRO */
+/* ========================= */
+@media (max-width: 768px){
+
+    /* HEADER */
+    .header-container{
+        padding: 10px 20px;
+    }
+
+    .logo img{
+        height: 40px;
+    }
+
+    /* MENU */
+    .nav{
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        width: 200px;
+        height: 100vh;
+        background: black;
+        transition: 0.3s;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav.active{
+        right: 0;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    /* SECCIÓN REGISTRO */
+    .registro{
+        padding: 80px 20px;
+    }
+
+    .registro h1{
+        font-size: 24px;
+    }
+
+    .registro p{
+        font-size: 14px;
+    }
+
+    /* CARDS */
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .carda{
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .carda img{
+        height: 150px;
+    }
+
+    /* FOOTER */
+    .footer-top{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
