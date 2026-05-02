@@ -1291,3 +1291,57 @@ footer {
         text-align: center;
     }
 }
+
+
+
+.principal {
+  position: relative;
+}
+
+.principal img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+/* DIFUMINADO */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+/* TEXTO ENCIMA */
+.contenido-hero {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 500px;
+}
+
+.contenido-hero h1 {
+  font-size: 3rem;
+}
+
+.contenido-hero p {
+  margin: 10px 0;
+}
+
+.btn {
+  background: #00c3ff;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contenido-hero h1 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,14 +1,17 @@
 
+       
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareOut | Autos</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
- <header class="header">
+<header class="header">
     <div class="header-container">
 
         <div class="logo">
@@ -37,30 +40,30 @@
 
 <!-- HERO -->
 <section class="hero">
-<section class="carrusel">
 
-    <!-- Imagen principal -->
-    <div class="principal">
-        <img id="imgPrincipal" src="carro_ciudad-de-frente.webp">
-    </div>
+    <section class="carrusel">
 
-    <!-- Miniaturas -->
-    <div class="miniaturas">
-        <img src="carro-negro-de-lado.webp" onclick="cambiarImagen(this)">
-        <img src="carro-negro-de-frente.webp" onclick="cambiarImagen(this)">
-        <img src="carro-negro-desde-arriba.webp" onclick="cambiarImagen(this)">
-    </div>
+        <div class="principal">
 
-</section>
-    <div class="hero-content fade">
-        <p>Bienvenido</p>
-        <h1>"EL MOMENTO ES HOY "</h1>
-        <a href="#" class="btn">Conoce más</a>
-    </div>
+            <img id="imgPrincipal" src="carro_ciudad-de-frente.webp">
 
-    <div class="price fade">
-        CONOCE MAS SOBRE NUESTRA PAGINA
-    </div>
+            <div class="overlay"></div>
+
+            <div class="contenido-hero">
+                <h1>Encuentra tu auto ideal</h1>
+                <p>Explora autos deportivos, SUV y sedanes diseñados para tu estilo de vida</p>
+                <a href="pag2.html" class="btn">Ver catálogo</a>
+            </div>
+
+        </div>
+
+        <div class="miniaturas">
+            <img src="carro-negro-de-lado.webp" onclick="cambiarImagen(this)">
+            <img src="carro-negro-de-frente.webp" onclick="cambiarImagen(this)">
+            <img src="carro-negro-desde-arriba.webp" onclick="cambiarImagen(this)">
+        </div>
+
+    </section>
 
 </section>
 
@@ -70,11 +73,12 @@
     <img src="camioneta.webp">
     <img src="deportivo.webp">
 </section>
+
+<!-- AUTOS -->
 <section class="autos">
 
     <h2 class="titulo">Autos Destacados</h2>
 
-    <!-- FILTROS -->
     <div class="filtros">
         <button class="btn-filtro active" data-filtro="all">Todos</button>
         <button class="btn-filtro" data-filtro="suv">SUV</button>
@@ -82,22 +86,17 @@
         <button class="btn-filtro" data-filtro="sedan">Sedan</button>
     </div>
 
-    <!-- AUTOS -->
     <div class="grid-autos">
-<div class="card-auto" data-tipo="deportivo"
-     data-img="camaro"
-     data-titulo="Chevrolet Camaro"
-     data-precio="$750,000">
 
-    <img src="camaro.webp">
-    <div class="info">
-        <h3>Camaro</h3>
-        <p class="precio">$750,000</p>
-    </div>
+        <div class="card-auto" data-tipo="deportivo">
+            <img src="camaro.webp">
+            <div class="info">
+                <h3>Camaro</h3>
+                <p class="precio">$750,000</p>
+            </div>
+        </div>
 
-</div>
-
-        <div class="card-auto"onclick="abrirAuto()" data-tipo="suv">
+        <div class="card-auto" data-tipo="suv">
             <img src="camioneta.webp">
             <div class="info">
                 <h3>SUV</h3>
@@ -105,10 +104,10 @@
             </div>
         </div>
 
-        <div class="card-auto" onclick="abrirAuto()" data-tipo="sedan">
+        <div class="card-auto" data-tipo="sedan">
             <img src="deportivo.webp">
             <div class="info">
-                <h3>Sedan</h3>
+                <h3>Sedán</h3>
                 <p class="precio">$500,000</p>
             </div>
         </div>
@@ -116,17 +115,17 @@
     </div>
 
 </section>
+
+<!-- FOOTER -->
 <footer class="footer-pro">
 
     <div class="footer-top">
 
-        <!-- Marca -->
         <div class="footer-box">
             <h2>CareOut</h2>
             <p>Innovación en movimiento. Descubre autos que se adaptan a tu estilo de vida.</p>
         </div>
 
-        <!-- Navegación -->
         <div class="footer-box">
             <h3>Navegación</h3>
             <ul>
@@ -137,7 +136,6 @@
             </ul>
         </div>
 
-        <!-- Redes -->
         <div class="footer-box">
             <h3>Síguenos</h3>
             <div class="social-icons">
@@ -147,7 +145,6 @@
             </div>
         </div>
 
-        <!-- Mapa -->
         <div class="footer-box">
             <h3>Ubicación</h3>
             <iframe 
@@ -163,11 +160,10 @@
     </div>
 
 </footer>
- 
 
-</div>
 <script src="java.js"></script>
-</div>
+
+<!-- MODAL -->
 <div id="modal-auto" class="modal">
 
     <div class="modal-content">
@@ -202,4 +198,6 @@
     </div>
 
 </div>
+
 </body>
+</html>
