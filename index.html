@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="nuevo-logo.webp" type="image/webp">
     <title>CareOut | Autos</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
@@ -34,8 +35,11 @@
             <span></span>
             <span></span>
         </div>
+<!-- FAVORITOS -->
+<div class="favoritos-icono" id="btnFavoritos">
+    ❤️ <span id="contadorFav">0</span>
+</div>
 
-    </div>
 </header>
 
 <!-- HERO -->
@@ -67,13 +71,28 @@
 
 </section>
 
-<!-- SLIDER -->
-<section class="slider">
-    <img src="nuevo-logo.webp" class="active">
-    <img src="camioneta.webp">
-    <img src="deportivo.webp">
-</section>
+<section class="buscador">
 
+    <h2>Encuentra tu auto ideal</h2>
+
+    <div class="barra-busqueda">
+
+        <div class="input-box">
+            <span class="icono">🔎</span>
+            <input type="text" id="inputBusqueda" placeholder="Buscar auto...">
+            <span class="limpiar" id="limpiar">✖</span>
+        </div>
+
+        <select id="filtroCategoria">
+            <option value="all">Todos</option>
+            <option value="suv">SUV</option>
+            <option value="deportivo">Deportivos</option>
+            <option value="sedan">Sedan</option>
+        </select>
+
+    </div>
+
+</section>
 <!-- AUTOS -->
 <section class="autos">
 
@@ -86,34 +105,32 @@
         <button class="btn-filtro" data-filtro="sedan">Sedan</button>
     </div>
 
-    <div class="grid-autos">
-
-        <div class="card-auto" data-tipo="deportivo">
-            <img src="camaro.webp">
-            <div class="info">
-                <h3>Camaro</h3>
-                <p class="precio">$750,000</p>
-            </div>
-        </div>
-
-        <div class="card-auto" data-tipo="suv">
-            <img src="camioneta.webp">
-            <div class="info">
-                <h3>SUV</h3>
-                <p class="precio">$620,000</p>
-            </div>
-        </div>
-
-        <div class="card-auto" data-tipo="sedan">
-            <img src="deportivo.webp">
-            <div class="info">
-                <h3>Sedán</h3>
-                <p class="precio">$500,000</p>
-            </div>
-        </div>
-
+   <div class="card-auto" data-tipo="deportivo">
+    <button class="btn-fav">❤️</button>
+    <img src="camaro.webp">
+    <div class="info">
+        <h3>Camaro</h3>
+        <p class="precio">$750,000</p>
     </div>
+</div>
 
+<div class="card-auto" data-tipo="suv">
+    <button class="btn-fav">❤️</button>
+    <img src="camioneta.webp">
+    <div class="info">
+        <h3>SUV</h3>
+        <p class="precio">$620,000</p>
+    </div>
+</div>
+
+<div class="card-auto" data-tipo="sedan">
+    <button class="btn-fav">❤️</button>
+    <img src="deportivo.webp">
+    <div class="info">
+        <h3>Sedán</h3>
+        <p class="precio">$500,000</p>
+    </div>
+</div>
 </section>
 
 <!-- FOOTER -->
