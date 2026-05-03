@@ -1,19 +1,22 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Estudiantil</title>
+    <title>Nosotros | CareOut</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
-  <header class="header">
+<header class="header">
     <div class="header-container">
 
         <div class="logo">
             <a href="index.html">
-                <img src="nuevo-logo.webp" alt="logo">
+                <img src="nuevo-logo.webp" alt="Logo de CareOut">
             </a>
         </div>
 
@@ -35,12 +38,15 @@
     </div>
 </header>
 
+<main>
+
+<!-- NOSOTROS -->
 <section id="nosotros" class="seccion">
 
     <section class="hero-nosotros">
-    <h1>Equipo 7 - Desarrollo Web</h1>
-    <p>Innovación, diseño y tecnología aplicada al mundo automotriz</p>
-</section>
+        <h1>Equipo 7 - Desarrollo Web</h1>
+        <p>Innovación, diseño y tecnología aplicada al mundo automotriz</p>
+    </section>
 
     <p class="descripcion">
         Somos el <strong>Equipo 7</strong> del CBT No. 52, un grupo de estudiantes
@@ -61,60 +67,70 @@
         manera colaborativa para lograr un proyecto de calidad.
     </p>
 
-    <h3 class="subtitulo">Integrantes del equipo</h3>
+    <h2 class="subtitulo">Integrantes del equipo</h2>
 
     <div class="equipo">
 
         <div class="card">
-            <h4>Jefe de equipo</h4>
+            <h3>Jefe de equipo</h3>
             <p>Diego Emmanuel Alemán Campos</p>
         </div>
 
         <div class="card">
-            <h4>Integrante</h4>
+            <h3>Integrante</h3>
             <p>Luis Jesús Guerrero</p>
         </div>
 
         <div class="card">
-            <h4>Integrante</h4>
+            <h3>Integrante</h3>
             <p>Alan Pulido Becerra</p>
         </div>
 
         <div class="card">
-            <h4>Integrante</h4>
+            <h3>Integrante</h3>
             <p>Oscar</p>
         </div>
 
         <div class="card">
-            <h4>Integrante</h4>
+            <h3>Integrante</h3>
             <p>Jazmín Magdaleno</p>
         </div>
 
     </div>
 
 </section>
+
+<!-- CONTACTO -->
 <section id="contacto" class="seccion">
     <h2>Contáctanos</h2>
 
     <form onsubmit="mensaje(event)">
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo" required>
-        <textarea placeholder="Mensaje" required></textarea>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" placeholder="Correo" required>
+
+        <label for="mensajeTexto">Mensaje</label>
+        <textarea id="mensajeTexto" placeholder="Escribe tu mensaje" required></textarea>
+
         <button type="submit">Enviar</button>
+
     </form>
 </section>
+
+</main>
 
 <footer class="footer-pro">
 
     <div class="footer-top">
 
-        <!-- Marca -->
         <div class="footer-box">
             <h2>CareOut</h2>
             <p>Innovación en movimiento. Descubre autos que se adaptan a tu estilo de vida.</p>
         </div>
 
-        <!-- Navegación -->
         <div class="footer-box">
             <h3>Navegación</h3>
             <ul>
@@ -125,17 +141,15 @@
             </ul>
         </div>
 
-        <!-- Redes -->
         <div class="footer-box">
             <h3>Síguenos</h3>
             <div class="social-icons">
-                <a href="#"><img src="facebook.png" alt=""></a>
-                <a href="#"><img src="instagram.png" alt=""></a>
-                <a href="#"><img src="youtube.png" alt=""></a>
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="youtube.png" alt="YouTube"></a>
             </div>
         </div>
 
-        <!-- Mapa -->
         <div class="footer-box">
             <h3>Ubicación</h3>
             <iframe 

@@ -17,7 +17,7 @@
 
         <div class="logo">
             <a href="index.html">
-                <img src="nuevo-logo.webp" alt="logo">
+                <img src="nuevo-logo.webp" alt="Logo de CareOut">
             </a>
         </div>
 
@@ -35,12 +35,15 @@
             <span></span>
             <span></span>
         </div>
-<!-- FAVORITOS -->
-<div class="favoritos-icono" id="btnFavoritos">
-    ❤️ <span id="contadorFav">0</span>
-</div>
 
+        <div class="favoritos-icono" id="btnFavoritos">
+            ❤️ <span id="contadorFav">0</span>
+        </div>
+
+    </div>
 </header>
+
+<main>
 
 <!-- HERO -->
 <section class="hero">
@@ -49,7 +52,7 @@
 
         <div class="principal">
 
-            <img id="imgPrincipal" src="carro_ciudad-de-frente.webp">
+            <img id="imgPrincipal" src="carro_ciudad-de-frente.webp" alt="Auto en ciudad de frente">
 
             <div class="overlay"></div>
 
@@ -62,37 +65,43 @@
         </div>
 
         <div class="miniaturas">
-            <img src="carro-negro-de-lado.webp" onclick="cambiarImagen(this)">
-            <img src="carro-negro-de-frente.webp" onclick="cambiarImagen(this)">
-            <img src="carro-negro-desde-arriba.webp" onclick="cambiarImagen(this)">
+            <img src="carro-negro-de-lado.webp" alt="Auto negro de lado" onclick="cambiarImagen(this)">
+            <img src="carro-negro-de-frente.webp" alt="Auto negro de frente" onclick="cambiarImagen(this)">
+            <img src="carro-negro-desde-arriba.webp" alt="Auto negro desde arriba" onclick="cambiarImagen(this)">
         </div>
 
     </section>
 
 </section>
 
+<!-- BUSCADOR -->
 <section class="buscador">
 
-    <h2>Encuentra tu auto ideal</h2>
+    <h2>Búsqueda de autos</h2>
 
     <div class="barra-busqueda">
 
         <div class="input-box">
+            <label for="inputBusqueda">Buscar auto</label>
             <span class="icono">🔎</span>
             <input type="text" id="inputBusqueda" placeholder="Buscar auto...">
             <span class="limpiar" id="limpiar">✖</span>
         </div>
 
-        <select id="filtroCategoria">
-            <option value="all">Todos</option>
-            <option value="suv">SUV</option>
-            <option value="deportivo">Deportivos</option>
-            <option value="sedan">Sedan</option>
-        </select>
+        <div>
+            <label for="filtroCategoria">Categoría</label>
+            <select id="filtroCategoria">
+                <option value="all">Todos</option>
+                <option value="suv">SUV</option>
+                <option value="deportivo">Deportivos</option>
+                <option value="sedan">Sedan</option>
+            </select>
+        </div>
 
     </div>
 
 </section>
+
 <!-- AUTOS -->
 <section class="autos">
 
@@ -105,33 +114,36 @@
         <button class="btn-filtro" data-filtro="sedan">Sedan</button>
     </div>
 
-   <div class="card-auto" data-tipo="deportivo">
-    <button class="btn-fav">❤️</button>
-    <img src="camaro.webp">
-    <div class="info">
-        <h3>Camaro</h3>
-        <p class="precio">$750,000</p>
+    <div class="card-auto" data-tipo="deportivo">
+        <button class="btn-fav">❤️</button>
+        <img src="camaro.webp" alt="Chevrolet Camaro deportivo">
+        <div class="info">
+            <h3>Camaro</h3>
+            <p class="precio">$750,000</p>
+        </div>
     </div>
-</div>
 
-<div class="card-auto" data-tipo="suv">
-    <button class="btn-fav">❤️</button>
-    <img src="camioneta.webp">
-    <div class="info">
-        <h3>SUV</h3>
-        <p class="precio">$620,000</p>
+    <div class="card-auto" data-tipo="suv">
+        <button class="btn-fav">❤️</button>
+        <img src="camioneta.webp" alt="Camioneta SUV moderna">
+        <div class="info">
+            <h3>SUV</h3>
+            <p class="precio">$620,000</p>
+        </div>
     </div>
-</div>
 
-<div class="card-auto" data-tipo="sedan">
-    <button class="btn-fav">❤️</button>
-    <img src="deportivo.webp">
-    <div class="info">
-        <h3>Sedán</h3>
-        <p class="precio">$500,000</p>
+    <div class="card-auto" data-tipo="sedan">
+        <button class="btn-fav">❤️</button>
+        <img src="deportivo.webp" alt="Auto sedán deportivo">
+        <div class="info">
+            <h3>Sedán</h3>
+            <p class="precio">$500,000</p>
+        </div>
     </div>
-</div>
+
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer class="footer-pro">
@@ -156,9 +168,9 @@
         <div class="footer-box">
             <h3>Síguenos</h3>
             <div class="social-icons">
-                <a href="#"><img src="facebook.png" alt=""></a>
-                <a href="#"><img src="instagram.png" alt=""></a>
-                <a href="#"><img src="youtube.png" alt=""></a>
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="youtube.png" alt="YouTube"></a>
             </div>
         </div>
 
@@ -190,11 +202,11 @@
         <div class="modal-body">
 
             <div class="modal-img">
-                <img id="img-modal" src="camaro.webp">
+                <img id="img-modal" src="camaro.webp" alt="Chevrolet Camaro vista principal">
                 <div class="galeria">
-                    <img src="camaro.webp" onclick="cambiarFoto(this)">
-                    <img src="camaro.webp" onclick="cambiarFoto(this)">
-                    <img src="camaro.webp" onclick="cambiarFoto(this)">
+                    <img src="camaro.webp" alt="Camaro vista 1" onclick="cambiarFoto(this)">
+                    <img src="camaro.webp" alt="Camaro vista 2" onclick="cambiarFoto(this)">
+                    <img src="camaro.webp" alt="Camaro vista 3" onclick="cambiarFoto(this)">
                 </div>
             </div>
 

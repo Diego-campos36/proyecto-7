@@ -14,7 +14,7 @@
 
         <div class="logo">
             <a href="index.html">
-                <img src="nuevo-logo.webp" alt="logo">
+                <img src="nuevo-logo.webp" alt="Logo de CareOut">
             </a>
         </div>
 
@@ -30,41 +30,52 @@
     </div>
 </header>
 
+<main>
+
+<!-- INTRO -->
 <section class="comprar-intro">
     <h1>Compra tu auto</h1>
     <p>Encuentra el vehículo ideal para ti</p>
 </section>
 
+<!-- BUSCADOR -->
 <section class="buscador">
+
+    <label for="inputBusqueda">Buscar auto</label>
     <input type="text" id="inputBusqueda" placeholder="Buscar auto...">
 
+    <label for="filtroCategoria">Categoría</label>
     <select id="filtroCategoria">
         <option value="all">Todos</option>
         <option value="suv">SUV</option>
         <option value="deportivo">Deportivos</option>
         <option value="sedan">Sedan</option>
     </select>
+
 </section>
 
+<!-- AUTOS -->
 <section class="autos">
+    <h2>Catálogo de autos</h2>
+
     <div class="grid-autos">
 
         <div class="card-auto" data-tipo="deportivo">
-            <img src="camaro.webp">
+            <img src="camaro.webp" alt="Chevrolet Camaro deportivo">
             <h3>Camaro</h3>
             <p>$750,000</p>
             <button class="btn">Comprar</button>
         </div>
 
         <div class="card-auto" data-tipo="suv">
-            <img src="camioneta.webp">
+            <img src="camioneta.webp" alt="Camioneta SUV familiar">
             <h3>SUV Familiar</h3>
             <p>$620,000</p>
             <button class="btn">Comprar</button>
         </div>
 
         <div class="card-auto" data-tipo="sedan">
-            <img src="deportivo.webp">
+            <img src="deportivo.webp" alt="Auto sedán moderno">
             <h3>Sedán</h3>
             <p>$500,000</p>
             <button class="btn">Comprar</button>
@@ -73,16 +84,22 @@
     </div>
 </section>
 
+<!-- FINANCIAMIENTO -->
 <section class="financiamiento">
     <h2>Simula tu pago mensual</h2>
 
+    <label for="precio">Precio del auto</label>
     <input type="number" id="precio" placeholder="Precio del auto">
+
+    <label for="enganche">Enganche</label>
     <input type="number" id="enganche" placeholder="Enganche">
+
     <button id="btnCalcular">Calcular</button>
 
     <p id="resultado"></p>
 </section>
 
+<!-- PROCESO -->
 <section class="proceso">
     <h2>¿Cómo comprar?</h2>
     <ul>
@@ -93,21 +110,24 @@
     </ul>
 </section>
 
+<!-- CTA -->
 <section class="cta">
     <h2>¿Listo para tu auto?</h2>
     <a href="pag4.html" class="btn">Contáctanos</a>
 </section>
+
+</main>
+
+<!-- FOOTER -->
 <footer class="footer-pro">
 
     <div class="footer-top">
 
-        <!-- Marca -->
         <div class="footer-box">
             <h2>CareOut</h2>
             <p>Innovación en movimiento. Descubre autos que se adaptan a tu estilo de vida.</p>
         </div>
 
-        <!-- Navegación -->
         <div class="footer-box">
             <h3>Navegación</h3>
             <ul>
@@ -118,17 +138,15 @@
             </ul>
         </div>
 
-        <!-- Redes -->
         <div class="footer-box">
             <h3>Síguenos</h3>
             <div class="social-icons">
-                <a href="#"><img src="facebook.png" alt=""></a>
-                <a href="#"><img src="instagram.png" alt=""></a>
-                <a href="#"><img src="youtube.png" alt=""></a>
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="youtube.png" alt="YouTube"></a>
             </div>
         </div>
 
-        <!-- Mapa -->
         <div class="footer-box">
             <h3>Ubicación</h3>
             <iframe 
@@ -144,6 +162,7 @@
     </div>
 
 </footer>
+
 <script src="comprar.js"></script>
 
 </body>
