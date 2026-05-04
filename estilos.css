@@ -1,4 +1,14 @@
- *{
+:root{
+  --azul-oscuro: #0A1F44;
+  --azul-medio: #123A73;
+  --dorado: #D4AF37;
+  --dorado-claro: #F1D67A;
+  --negro: #000000;
+  --gris: #2E2E2E;
+  --blanco: #FFFFFF;
+}
+
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -1675,7 +1685,7 @@ body {
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #0f172a;
-  color: white;
+  color:#ffffff;
   margin: 0;
 }
 
@@ -1701,7 +1711,7 @@ body {
 .descripcion {
   max-width: 700px;
   margin: 10px auto;
-  color: #ccc;
+  color: #000000;
   line-height: 1.6;
 }
 
@@ -1755,7 +1765,7 @@ body {
 /* ===== BOTON ===== */
 button {
   background: linear-gradient(45deg, #00c3ff, #1f4d74);
-  color: white;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 12px;
   border-radius: 10px;
@@ -1797,7 +1807,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-              url("carro_ciudad-de-frente.webp");
+              url("carro-verde.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1807,5 +1817,5 @@ button:hover {
 }
 
 .hero-nosotros p {
-  color: #ccc;
+  color: #fffcfc;
 }

@@ -267,3 +267,21 @@ btn.addEventListener("click", () => {
     document.getElementById("resultado").textContent =
         "Pago mensual aproximado: $" + mensual.toFixed(2);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
