@@ -287,32 +287,31 @@ document.addEventListener("click", function(event) {
         carros2Menu.classList.remove("active");
     }
 });
-document.querySelectorAll(".btn-leer").forEach(function (btn) {
 
-  btn.addEventListener("click", function () {
 
- var contenedor = btn.closest(".texto, .texto2");
 
-    var extra = contenedor.querySelector(".extra");
-    var puntos = contenedor.querySelector(".puntos");
-    var btnVer = contenedor.querySelector(".btn-ver");
+document.querySelectorAll(".btn-leer").forEach(btn => {
 
-    var abierto = extra.classList.contains("activo");
-  if (abierto) {
-    extra.classList.remove("activo");
-    puntos.style.display = "inline";
-    btn.innerText = "Leer más";
-    btnVer.style.display = "none";
-  } else {
-    extra.classList.add("activo");
-    puntos.style.display = "none";
-    btn.innerText = "Leer menos";
-    btnVer.style.display = "inline-block";
-  }
+  btn.addEventListener("click", () => {
+
+    const contenedor = btn.closest(".texto");
+
+    const extra = contenedor.querySelector(".extra");
+    const puntos = contenedor.querySelector(".puntos");
+    const btnVer = contenedor.querySelector(".btn-ver");
+
+    const abierto = extra.classList.contains("mostrar");
+
+    extra.classList.toggle("mostrar");
+
+    if (puntos) puntos.style.display = abierto ? "inline" : "none";
+    if (btnVer) btnVer.style.display = abierto ? "none" : "inline-block";
+
+    btn.innerText = abierto ? "Leer más" : "Leer menos";
+
+  });
+
 });
-});
-
-
 
 
 

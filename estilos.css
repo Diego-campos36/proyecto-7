@@ -1882,15 +1882,17 @@ footer, .footer, .footer-pro{
 }
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body{
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f6f6f6;
 }
 
+/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -1904,7 +1906,7 @@ header a,
     color: #fff;
 }
 
-/* Estilo solo para el logo */
+/* LOGO */
 .encabezado {
     display: flex;
     align-items: center;
@@ -1912,20 +1914,17 @@ header a,
 }
 
 .encabezado img {
-    display: block;
     width: 120px;
-    height: auto;
-}  /* estilo para el logo en el encabezado*/
-.leo{
-    position: static;
 }
+
+/* MENU */
 .leo-btm{
     font-size: 30px;
     cursor: pointer;
     border: none;
     background: none;
-    position: static;
 }
+
 .carros2-menu{
     position: fixed;
     right: -250px;
@@ -1936,42 +1935,48 @@ header a,
     transition: right 0.2s ease;
     padding-top: 50px;
 }
+
 .carros2-menu ul{
     list-style: none;
-    padding: 0px;
 }
+
 .carros2-menu ul li{
     padding: 15px;
     text-align: center;
 }
+
 .carros2-menu ul li a{
    color: #fff;
    text-decoration: none;
    display: block;
 }
+
 .carros2-menu ul li a:hover{
     background-color: #333;
 }
+
 .carros2-menu.active{
     right: 0;
 }
+
+/* TITULO */
 .txtser{
-     text-align: center;
-    margin-top: 40px;   /* más separado del header */
+    text-align: center;
+    margin-top: 40px;
     font-size: 30px;
     color: #333;
-    margin-left: auto;
-    margin-right: auto;
 }
+
+/* CUADROS */
 .contenedor-cuadros {
-     display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     max-width: 900px;  
     margin: 40px auto; 
 }
+
 .cuadro {
-   width: 100%;
     background: #000;
     color: white;
     border-radius: 15px;
@@ -1986,7 +1991,7 @@ header a,
 }
 
 /* IMAGEN */
-.img {
+.img, .img2 {
     width: 150px;
     height: 120px;
     object-fit: cover;
@@ -2000,57 +2005,12 @@ header a,
     flex-direction: column;
 }
 
-
+/* 🔥 LEER MÁS (CORREGIDO) */
 .extra {
     display: none;
-}    /*oculta el texto8*/
-
-.extra.activo {
-    display: inline;
 }
 
-/* BOTONES */
-.botones {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-
-.btn-Leer {
-    background: black;
-    color: white;
-    border: 1px solid white;
-    padding: 8px 15px;
-    cursor: pointer;
-}    /*boton para leer mas*/
-
-/* FLEX */
-.flex {
-    display: flex;
-    gap: 15px;
-}
-
-
-.img2 {
-    width: 150px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px;
-     flex-shrink: 0;
-}/*para el tamano de la imagen en la targeta*/
-
-/* TEXTO */
-.texto {
-    display: flex;
-    flex-direction: column;
-}
-
-.extra {
-    display: none;
-}/*oculta el teexto*/
-
-.extra.activo {
+.extra.mostrar {
     display: block;
     margin-top: 5px;
 }
@@ -2061,26 +2021,31 @@ header a,
     justify-content: space-between;
     margin-top: 15px;
 }
-/* CONTENEDOR GENERAL */
+
+.btn-leer {
+    background: black;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* SECCIONES EXTRA */
 .simon {
     width: 100%;
     padding-top: 20px;
 }
 
-/* TARJETA */
 .Agnes {
-    width: 100%;               
     display: flex;
-    align-items:  flex-start;
+    align-items: flex-start;
     gap: 30px;
     background: #111;
     color: white;
     padding: 40px;
     border-radius: 15px;
-    flex-direction: row; 
 }
 
-/* IMAGEN */
 .Agnes img {
     width: 300px;
     height: 200px;
@@ -2088,7 +2053,6 @@ header a,
     border-radius: 10px;
 }
 
-/* TEXTO */
 .stx {
     max-width: 600px;
     display: flex;
@@ -2096,7 +2060,6 @@ header a,
 }
 
 .pez {
-    margin: 0;
     font-size: 28px;
 }
 
