@@ -3,10 +3,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros | CareOut</title>
-    <link rel="stylesheet" href="estilos.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros | CareOut</title>
+<link rel="stylesheet" href="estilos.css">
+
+<!-- Fuente pro -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,25 +17,21 @@
 <header class="header">
     <div class="header-container">
 
-        <div class="logo">
-            <a href="index.html">
-                <img src="nuevo-logo.webp" alt="Logo de CareOut">
-            </a>
-        </div>
+        <a href="index.html" class="logo">
+            <img src="nuevo-logo.webp" alt="CareOut">
+        </a>
 
         <nav class="nav" id="nav">
             <ul>
                 <li><a href="ACCEDERR.html">Acceder</a></li>
                 <li><a href="COMMPRAR.html">Comprar</a></li>
-                <li><a href="ACCEDERR.html">Servicios</a></li>
-                <li><a href="NOSOSTROS.html">Contacto</a></li>
+                <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
 
         <div class="hamburger" id="btn-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </div>
 
     </div>
@@ -40,60 +39,54 @@
 
 <main>
 
+<!-- HERO -->
+<section class="hero-nosotros">
+    <div class="overlay">
+        <h1>Equipo 7</h1>
+        <p>Desarrollo Web Automotriz</p>
+    </div>
+</section>
+
 <!-- NOSOTROS -->
-<section id="nosotros" class="seccion">
-
-    <section class="hero-nosotros">
-        <h1>Equipo 7 - Desarrollo Web</h1>
-        <p>Innovación, diseño y tecnología aplicada al mundo automotriz</p>
-    </section>
+<section class="seccion contenedor">
 
     <p class="descripcion">
-        Somos el <strong>Equipo 7</strong> del CBT No. 52, un grupo de estudiantes
-        enfocados en el desarrollo de soluciones digitales innovadoras.
-        Nuestro proyecto consiste en la creación de una página web dedicada
-        al mundo de los automóviles.
+        Somos estudiantes del CBT No. 52 enfocados en crear soluciones digitales modernas
+        para el mundo automotriz.
     </p>
 
     <p class="descripcion">
-        En este sitio compartimos información relevante, diseños atractivos
-        y contenido de interés sobre distintos modelos de carros, combinando
-        nuestra pasión por la tecnología con el ámbito automotriz.
+        Este proyecto combina diseño, programación y experiencia de usuario para crear
+        una plataforma atractiva y funcional.
     </p>
 
-    <p class="descripcion">
-        Aplicamos nuestros conocimientos en desarrollo web para construir
-        una plataforma funcional, moderna y fácil de usar, trabajando de
-        manera colaborativa para lograr un proyecto de calidad.
-    </p>
-
-    <h2 class="subtitulo">Integrantes del equipo</h2>
+    <h2 class="subtitulo">Nuestro Equipo</h2>
 
     <div class="equipo">
 
         <div class="card">
-            <h3>Jefe de equipo</h3>
-            <p>Diego Emmanuel Alemán Campos</p>
+            <h3>Diego Alemán</h3>
+            <span>Jefe de equipo</span>
         </div>
 
         <div class="card">
-            <h3>Integrante</h3>
-            <p>Luis Jesús Guerrero</p>
+            <h3>Luis Guerrero</h3>
+            <span>Desarrollador</span>
         </div>
 
         <div class="card">
-            <h3>Integrante</h3>
-            <p>Alan Pulido Becerra</p>
+            <h3>Alan Pulido</h3>
+            <span>Diseño UI</span>
         </div>
 
         <div class="card">
-            <h3>Integrante</h3>
-            <p>Oscar</p>
+            <h3>Oscar</h3>
+            <span>Backend</span>
         </div>
 
         <div class="card">
-            <h3>Integrante</h3>
-            <p>Jazmín Magdaleno</p>
+            <h3>Jazmín Magdaleno</h3>
+            <span>Contenido</span>
         </div>
 
     </div>
@@ -101,61 +94,53 @@
 </section>
 
 <!-- CONTACTO -->
-<section id="contacto" class="seccion">
+<section id="contacto" class="contacto">
+
     <h2>Contáctanos</h2>
 
     <form onsubmit="mensaje(event)">
-
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" placeholder="Nombre" required>
-
-        <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" placeholder="Correo" required>
-
-        <label for="mensajeTexto">Mensaje</label>
-        <textarea id="mensajeTexto" placeholder="Escribe tu mensaje" required></textarea>
-
-        <button type="submit">Enviar</button>
-
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar mensaje</button>
     </form>
+
 </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="footer-pro">
 
     <div class="footer-top">
 
-        <div class="footer-box">
+        <div>
             <h2>CareOut</h2>
-            <p>Innovación en movimiento. Descubre autos que se adaptan a tu estilo de vida.</p>
+            <p>Autos, tecnología y diseño en un solo lugar.</p>
         </div>
 
-        <div class="footer-box">
-            <h3>Navegación</h3>
+        <div>
+            <h3>Links</h3>
             <ul>
-                <li><a href="ACCEDERR.html">Acceder</a></li>
-                <li><a href="COMMPRAR.html">Comprar</a></li>
-                <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
-                <li><a href="NOSOSTROS.html">Contacto</a></li>
+                <li><a href="#">Acceder</a></li>
+                <li><a href="#">Comprar</a></li>
+                <li><a href="#">Servicios</a></li>
             </ul>
         </div>
 
-        <div class="footer-box">
-            <h3>Síguenos</h3>
+        <div>
+            <h3>Redes</h3>
             <div class="social-icons">
-                <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                <img src="facebook.png">
+                <img src="instagram.png">
+                <img src="youtube.png">
             </div>
         </div>
-
-        
 
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; 2026 CareOut | Todos los derechos reservados</p>
+        <p>© 2026 CareOut</p>
     </div>
 
 </footer>
@@ -163,7 +148,7 @@
 <script>
 function mensaje(e){
     e.preventDefault();
-    alert("Mensaje enviado correctamente");
+    alert("Mensaje enviado ");
 }
 </script>
 

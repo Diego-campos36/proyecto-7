@@ -776,13 +776,6 @@ footer {
     filter: brightness(1.5);
 }
 
-/* Mapa */
-.footer-box iframe {
-    width: 100%;
-    height: 150px;
-    border: none;
-    border-radius: 10px;
-}
 
 /* Parte baja */
 .footer-bottom {
@@ -1208,7 +1201,7 @@ footer {
     }
 }
 /* ========================= */
-/* 📱 RESPONSIVE REGISTRO */
+/*  RESPONSIVE REGISTRO */
 /* ========================= */
 @media (max-width: 768px){
 
@@ -1800,7 +1793,7 @@ button:hover {
 }
 
 /* ========================= */
-/* 🎨 PALETA AZUL + DORADO */
+/* PALETA AZUL + DORADO */
 /* ========================= */
 
 :root{
@@ -2005,7 +1998,7 @@ header a,
     flex-direction: column;
 }
 
-/* 🔥 LEER MÁS (CORREGIDO) */
+/*  LEER MÁS (CORREGIDO) */
 .extra {
     display: none;
 }
@@ -2077,4 +2070,92 @@ header a,
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* HERO */
+.hero-nosotros{
+    height: 60vh;
+    background: url("carro-negro-desde-arriba.webp") center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.overlay{
+    background: rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:10px;
+}
+
+/* CONTENIDO */
+.contenedor{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.descripcion{
+    opacity:0.8;
+    margin-bottom:15px;
+}
+
+/* EQUIPO */
+.equipo{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    background:#334155;
+}
+
+/* CONTACTO */
+.contacto{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.contacto form{
+    max-width:400px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input, textarea{
+    padding:10px;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    background:#4eb923;
+    color:rgb(182, 0, 0);
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2563eb;
 }
