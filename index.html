@@ -35,11 +35,12 @@
             <span></span>
             <span></span>
         </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        <div class="favoritos-icono" id="btnFavoritos">
-            ❤️ <span id="contadorFav">0</span>
-        </div>
-
+<div class="favoritos-icono" id="btnFavoritos">
+    <i class="fa-solid fa-heart"></i>
+    <span id="contadorFav">0</span>
+</div>
     </div>
 </header>
 
@@ -83,7 +84,7 @@
 
         <div class="input-box">
             <label for="inputBusqueda">Buscar auto</label>
-            <span class="icono">🔎</span>
+            <span class="icono"></span>
             <input type="text" id="inputBusqueda" placeholder="Buscar auto...">
             <span class="limpiar" id="limpiar">✖</span>
         </div>
@@ -114,33 +115,40 @@
         <button class="btn-filtro" data-filtro="sedan">Sedan</button>
     </div>
 
-    <div class="card-auto" data-tipo="deportivo">
-        <button class="btn-fav">❤️</button>
-        <img src="camaro.webp" alt="Chevrolet Camaro deportivo">
-        <div class="info">
-            <h3>Camaro</h3>
-            <p class="precio">$750,000</p>
-        </div>
-    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <div class="card-auto" data-tipo="suv">
-        <button class="btn-fav">❤️</button>
-        <img src="camioneta.webp" alt="Camioneta SUV moderna">
-        <div class="info">
-            <h3>SUV</h3>
-            <p class="precio">$620,000</p>
-        </div>
+<div class="card-auto" data-tipo="deportivo">
+    <button class="btn-fav">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+    <img src="camaro.webp" alt="Chevrolet Camaro deportivo">
+    <div class="info">
+        <h3>Camaro</h3>
+        <p class="precio">$750,000</p>
     </div>
+</div>
 
-    <div class="card-auto" data-tipo="sedan">
-        <button class="btn-fav">❤️</button>
-        <img src="deportivo.webp" alt="Auto sedán deportivo">
-        <div class="info">
-            <h3>Sedán</h3>
-            <p class="precio">$500,000</p>
-        </div>
+<div class="card-auto" data-tipo="suv">
+    <button class="btn-fav">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+    <img src="camioneta.webp" alt="Camioneta SUV moderna">
+    <div class="info">
+        <h3>SUV</h3>
+        <p class="precio">$620,000</p>
     </div>
+</div>
 
+<div class="card-auto" data-tipo="sedan">
+    <button class="btn-fav">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+    <img src="deportivo.webp" alt="Auto sedán deportivo">
+    <div class="info">
+        <h3>Sedán</h3>
+        <p class="precio">$500,000</p>
+    </div>
+</div>
 </section>
 
 </main>

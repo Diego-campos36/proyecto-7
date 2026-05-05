@@ -2067,3 +2067,14 @@ header a,
     margin-top: 15px;
     line-height: 1.6;
 }
+
+
+
+.favoritos-icono {
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
