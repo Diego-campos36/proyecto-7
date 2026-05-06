@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="nuevo-logo.webp" type="image/webp">
+    <title>CareOut | Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-container">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="nuevo-logo.webp" alt="Logo de CareOut">
+            </a>
+        </div>
+
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="ACCEDERR.html">Acceder</a></li>
+                <li><a href="COMMPRAR.html">Comprar</a></li>
+                <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
+                <li><a href="CONTACTO.html" class="activo">Contacto</a></li>
+                <li><a href="NOSOSTROS.html">Nosotros</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger" id="btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="favoritos-icono" id="btnFavoritos">
+            <i class="fa-solid fa-heart"></i>
+            <span id="contadorFav">0</span>
+        </div>
+
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-contacto">
+    <h1>Contáctanos</h1>
+    <p>Estamos listos para ayudarte con tu vehículo</p>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+
+    <div class="contacto-container">
+
+        <!-- FORM -->
+        <div class="contacto-form">
+            <h2>Envíanos un mensaje</h2>
+
+            <form onsubmit="mensaje(event)">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Escribe tu mensaje..." required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+        <!-- INFO -->
+        <div class="contacto-info">
+            <h2>Información</h2>
+
+            <p><i class="fa-solid fa-location-dot"></i> Zamora,mich, México</p>
+            <p><i class="fa-solid fa-phone"></i> +52 351 000 0000</p>
+            <p><i class="fa-solid fa-envelope"></i> contacto@careout.com</p>
+
+            <div class="contacto-redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/careout_4am/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-pro">
+
+    <div class="footer-top">
+
+        <div class="footer-box">
+            <h2>CareOut</h2>
+            <p>Innovación en movimiento. Autos que se adaptan a tu estilo de vida.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Navegación</h3>
+            <ul>
+                <li><a href="ACCEDERR.html">Acceder</a></li>
+                <li><a href="COMMPRAR.html">Comprar</a></li>
+                <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
+                <li><a href="CONTACTO.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Síguenos</h3>
+            <div class="social-icons">
+                <a href="#"><img src="facebookpn.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/careout_4am/"><img src="instapn.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 CareOut | Todos los derechos reservados</p>
+    </div>
+
+</footer>
+
+</body>
+</html>

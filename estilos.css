@@ -2467,3 +2467,287 @@ body {
     color: white;
     padding: 20px;
 }
+
+
+
+.servicio-detalle {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero-servicio {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-servicio h1 {
+    font-size: 36px;
+    color: var(--azul-oscuro);
+}
+
+.hero-servicio p {
+    color: var(--gris);
+    font-size: 18px;
+}
+
+.contenido-servicio p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+}
+
+.cta-servicio {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-servicio {
+    background: var(--dorado);
+    color: #000;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-servicio:hover {
+    background: var(--dorado-claro);
+}
+
+------------------------------------------------------
+/* HERO */
+/* Fondo general */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Hero */
+.hero-contacto {
+    background: #000;
+    color: #fff;
+    border-bottom: 1px solid #222;
+}
+
+.hero-contacto p {
+    color: var(--dorado);
+}
+
+/* Formulario */
+.contacto-form input,
+.contacto-form textarea {
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+.contacto-form input::placeholder,
+.contacto-form textarea::placeholder {
+    color: #aaa;
+}
+
+/* Botón */
+.contacto-form button {
+    background: var(--dorado);
+    color: #000;
+}
+
+.contacto-form button:hover {
+    background: var(--dorado-claro);
+}
+
+/* Info */
+.contacto-info p {
+    color: #ccc;
+}
+
+/* Iconos */
+.contacto-info i {
+    color: var(--dorado);
+}
+
+/* Redes */
+.contacto-redes a {
+    color: #fff;
+}
+
+.contacto-redes a:hover {
+    color: var(--dorado);
+}
+
+/* Footer */
+.footer-pro {
+    background: #000;
+    border-top: 1px solid #222;
+}
+
+.footer-pro p,
+.footer-pro a {
+    color: #ccc;
+}
+
+.footer-pro a:hover {
+    color: var(--dorado);
+}
+
+
+------------------------------------------------------
+
+
+
+/* HERO CON IMAGEN */
+.hero-mantenimiento {
+    position: relative;
+    height: 400px;
+    background: url("mantenimiento.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-mantenimiento .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.hero-content {
+    position: relative;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+}
+
+.hero-content p {
+    margin: 10px 0 20px;
+    color: var(--dorado);
+}
+
+/* BENEFICIOS */
+.beneficios-servicio {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.beneficio {
+    max-width: 250px;
+}
+
+.beneficio i {
+    font-size: 30px;
+    color: var(--dorado);
+    margin-bottom: 10px;
+}
+
+/* CONTENIDO */
+.contenido-servicio {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* CHECKLIST */
+.checklist {
+    margin: 30px 0;
+}
+
+.check-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.check-item i {
+    color: var(--dorado);
+    margin-right: 10px;
+}
+
+/* BOTÓN */
+.btn-servicio {
+    background: var(--dorado);
+    color: #000;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-servicio:hover {
+    background: var(--dorado-claro);
+}
+
+------------------------------------------------------
+
+/* HERO CON IMAGEN */
+.hero-pintura {
+    position: relative;
+    height: 400px;
+    background: url("pintura.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-pintura .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+/* PROCESO */
+.proceso-servicio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pasos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.paso {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.paso span {
+    display: block;
+    font-size: 24px;
+    color: var(--dorado);
+    margin-bottom: 10px;
+}
+
+
+-------------------------------------------
+
+/* HERO */
+.hero-diagnostico {
+    position: relative;
+    height: 400px;
+    background: url("diagnostico.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-diagnostico .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
