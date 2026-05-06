@@ -313,18 +313,3 @@ document.querySelectorAll(".btn-leer").forEach(btn => {
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

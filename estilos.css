@@ -2602,7 +2602,7 @@ body {
 .hero-mantenimiento {
     position: relative;
     height: 400px;
-    background: url("mantenimiento.jpg") center/cover no-repeat;
+    background: url("registro.webp") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2692,7 +2692,7 @@ body {
 .hero-pintura {
     position: relative;
     height: 400px;
-    background: url("pintura.jpg") center/cover no-repeat;
+    background: url("registro.webp") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2739,7 +2739,7 @@ body {
 .hero-diagnostico {
     position: relative;
     height: 400px;
-    background: url("diagnostico.jpg") center/cover no-repeat;
+    background: url("registro.webp") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2874,4 +2874,720 @@ body {
 .beneficio i {
     font-size: 30px;
     color: var(--dorado);
+}
+
+
+----------------------------------------------
+
+/* ================= HERO ================= */
+
+.catalogo-hero{
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    background: url("fondo-autos.webp") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.catalogo-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.65);
+}
+
+.catalogo-contenido{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 900px;
+}
+
+.subtitulo{
+    color: #D4AF37;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.catalogo-contenido h1{
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.catalogo-contenido p{
+    font-size: 1.1rem;
+    color: #dcdcdc;
+    line-height: 1.8;
+}
+
+/* ================= BUSCADOR ================= */
+
+.buscador-autos{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.input-box{
+    background: white;
+    border-radius: 50px;
+    padding: 15px 20px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-box input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.btn-buscar{
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    background: #D4AF37;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-buscar:hover{
+    transform: translateY(-3px);
+    background: #f1cb4b;
+}
+
+/* ================= FILTROS ================= */
+
+.filtros{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filtros button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #1b1b1b;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.filtros button:hover,
+.filtros .activo{
+    background: #D4AF37;
+    color: black;
+}
+
+/* ================= CATALOGO ================= */
+
+.catalogo{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 35px;
+    padding-bottom: 80px;
+}
+
+/* ================= CARD ================= */
+
+.card-auto{
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: .4s;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.card-auto:hover{
+    transform: translateY(-10px);
+}
+
+.img-auto{
+    height: 240px;
+    overflow: hidden;
+}
+
+.img-auto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.card-auto:hover img{
+    transform: scale(1.08);
+}
+
+.btn-fav{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    color: crimson;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.info-auto{
+    padding: 25px;
+}
+
+.categoria{
+    background: rgba(212,175,55,.15);
+    color: #D4AF37;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.info-auto h3{
+    margin: 18px 0 10px;
+    font-size: 1.5rem;
+}
+
+.descripcion{
+    color: #666;
+    line-height: 1.7;
+}
+
+.detalles{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    color: #444;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-card h4{
+    color: #0A1F44;
+    font-size: 1.5rem;
+}
+
+.btn-ver{
+    text-decoration: none;
+    background: #0A1F44;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.btn-ver:hover{
+    background: #123A73;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .catalogo-contenido h1{
+        font-size: 2.5rem;
+    }
+
+    .input-box{
+        width: 100%;
+    }
+
+    .footer-card{
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+}
+
+
+
+-------------------------------------------
+
+
+/* ===========================
+DARK MODE
+=========================== */
+
+.dark-mode{
+    background: #0b0f19;
+    color: white;
+}
+
+/* HEADER */
+
+.dark-mode .header{
+    background: rgba(10,10,10,.95);
+    backdrop-filter: blur(10px);
+}
+
+/* HERO */
+
+.dark-mode .catalogo-hero{
+    filter: brightness(.8);
+}
+
+/* CARDS */
+
+.dark-mode .card-auto{
+    background: #131c2f;
+    color: white;
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 10px 40px rgba(0,0,0,.5);
+}
+
+.dark-mode .descripcion{
+    color: #b8b8b8;
+}
+
+.dark-mode .footer-card h4{
+    color: #D4AF37;
+}
+
+/* INPUT */
+
+.dark-mode .input-box{
+    background: #1b2338;
+}
+
+.dark-mode .input-box input{
+    background: transparent;
+    color: white;
+}
+
+/* FILTROS */
+
+.dark-mode .filtros button{
+    background: #1b2338;
+    color: white;
+}
+
+.dark-mode .filtros .activo{
+    background: #D4AF37;
+    color: black;
+}
+
+/* BOTON DARK */
+
+.btn-dark-mode{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    background: #0A1F44;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 10px 25px rgba(0,0,0,.4);
+}
+
+.btn-dark-mode:hover{
+    transform: scale(1.1);
+}
+
+/* ANIMACION */
+
+.animar-dark{
+    animation: girarDark .6s ease;
+}
+
+@keyframes girarDark{
+
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+
+    50%{
+        transform: rotate(180deg) scale(1.2);
+    }
+
+    100%{
+        transform: rotate(360deg) scale(1);
+    }
+
+}
+
+/* HEADER SCROLL */
+
+.header-scroll{
+    background: rgba(0,0,0,.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,.3);
+}
+
+/* CONTADOR */
+
+.animar-contador{
+    animation: pop .4s ease;
+}
+
+@keyframes pop{
+
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+/* PARTICULAS */
+
+.particula-dark{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #D4AF37;
+    pointer-events: none;
+    animation: subirParticula linear forwards;
+    z-index: 999;
+}
+
+@keyframes subirParticula{
+
+    0%{
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-200px) scale(0);
+        opacity: 0;
+    }
+
+}
+
+
+--------------------------------------------------------
+
+
+
+/* ===========================
+PALETA CLARA PREMIUM
+=========================== */
+
+:root{
+
+    --fondo: #f5f7fb;
+    --blanco: #ffffff;
+
+    --azul: #0A1F44;
+    --azul-claro: #123A73;
+
+    --dorado: #D4AF37;
+
+    --texto: #1e293b;
+    --texto-gris: #64748b;
+
+    --borde: rgba(0,0,0,.08);
+
+}
+
+/* ===========================
+BODY
+=========================== */
+
+body{
+    background: var(--fondo);
+    color: var(--texto);
+}
+
+/* ===========================
+HEADER
+=========================== */
+
+.header{
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--borde);
+}
+
+.nav a{
+    color: var(--texto);
+}
+
+.nav a:hover{
+    color: var(--dorado);
+}
+
+/* ===========================
+HERO
+=========================== */
+
+.catalogo-hero{
+
+    background:
+    linear-gradient(
+        rgba(255,255,255,.75),
+        rgba(255,255,255,.75)
+    ),
+    url("fondo-autos.webp");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.catalogo-overlay{
+    display: none;
+}
+
+.catalogo-contenido h1{
+    color: var(--azul);
+}
+
+.catalogo-contenido p{
+    color: var(--texto-gris);
+}
+
+/* ===========================
+BUSCADOR
+=========================== */
+
+.input-box{
+    background: white;
+    border: 1px solid var(--borde);
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.input-box i{
+    color: var(--azul);
+}
+
+.input-box input{
+    color: var(--texto);
+}
+
+.btn-buscar{
+    background: var(--azul);
+    color: white;
+}
+
+.btn-buscar:hover{
+    background: var(--azul-claro);
+}
+
+/* ===========================
+FILTROS
+=========================== */
+
+.filtros button{
+    background: white;
+    color: var(--texto);
+    border: 1px solid var(--borde);
+}
+
+.filtros button:hover,
+.filtros .activo{
+    background: var(--azul);
+    color: white;
+}
+
+/* ===========================
+CARDS
+=========================== */
+
+.card-auto{
+    background: white;
+    border: 1px solid var(--borde);
+    box-shadow: 0 10px 25px rgba(0,0,0,.06);
+}
+
+.card-auto:hover{
+    box-shadow: 0 15px 40px rgba(0,0,0,.12);
+}
+
+.info-auto h3{
+    color: var(--azul);
+}
+
+.descripcion{
+    color: var(--texto-gris);
+}
+
+.detalles{
+    color: var(--texto);
+}
+
+.footer-card h4{
+    color: var(--azul);
+}
+
+/* ===========================
+BOTONES
+=========================== */
+
+.btn-ver{
+    background: var(--azul);
+    color: white;
+}
+
+.btn-ver:hover{
+    background: var(--azul-claro);
+}
+
+/* ===========================
+FAVORITOS
+=========================== */
+
+.btn-fav{
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+/* ===========================
+DARK MODE MAS ELEGANTE
+=========================== */
+-----------------------------------------------
+.dark-mode{
+    background: #eef2f7;
+}
+
+/* ===========================
+SCROLL
+=========================== */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--azul);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: #e2e8f0;
+}
+
+--------------------------------------------
+
+
+/* ===========================
+BOTON SCROLL
+=========================== */
+
+.btn-scroll{
+
+    position: fixed;
+
+    right: 25px;
+    bottom: 110px;
+
+    width: 60px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #0A1F44;
+    color: white;
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(20px);
+
+    transition: .4s ease;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+
+}
+
+/* MOSTRAR */
+
+.btn-scroll.mostrar{
+
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+
+}
+
+/* HOVER */
+
+.btn-scroll:hover{
+
+    transform: scale(1.12);
+
+    background: #123A73;
+
+}
+
+/* CUANDO SUBE */
+
+.btn-scroll.subir{
+
+    background: #D4AF37;
+    color: black;
+
+}
+
+/* ANIMACION */
+
+.animar-scroll{
+
+    animation: pulseScroll .5s ease;
+
+}
+
+@keyframes pulseScroll{
+
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.25);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
 }
