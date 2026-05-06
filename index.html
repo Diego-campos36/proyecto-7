@@ -47,58 +47,40 @@
 
 <main>
 
-<!-- HERO -->
-<section class="hero">
+<!-- HERO PRO MAX -->
+<section class="hero hero-pro">
 
-    <section class="carrusel">
+    <div class="hero-bg"></div>
 
-        <div class="principal">
+    <div class="contenido-hero">
+        <h1>Encuentra el auto perfecto</h1>
+        <p>Diseño, potencia y tecnología en un solo lugar</p>
 
-            <img id="imgPrincipal" src="carro_ciudad-de-frente.webp" alt="Auto en ciudad de frente">
-
-            <div class="overlay"></div>
-
-            <div class="contenido-hero">
-                <h1>Encuentra tu auto ideal</h1>
-                <p>Explora autos deportivos, SUV y sedanes diseñados para tu estilo de vida</p>
-                <a href="CATALOGO.html" class="btn">Ver catálogo</a>
-            </div>
-
+        <div class="hero-botones">
+            <a href="CATALOGO.html" class="btn">Ver catálogo</a>
+            <a href="AUTOSERVICIOO.html" class="btn-secundario">Ver servicios</a>
         </div>
-
-        <div class="miniaturas">
-            <img src="carro-negro-de-lado.webp" alt="Auto negro de lado" onclick="cambiarImagen(this)">
-            <img src="carro-negro-de-frente.webp" alt="Auto negro de frente" onclick="cambiarImagen(this)">
-            <img src="carro-negro-desde-arriba.webp" alt="Auto negro desde arriba" onclick="cambiarImagen(this)">
-        </div>
-
-    </section>
+    </div>
 
 </section>
 
-<!-- BUSCADOR -->
-<section class="buscador">
+<!-- BUSCADOR PRO -->
+<section class="buscador buscador-pro">
 
-    <h2>Búsqueda de autos</h2>
+    <h2>Encuentra tu auto</h2>
 
     <div class="barra-busqueda">
 
-        <div class="input-box">
-            <label for="inputBusqueda">Buscar auto</label>
-            <span class="icono"></span>
-            <input type="text" id="inputBusqueda" placeholder="Buscar auto...">
-            <span class="limpiar" id="limpiar">✖</span>
-        </div>
+        <input type="text" id="inputBusqueda" placeholder="Buscar marca o modelo...">
 
-        <div>
-            <label for="filtroCategoria">Categoría</label>
-            <select id="filtroCategoria">
-                <option value="all">Todos</option>
-                <option value="suv">SUV</option>
-                <option value="deportivo">Deportivos</option>
-                <option value="sedan">Sedan</option>
-            </select>
-        </div>
+        <select id="filtroCategoria">
+            <option value="all">Todas las categorías</option>
+            <option value="suv">SUV</option>
+            <option value="deportivo">Deportivos</option>
+            <option value="sedan">Sedan</option>
+        </select>
+
+        <button class="btn-buscar">Buscar</button>
 
     </div>
 
@@ -109,47 +91,78 @@
 
     <h2 class="titulo">Autos Destacados</h2>
 
-    <div class="filtros">
-        <button class="btn-filtro active" data-filtro="all">Todos</button>
-        <button class="btn-filtro" data-filtro="suv">SUV</button>
-        <button class="btn-filtro" data-filtro="deportivo">Deportivos</button>
-        <button class="btn-filtro" data-filtro="sedan">Sedan</button>
+    <div class="autos-grid">
+
+        <!-- CARD -->
+        <div class="card-auto" data-tipo="deportivo">
+            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
+            <img src="camaro.webp" alt="Chevrolet Camaro deportivo">
+            <div class="info">
+                <h3>Camaro</h3>
+                <p class="precio">$750,000</p>
+                <button class="btn-ver">Ver más</button>
+            </div>
+        </div>
+
+        <div class="card-auto" data-tipo="suv">
+            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
+            <img src="camioneta.webp" alt="SUV moderna">
+            <div class="info">
+                <h3>SUV</h3>
+                <p class="precio">$620,000</p>
+                <button class="btn-ver">Ver más</button>
+            </div>
+        </div>
+
+        <div class="card-auto" data-tipo="sedan">
+            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
+            <img src="deportivo.webp" alt="Sedán deportivo">
+            <div class="info">
+                <h3>Sedán</h3>
+                <p class="precio">$500,000</p>
+                <button class="btn-ver">Ver más</button>
+            </div>
+        </div>
+
+ <div class="card-auto" data-tipo="desert">
+            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
+            <img src="carro desierto.webp" alt="desert deportivo">
+            <div class="info">
+                <h3>desert</h3>
+                <p class="precio">$600,000</p>
+                <button class="btn-ver">Ver más</button>
+            </div>
+        </div>
+
+
+
+
+
     </div>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</section>
 
-<div class="card-auto" data-tipo="deportivo">
-    <button class="btn-fav">
-        <i class="fa-regular fa-heart"></i>
-    </button>
-    <img src="camaro.webp" alt="Chevrolet Camaro deportivo">
-    <div class="info">
-        <h3>Camaro</h3>
-        <p class="precio">$750,000</p>
-    </div>
-</div>
+<!-- BENEFICIOS -->
+<section class="beneficios-home">
 
-<div class="card-auto" data-tipo="suv">
-    <button class="btn-fav">
-        <i class="fa-regular fa-heart"></i>
-    </button>
-    <img src="camioneta.webp" alt="Camioneta SUV moderna">
-    <div class="info">
-        <h3>SUV</h3>
-        <p class="precio">$620,000</p>
+    <div class="beneficio">
+        <i class="fa-solid fa-car"></i>
+        <h3>Variedad</h3>
+        <p>Autos para cada estilo de vida</p>
     </div>
-</div>
 
-<div class="card-auto" data-tipo="sedan">
-    <button class="btn-fav">
-        <i class="fa-regular fa-heart"></i>
-    </button>
-    <img src="deportivo.webp" alt="Auto sedán deportivo">
-    <div class="info">
-        <h3>Sedán</h3>
-        <p class="precio">$500,000</p>
+    <div class="beneficio">
+        <i class="fa-solid fa-shield"></i>
+        <h3>Seguridad</h3>
+        <p>Vehículos certificados y revisados</p>
     </div>
-</div>
+
+    <div class="beneficio">
+        <i class="fa-solid fa-bolt"></i>
+        <h3>Rendimiento</h3>
+        <p>Máxima eficiencia y potencia</p>
+    </div>
+
 </section>
 
 </main>
