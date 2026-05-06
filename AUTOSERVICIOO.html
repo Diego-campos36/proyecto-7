@@ -1,172 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
-    <link rel="stylesheet" href="estilos.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios | CareOut</title>
+
+<link rel="stylesheet" href="servicios.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <header class="header">
-    <div class="header-container">
-
-        <div class="logo">
-            <a href="index.html">
-                <img src="nuevo-logo.webp" alt="Logo de CareOut">
-            </a>
-        </div>
-
-        <nav class="nav" id="nav">
-            <ul>
-                <li><a href="ACCEDERR.html">Acceder</a></li>
-                <li><a href="COMMPRAR.html">Comprar</a></li>
-                <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
-                <li><a href="NOSOSTROS.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <div class="hamburger" id="btn-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<div class="favoritos-icono" id="btnFavoritos">
-    <i class="fa-solid fa-heart"></i>
-    <span id="contadorFav">0</span>
-</div> 
-
+    <div class="logo">
+        <img src="nuevo-logo.webp">
     </div>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="ACCEDERR.html">Acceder</a></li>
+            <li><a href="COMPRAR.html">Comprar</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="NOSOTROS.html">Contacto</a></li>
+        </ul>
+    </nav>
 </header>
 
-<div class="txtser">
-    <h2>Nuetros servicios</h2>
-</div>
+<section class="titulo">
+    <h1>Nuestros Servicios</h1>
+</section>
 
-<div class="contenedor-cuadros">
+<section class="servicios">
 
-<!-- CUADRO 1 -->
-<div class="cuadro">
-<div class="flex">
-<img src="lambo-calle.webp" alt="Auto" class="img">
-<div class="texto">
+    <div class="card">
+        <img src="lambo-calle.webp">
+        <div class="card-content">
+            <h3>Mantenimiento</h3>
+            <p>Revisión completa para asegurar el rendimiento del vehículo.</p>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+    </div>
 
-<h3>Servicio de mantenimiento preventivo</h3>
-<span class="puntos">...</span>
+    <div class="card">
+        <img src="lambo-calle.webp">
+        <div class="card-content">
+            <h3>Hojalatería y pintura</h3>
+            <p>Reparación estética profesional para tu auto.</p>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+    </div>
 
-<p class="extra">
-El taller mecánico realiza mantenimientos periódicos...
-</p>
+    <div class="card">
+        <img src="lambo-calle.webp">
+        <div class="card-content">
+            <h3>Diagnóstico</h3>
+            <p>Detección de fallas con tecnología avanzada.</p>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+    </div>
 
-<div class="botones">
-<button class="btn-leer">Leer más</button>
-<a href="NOSOTROS.html" class="btn-ver">Ver más</a>
-</div>
+</section>
 
-</div>
-</div>
-</div>
+<section class="info">
 
-<!-- CUADRO 2 -->
-<div class="cuadro">
-<div class="flex">
-<img src="lambo-calle.webp" alt="Auto" class="img2">
-<div class="texto">
+    <div class="info-box">
+        <img src="lambo-calle.webp">
+        <div class="info-text">
+            <h2>¿Por qué hacer mantenimiento?</h2>
+            <p>Evita fallas y mejora el rendimiento del auto.</p>
+        </div>
+    </div>
 
-<h3>Servicio de hojalatería y pintura</h3>
-<span class="puntos">...</span>
+    <div class="info-box">
+        <img src="lambo-calle.webp">
+        <div class="info-text">
+            <h2>¿Cada cuánto hacerlo?</h2>
+            <p>Se recomienda cada 5,000 a 10,000 km.</p>
+        </div>
+    </div>
 
-<p class="extra">
-Este servicio está enfocado en la reparación estética del vehículo...
-</p>
+</section>
 
-<div class="botones">
-<button class="btn-leer">Leer más</button>
-<a href="NOSOTROS.html" class="btn-ver">Ver más</a>
-</div>
-
-</div>
-</div>
-</div>
-
-<!-- (los demás cuadros están bien estructurados, solo mantuve tu formato) -->
-
-</div>
-
-<!-- SECCIONES SIMON -->
-<div class="simon">
-<div class="Agnes">
-
-<img src="lambo-calle.webp" alt="foto perrona">
-
-<div class="stx">
-<h2 class="pez">¿Por qué debería realizar estos servicios?</h2>
-
-<p class="pulpo">
-Realizar los servicios de mantenimiento...
-</p>
-
-</div>
-</div>
-</div>
-
-<div class="simon">
-<div class="Agnes">
-
-<img src="lambo-calle.webp" alt="foto perrona">
-
-<div class="stx">
-<h2 class="pez">¿Cada cuándo debería realizar estos servicios?</h2>
-
-<p class="pulpo">
-En nuestra concesionaria recomendamos...
-</p>
-
-</div>
-</div>
-</div>
-
-<!-- FOOTER -->
-<footer class="footer-pro">
-
-<div class="footer-top">
-
-<div class="footer-box">
-<h2>CareOut</h2>
-<p>Innovación en movimiento...</p>
-</div>
-
-<div class="footer-box">
-<h3>Navegación</h3>
-<ul>
-<li><a href="ACCEDERR.html">Acceder</a></li>
-<li><a href="COMPRAR.html">Comprar</a></li>
-<li><a href="AUTOSERVICIO.html">Servicios</a></li>
-<li><a href="NOSOTROS.html">Contacto</a></li>
-</ul>
-</div>
-
-<div class="footer-box">
-<h3>Síguenos</h3>
-<div class="social-icons">
-<a href="#"><img src="facebook.png"></a>
-<a href="#"><img src="instagram.png"></a>
-<a href="#"><img src="youtube.png"></a>
-</div>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-<p>&copy; 2026 CareOut</p>
-</div>
-
+<footer class="footer">
+    <p>&copy; 2026 CareOut</p>
 </footer>
-
-<script src="pagj3.js"></script>
 
 </body>
 </html>

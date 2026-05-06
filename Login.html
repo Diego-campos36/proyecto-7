@@ -1,11 +1,9 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Registro | CareOut</title>
+<title>Login | CareOut</title>
 <link rel="stylesheet" href="estilos.css">
 </head>
 
@@ -41,34 +39,22 @@
 <main class="logins">
 
 <div class="login">
-    <h1>Crear Cuenta</h1>
+    <h1>Iniciar Sesión</h1>
 
-    <form id="registroForm">
+    <form id="loginForm">
 
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" placeholder="Nombre completo" required>
-
-        <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" placeholder="Correo electrónico" required>
-
-        <label for="usuario">Usuario</label>
-        <input type="text" id="usuario" placeholder="Usuario" required>
+        <label for="usuario">Usuario o correo</label>
+        <input type="text" id="usuario" placeholder="Usuario o correo" required>
 
         <label for="password">Contraseña</label>
         <input type="password" id="password" placeholder="Contraseña" required>
 
-        <label for="confirmar">Confirmar contraseña</label>
-        <input type="password" id="confirmar" placeholder="Confirmar contraseña" required>
+        <button type="submit">Entrar</button>
 
-        <label for="fecha">Fecha de nacimiento</label>
-        <input type="date" id="fecha" required>
+        <p id="mensaje"></p>
 
-        <button type="submit">Registrarse</button>
-
-        <p id="mensaje">Ya te has registrado correctamente</p>
-
-        <p>¿Ya tienes cuenta?</p>
-        <button type="button" onclick="window.location.href='Login.html'">Iniciar sesión</button>
+        <p>¿No tienes cuenta?</p>
+        <button type="button" onclick="window.location.href='REGISTROR.html'">Registrarse</button>
     
     </form>
 </div>
@@ -103,8 +89,6 @@
             </div>
         </div>
 
-        
-
     </div>
 
     <div class="footer-bottom">
@@ -113,7 +97,21 @@
 
 </footer>
 
-<script src="script.js"></script>
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const usuario = document.getElementById("usuario").value;
+    const password = document.getElementById("password").value;
+
+    if(usuario === "admin" && password === "1234"){
+        document.getElementById("mensaje").textContent = "Login correcto";
+        window.location.href = "index.html";
+    } else {
+        document.getElementById("mensaje").textContent = "Usuario o contraseña incorrectos";
+    }
+});
+</script>
 
 </body>
 </html>
