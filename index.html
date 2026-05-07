@@ -13,13 +13,13 @@
 <body>
 
 <header class="header">
-    <div class="header-container">
+    <section class="header-container">
 
-        <div class="logo">
+        <figure class="logo">
             <a href="index.html">
                 <img src="nuevo-logo.webp" alt="Logo de CareOut">
             </a>
-        </div>
+        </figure>
 
         <nav class="nav" id="nav">
             <ul>
@@ -38,11 +38,11 @@
         </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<div class="favoritos-icono" id="btnFavoritos">
+<button class="favoritos-icono" id="btnFavoritos">
     <i class="fa-solid fa-heart"></i>
     <span id="contadorFav">0</span>
-</div>
-    </div>
+</button>
+    </section>
 </header>
 
 <main>
@@ -52,15 +52,15 @@
 
     <div class="hero-bg"></div>
 
-    <div class="contenido-hero">
+    <section class="contenido-hero">
         <h1>Encuentra el auto perfecto</h1>
         <p>Diseño, potencia y tecnología en un solo lugar</p>
 
-        <div class="hero-botones">
+        <nav class="hero-botones">
             <a href="CATALOGO.html" class="btn">Ver catálogo</a>
             <a href="AUTOSERVICIOO.html" class="btn-secundario">Ver servicios</a>
-        </div>
-    </div>
+        </nav>
+    </section>
 
 </section>
 
@@ -69,7 +69,7 @@
 
     <h2>Encuentra tu auto</h2>
 
-    <div class="barra-busqueda">
+    <from class="barra-busqueda">
 
         <input type="text" id="inputBusqueda" placeholder="Buscar marca o modelo...">
 
@@ -82,7 +82,7 @@
 
         <button class="btn-buscar">Buscar</button>
 
-    </div>
+    </from>
 
 </section>
 
@@ -91,10 +91,10 @@
 
     <h2 class="titulo">Autos Destacados</h2>
 
-    <div class="autos-grid">
+    <section class="autos-grid">
 
         <!-- CARD -->
-        <div class="card-auto" data-tipo="deportivo">
+        <article class="card-auto" data-tipo="deportivo">
             <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
             <img src="camaro.webp" alt="Chevrolet Camaro deportivo">
             <div class="info">
@@ -102,9 +102,9 @@
                 <p class="precio">$750,000</p>
                 <button class="btn-ver">Ver más</button>
             </div>
-        </div>
+        </article>
 
-        <div class="card-auto" data-tipo="suv">
+        <article class="card-auto" data-tipo="suv">
             <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
             <img src="camioneta.webp" alt="SUV moderna">
             <div class="info">
@@ -112,9 +112,9 @@
                 <p class="precio">$620,000</p>
                 <button class="btn-ver">Ver más</button>
             </div>
-        </div>
+        </article>
 
-        <div class="card-auto" data-tipo="sedan">
+        <article class="card-auto" data-tipo="sedan">
             <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
             <img src="deportivo.webp" alt="Sedán deportivo">
             <div class="info">
@@ -122,9 +122,9 @@
                 <p class="precio">$500,000</p>
                 <button class="btn-ver">Ver más</button>
             </div>
-        </div>
+        </article>
 
- <div class="card-auto" data-tipo="desert">
+ <article class="card-auto" data-tipo="desert">
             <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
             <img src="carro desierto.webp" alt="desert deportivo">
             <div class="info">
@@ -132,9 +132,9 @@
                 <p class="precio">$600,000</p>
                 <button class="btn-ver">Ver más</button>
             </div>
-        </div>
+ </article>
 
-<div class="card-auto" data-tipo="bmw">
+<article class="card-auto" data-tipo="bmw">
             <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
             <img src="carro-verde.webp" alt="bmw ">
             <div class="info">
@@ -142,9 +142,9 @@
                 <p class="precio">$900,000</p>
                 <button class="btn-ver">Ver más</button>
             </div>
-        </div>
+</article>
 
-<div class="card-auto" data-tipo="lambo">
+<article class="card-auto" data-tipo="lambo">
             <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
             <img src="lambo-calle.webp" alt="lambo ">
             <div class="info">
@@ -152,10 +152,10 @@
                 <p class="precio">$1,000,000</p>
                 <button class="btn-ver">Ver más</button>
             </div>
-        </div>
+</article>
 
 
-        <div class="card-auto" data-tipo="gtr">
+        <article class="card-auto" data-tipo="gtr">
             <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
             <img src="carro_ciudad-de-frente.webp" alt="gtr ">
             <div class="info">
@@ -163,34 +163,34 @@
                 <p class="precio">$1,000,000</p>
                 <button class="btn-ver">Ver más</button>
             </div>
-        </div>
+        </article>
 
 
 
-    </div>
+    </section>
 
 </section>
 
 <!-- BENEFICIOS -->
 <section class="beneficios-home">
 
-    <div class="beneficio">
+    <article class="beneficio">
         <i class="fa-solid fa-car"></i>
         <h3>Variedad</h3>
         <p>Autos para cada estilo de vida</p>
-    </div>
+    </article>
 
-    <div class="beneficio">
+    <article class="beneficio">
         <i class="fa-solid fa-shield"></i>
         <h3>Seguridad</h3>
         <p>Vehículos certificados y revisados</p>
-    </div>
+    </article>
 
-    <div class="beneficio">
+    <article class="beneficio">
         <i class="fa-solid fa-bolt"></i>
         <h3>Rendimiento</h3>
         <p>Máxima eficiencia y potencia</p>
-    </div>
+    </article>
 
 </section>
 
@@ -218,11 +218,11 @@
 
         <div class="footer-box">
             <h3>Síguenos</h3>
-            <div class="social-icons">
+            <nav class="social-icons">
                 <a href=""><img src="facebookpn.png" alt="Facebook"></a>
                 <a href="https://www.instagram.com/careout_4am/"><img src="instapn.jpg" alt="Instagram"></a>
                 
-            </div>
+            </nav>
         </div>
 
        
@@ -240,22 +240,22 @@
 <!-- MODAL -->
 <div id="modal-auto" class="modal">
 
-    <div class="modal-content">
+    <section class="modal-content">
 
         <span class="close" id="cerrar-modal">&times;</span>
 
-        <div class="modal-body">
+        <article class="modal-body">
 
-            <div class="modal-img">
+            <figure class="modal-img">
                 <img id="img-modal" src="camaro.webp" alt="Chevrolet Camaro vista principal">
-                <div class="galeria">
+                <section class="galeria">
                     <img src="camaro.webp" alt="Camaro vista 1" onclick="cambiarFoto(this)">
                     <img src="camaro.webp" alt="Camaro vista 2" onclick="cambiarFoto(this)">
                     <img src="camaro.webp" alt="Camaro vista 3" onclick="cambiarFoto(this)">
-                </div>
-            </div>
+                </section>
+            </figure>
 
-            <div class="modal-info">
+            <section class="modal-info">
                 <h2 id="titulo-modal">Chevrolet Camaro</h2>
                 <p>
                     Auto deportivo con motor V8, alto rendimiento y diseño aerodinámico.
@@ -265,11 +265,11 @@
                 <h3 class="precio">$750,000 MXN</h3>
 
                 <button class="btn-cotizar">Cotizar</button>
-            </div>
+            </section>
 
-        </div>
+        </article>
 
-    </div>
+    </section>
 
 </div>
 <!-- ===========================
