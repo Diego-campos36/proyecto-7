@@ -3591,3 +3591,84 @@ BOTON SCROLL
     }
 
 }
+
+
+---------------------------------------------------
+
+/* ===========================
+BOTON BAJAR
+=========================== */
+
+.btn-bajar{
+
+    position: fixed;
+
+    right: 25px;
+    bottom: 30px;
+
+    width: 65px;
+    height: 65px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #0A1F44;
+    color: white;
+
+    font-size: 1.3rem;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+
+    transition: .4s ease;
+
+}
+
+/* HOVER */
+
+.btn-bajar:hover{
+
+    transform: translateY(5px) scale(1.08);
+
+    background: #123A73;
+
+}
+
+/* OCULTAR */
+
+.btn-bajar.ocultar{
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: scale(0);
+
+}
+
+/* ANIMACION */
+
+.animar-bajar{
+
+    animation: bajarPulse .5s ease;
+
+}
+
+@keyframes bajarPulse{
+
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
+}

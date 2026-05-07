@@ -1,0 +1,526 @@
+/* ===============================
+   COOKIES
+================================ */
+
+.cookie-box{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    z-index: 9999;
+    animation: aparecer 0.5s ease;
+}
+
+.cookie-content h3{
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.cookie-content p{
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cookie-content button{
+    margin-top: 15px;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    background: #0d6efd;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cookie-content button:hover{
+    transform: scale(1.03);
+    background: #0b5ed7;
+}
+
+@keyframes aparecer{
+    from{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+---------------------------------------------------
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#111;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    width:100%;
+    height:80px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#0d6efd;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#0d6efd;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    width:100%;
+    padding:80px 8%;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#555;
+    font-size:18px;
+}
+
+/* ================= CONTENEDOR ================= */
+
+.contenedor{
+    width:100%;
+    padding:40px 8%;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+/* ================= MAPA ================= */
+
+.mapa-box{
+    width:100%;
+    height:600px;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.mapa-box iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+/* ================= LOCALES ================= */
+
+.locales{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card i{
+    font-size:35px;
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.5;
+}
+
+.card button{
+    margin-top:20px;
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    background:#0d6efd;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:#084298;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    margin-top:60px;
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .contenedor{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    nav{
+        gap:15px;
+    }
+
+}
+
+
+---------------------------------------
+
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#111;
+    overflow-x:hidden;
+}
+
+/* ================= FONDO ================= */
+
+.bg-blur{
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:#0d6efd33;
+    filter:blur(150px);
+    top:-100px;
+    left:-100px;
+    z-index:-1;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    width:100%;
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    padding:100px 8%;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:
+    linear-gradient(to right,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.3)),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070");
+    background-size:cover;
+    background-position:center;
+    z-index:-2;
+}
+
+.hero-content{
+    max-width:700px;
+    color:white;
+}
+
+.tag{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.2);
+    padding:12px 20px;
+    border-radius:50px;
+    backdrop-filter:blur(10px);
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:70px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:#a3a809;
+}
+
+.hero p{
+    font-size:18px;
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn-primary,
+.btn-secondary{
+    padding:15px 30px;
+    border-radius:15px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#06086889;
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-5px);
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:#111;
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    width:100%;
+    padding:60px 8%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.stat-box{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.stat-box h2{
+    font-size:45px;
+    color:#000000;
+    margin-bottom:10px;
+}
+
+/* ================= CONTENEDOR ================= */
+
+.contenedor{
+    width:100%;
+    padding:20px 8% 80px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+/* ================= MAPA ================= */
+
+.mapa-box{
+    background:white;
+    padding:20px;
+    border-radius:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.map-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.map-top h2{
+    font-size:28px;
+}
+
+.map-top button{
+    border:none;
+    background:#535456;
+    color:white;
+    padding:12px 18px;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+.mapa-box iframe{
+    width:100%;
+    height:650px;
+    border:none;
+    border-radius:20px;
+}
+
+/* ================= CARDS ================= */
+
+.locales{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-icon{
+    width:70px;
+    height:70px;
+    background:#000000;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.card-info{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:25px;
+    color:#444;
+}
+
+.card button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#111;
+    color:white;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:#000000;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .contenedor{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .map-top{
+        flex-direction:column;
+        gap:15px;
+    }
+
+}
