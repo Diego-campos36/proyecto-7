@@ -313,3 +313,53 @@ document.querySelectorAll(".btn-leer").forEach(btn => {
 
 });
 
+// ================= SUBMENUS =================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const submenus = document.querySelectorAll(".submenu");
+
+    submenus.forEach(menu => {
+
+        const enlace = menu.querySelector("a");
+        const dropdown = menu.querySelector(".dropdown");
+
+        // Ocultar al iniciar
+        dropdown.style.display = "none";
+
+        enlace.addEventListener("click", (e) => {
+
+            e.preventDefault();
+
+            // Cerrar otros submenus
+            document.querySelectorAll(".dropdown").forEach(item => {
+                if (item !== dropdown) {
+                    item.style.display = "none";
+                }
+            });
+
+            // Mostrar u ocultar submenu actual
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+
+        });
+
+    });
+
+    // Cerrar submenu al hacer click fuera
+    document.addEventListener("click", (e) => {
+
+        if (!e.target.closest(".submenu")) {
+
+            document.querySelectorAll(".dropdown").forEach(drop => {
+                drop.style.display = "none";
+            });
+
+        }
+
+    });
+
+});
