@@ -524,3 +524,139 @@ body{
     }
 
 }
+
+
+
+
+/* ===============================
+   RESPONSIVE CELULAR
+================================ */
+
+@media (max-width: 900px){
+
+    /* HEADER */
+
+    .header-container{
+        padding: 15px 5%;
+    }
+
+    .logo img{
+        width: 140px;
+    }
+
+    /* MENU */
+
+    .nav{
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 260px;
+        height: calc(100vh - 80px);
+        background: #111;
+        transition: 0.4s;
+        padding-top: 40px;
+        z-index: 999;
+    }
+
+    .nav.active{
+        right: 0;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav ul li a{
+        color: white;
+        font-size: 18px;
+    }
+
+    /* HAMBURGER */
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+    }
+
+    .hamburger span{
+        width: 30px;
+        height: 3px;
+        background: #111;
+        border-radius: 10px;
+    }
+
+    /* LOGIN */
+
+    .logins{
+        padding: 40px 20px;
+    }
+
+    .login{
+        width: 100%;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .login h1{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .login form{
+        width: 100%;
+    }
+
+    .login input{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .login button{
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    .footer-top{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-box ul{
+        padding: 0;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+
+}
+
+/* ===============================
+   CELULARES PEQUEÑOS
+================================ */
+
+@media (max-width: 500px){
+
+    .login{
+        padding: 25px 15px;
+    }
+
+    .login h1{
+        font-size: 26px;
+    }
+
+    .nav{
+        width: 100%;
+    }
+
+    .footer-bottom p{
+        font-size: 14px;
+    }
+
+}

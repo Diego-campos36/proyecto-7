@@ -80,13 +80,13 @@
             </ul>
         </div>
 
-        <div class="footer-box">
+         <div class="footer-box">
             <h3>Síguenos</h3>
-            <div class="social-icons">
-                <a href="#"><img src="facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="youtube.png" alt="YouTube"></a>
-            </div>
+            <nav class="social-icons">
+                <a href="https://www.facebook.com/careout4am"><img src="facebookpn.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/careout_4am/"><img src="instapn.jpg" alt="Instagram"></a>
+                
+            </nav>
         </div>
 
     </div>
@@ -97,21 +97,11 @@
 
 </footer>
 
-<script>
-document.getElementById("loginForm").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    const usuario = document.getElementById("usuario").value;
-    const password = document.getElementById("password").value;
-
-    if(usuario === "admin" && password === "1234"){
-        document.getElementById("mensaje").textContent = "Login correcto";
-        window.location.href = "index.html";
-    } else {
-        document.getElementById("mensaje").textContent = "Usuario o contraseña incorrectos";
-    }
-});
-</script>
-
+<script src="login.js"></script>
+<script src="darkmode.js"></script>
+<script src="bajar.js"></script>
+<script src="scroll.js"></script>
+<script src="cookies.js"></script>
+<script src="java.js"></script>
 </body>
 </html>
