@@ -8,23 +8,76 @@
 </head>
 
 <body>
-
 <header class="header">
-    <div class="header-container">
 
-        <div class="logo">
+    <section class="header-container">
+
+        <figure class="logo">
             <a href="index.html">
                 <img src="nuevo-logo.webp" alt="Logo de CareOut">
             </a>
-        </div>
+        </figure>
 
         <nav class="nav" id="nav">
+
             <ul>
-                <li><a href="ACCEDERR.html">Acceder</a></li>
-                <li><a href="COMMPRAR.html">Comprar</a></li>
-                <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
-                <li><a href="NOSOSTROS.html">Contacto</a></li>
+
+                <!-- ACCEDER -->
+                <li class="submenu">
+                    <a href="sigh up.html">
+                        Acceder <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                    <ul class="dropdown">
+                        <li><a href="Login.html">Iniciar sesión</a></li>
+                        <li><a href="REGISTROR.html">Crear cuenta</a></li>
+                    </ul>
+                </li>
+
+                <!-- COMPRAR -->
+                <li class="submenu">
+                    <a href="COMMPRAR.html">
+                        Comprar <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="CATALOGO.html">catalogo</a></li>
+                        <li><a href="mapa.html">mapa</a></li>
+                    </ul>
+
+                </li>
+
+                <!-- SERVICIOS -->
+                <li class="submenu">
+                    <a href="AUTOSERVICIOO.html">
+                        Servicios <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                    <ul class="dropdown">
+                        <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
+                        <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
+                        <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
+                         <li><a href="TECNOLOGIA.html">Tecnología</a></li>
+                    </ul>
+                </li>
+
+                <!-- CONTACTO -->
+                <li class="submenu">
+                    <a href="CONTACTO.html">
+                        Contacto <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </li>
+
+                <!-- NOSOTROS -->
+                <li class="submenu">
+                    <a href="equipo.html">
+                        Nosotros <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+    
+        
+
             </ul>
+
         </nav>
 
         <div class="hamburger" id="btn-menu">
@@ -33,9 +86,17 @@
             <span></span>
         </div>
 
-    </div>
-</header>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+        <button class="favoritos-icono" id="btnFavoritos">
+            <i class="fa-solid fa-heart"></i>
+            <span id="contadorFav">0</span>
+        </button>
+
+    </section>
+
+</header>
 <main class="logins">
 
 <div class="login">
