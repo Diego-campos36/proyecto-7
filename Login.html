@@ -8,13 +8,14 @@
 </head>
 
 <body>
+
 <header class="header">
 
     <section class="header-container">
 
         <figure class="logo">
             <a href="index.html">
-                <img src="nuevo-logo.webp" alt="Logo de CareOut">
+                <img src="nuevo-logo.webp" alt="Logo principal de CareOut">
             </a>
         </figure>
 
@@ -39,6 +40,7 @@
                     <a href="COMMPRAR.html">
                         Comprar <i class="fa-solid fa-angle-down"></i>
                     </a>
+
                     <ul class="dropdown">
                         <li><a href="CATALOGO.html">catalogo</a></li>
                         <li><a href="mapa.html">mapa</a></li>
@@ -56,7 +58,7 @@
                         <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
                         <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
                         <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
-                         <li><a href="TECNOLOGIA.html">Tecnología</a></li>
+                        <li><a href="TECNOLOGIA.html">Tecnología</a></li>
                     </ul>
                 </li>
 
@@ -72,9 +74,7 @@
                     <a href="equipo.html">
                         Nosotros <i class="fa-solid fa-angle-down"></i>
                     </a>
-
-    
-        
+                </li>
 
             </ul>
 
@@ -97,28 +97,36 @@
     </section>
 
 </header>
+
 <main class="logins">
 
-<div class="login">
-    <h1>Iniciar Sesión</h1>
+    <div class="login">
 
-    <form id="loginForm">
+        <!-- SOLO UN H1 EN TODA LA PAGINA -->
+        <h1>Iniciar Sesión en CareOut</h1>
 
-        <label for="usuario">Usuario o correo</label>
-        <input type="text" id="usuario" placeholder="Usuario o correo" required>
+        <form id="loginForm">
 
-        <label for="password">Contraseña</label>
-        <input type="password" id="password" placeholder="Contraseña" required>
+            <label for="usuario">Usuario o correo</label>
+            <input type="text" id="usuario" placeholder="Usuario o correo" required>
 
-        <button type="submit">Entrar</button>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" placeholder="Contraseña" required>
 
-        <p id="mensaje"></p>
+            <button type="submit">Entrar</button>
 
-        <p>¿No tienes cuenta?</p>
-        <button type="button" onclick="window.location.href='REGISTROR.html'">Registrarse</button>
-    
-    </form>
-</div>
+            <p id="mensaje"></p>
+
+            <p>¿No tienes cuenta?</p>
+
+            <button type="button"
+            onclick="window.location.href='REGISTROR.html'">
+                Registrarse
+            </button>
+
+        </form>
+
+    </div>
 
 </main>
 
@@ -127,27 +135,48 @@
     <div class="footer-top">
 
         <div class="footer-box">
-            <h2>CareOut</h2>
-            <p>Innovación en movimiento. Descubre autos que se adaptan a tu estilo de vida.</p>
+
+            <!-- CAMBIADO A H3 PARA NO REPETIR H1 -->
+            <h3>CareOut</h3>
+
+            <p>
+                Innovación en movimiento.
+                Descubre autos que se adaptan a tu estilo de vida.
+            </p>
+
         </div>
 
         <div class="footer-box">
+
             <h3>Navegación</h3>
+
             <ul>
                 <li><a href="ACCEDERR.html">Acceder</a></li>
                 <li><a href="COMMPRAR.html">Comprar</a></li>
                 <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
                 <li><a href="NOSOSTROS.html">Contacto</a></li>
             </ul>
+
         </div>
 
-         <div class="footer-box">
+        <div class="footer-box">
+
             <h3>Síguenos</h3>
+
             <nav class="social-icons">
-                <a href="https://www.facebook.com/careout4am"><img src="facebookpn.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/careout_4am/"><img src="instapn.jpg" alt="Instagram"></a>
-                
+
+                <a href="https://www.facebook.com/careout4am">
+                    <img src="facebookpn.png"
+                    alt="Logo oficial de Facebook">
+                </a>
+
+                <a href="https://www.instagram.com/careout_4am/">
+                    <img src="instapn.jpg"
+                    alt="Logo oficial de Instagram">
+                </a>
+
             </nav>
+
         </div>
 
     </div>
@@ -164,5 +193,6 @@
 <script src="scroll.js"></script>
 <script src="cookies.js"></script>
 <script src="java.js"></script>
+
 </body>
 </html>

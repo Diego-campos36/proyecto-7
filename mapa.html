@@ -4,30 +4,49 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Concesionarias | CareOut</title>
+<title>CareOut | Concesionarias</title>
 
-<link rel="stylesheet" href="casasa.css">
+<link rel="icon" href="nuevo-logo.webp" type="image/webp">
+
 <link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="casasa.css">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- ================= FONDO ================= -->
+<!-- =========================
+CURSOR LIGHT
+========================= -->
 
-<div class="bg-blur"></div>
+<div class="cursor-light"></div>
 
-<!-- ================= HEADER ================= -->
+<!-- =========================
+LOADER
+========================= -->
+
+<div class="loader" id="loader">
+    <div class="loader-car">
+        <i class="fa-solid fa-car-side"></i>
+    </div>
+</div>
+
+<!-- =========================
+HEADER
+========================= -->
+
 <header class="header">
 
     <section class="header-container">
 
         <figure class="logo">
             <a href="index.html">
-                <img src="nuevo-logo.webp" alt="Logo de CareOut">
+                <img src="nuevo-logo.webp" alt="Logo CareOut">
             </a>
         </figure>
 
@@ -37,8 +56,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
                 <!-- ACCEDER -->
                 <li class="submenu">
-                    <a href="sigh up.html">
-                        Acceder <i class="fa-solid fa-angle-down"></i>
+                    <a href="#">
+                        Acceder
+                        <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
@@ -50,48 +70,69 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                 <!-- COMPRAR -->
                 <li class="submenu">
                     <a href="COMMPRAR.html">
-                        Comprar <i class="fa-solid fa-angle-down"></i>
+                        Comprar
+                        <i class="fa-solid fa-angle-down"></i>
                     </a>
-                    <ul class="dropdown">
-                        <li><a href="CATALOGO.html">catalogo</a></li>
-                        <li><a href="mapa.html">mapa</a></li>
-                    </ul>
 
+                    <ul class="dropdown">
+                        <li><a href="CATALOGO.html">Catálogo</a></li>
+                        <li><a href="mapa.html">Mapa</a></li>
+                    </ul>
                 </li>
 
                 <!-- SERVICIOS -->
                 <li class="submenu">
                     <a href="AUTOSERVICIOO.html">
-                        Servicios <i class="fa-solid fa-angle-down"></i>
+                        Servicios
+                        <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
                         <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
                         <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
                         <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
-                         <li><a href="TECNOLOGIA.html">Tecnología</a></li>
+                        <li><a href="TECNOLOGIA.html">Tecnología</a></li>
                     </ul>
                 </li>
 
                 <!-- CONTACTO -->
                 <li class="submenu">
                     <a href="CONTACTO.html">
-                        Contacto <i class="fa-solid fa-angle-down"></i>
+                        Contacto
                     </a>
                 </li>
 
                 <!-- NOSOTROS -->
                 <li class="submenu">
                     <a href="equipo.html">
-                        Nosotros <i class="fa-solid fa-angle-down"></i>
+                        Nosotros
                     </a>
-
-    
-        
+                </li>
 
             </ul>
 
         </nav>
+
+        <!-- BOTONES -->
+
+        <div class="header-actions">
+
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="favoritos-icono" id="btnFavoritos">
+                <i class="fa-solid fa-heart"></i>
+                <span id="contadorFav">0</span>
+            </button>
+
+            <button class="btn-dark-mode" id="darkModeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </div>
+
+        <!-- HAMBURGER -->
 
         <div class="hamburger" id="btn-menu">
             <span></span>
@@ -99,27 +140,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             <span></span>
         </div>
 
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-        <button class="favoritos-icono" id="btnFavoritos">
-            <i class="fa-solid fa-heart"></i>
-            <span id="contadorFav">0</span>
-        </button>
-
     </section>
 
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- =========================
+HERO
+========================= -->
 
-<section class="hero">
+<section class="hero-mapa">
 
-    <div class="overlay"></div>
+    <div class="hero-overlay"></div>
 
     <div class="hero-content">
 
-        <span class="tag">
+        <span class="mini-tag">
             <i class="fa-solid fa-location-dot"></i>
             Ubicaciones Premium
         </span>
@@ -130,157 +165,302 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         </h1>
 
         <p>
-            Explora agencias automotrices, autos premium,
-            deportivos y SUV cerca de tu ubicación.
+            Explora agencias automotrices modernas,
+            encuentra autos exclusivos y localiza
+            servicios cerca de ti.
         </p>
 
         <div class="hero-buttons">
 
-            <a href="carro-negro-desde-arriba.webp" class="btn-primary">
-                Explorar Mapa
+            <a href="#mapa" class="btn-principal">
+                Explorar mapa
             </a>
 
-            <a href="COMMPRAR.html" class="btn-secondary">
-                Ver Autos
+            <a href="COMMPRAR.html" class="btn-secundario">
+                Ver autos
             </a>
 
         </div>
 
     </div>
 
+    <!-- EFECTOS -->
+
+    <div class="floating-card card-1">
+        <i class="fa-solid fa-car"></i>
+    </div>
+
+    <div class="floating-card card-2">
+        <i class="fa-solid fa-location-dot"></i>
+    </div>
+
+    <div class="floating-card card-3">
+        <i class="fa-solid fa-map"></i>
+    </div>
+
 </section>
 
+<!-- =========================
+STATS
+========================= -->
 
-<!-- ================= CONTENIDO ================= -->
+<section class="stats-section">
 
-<section class="contenedor" id="mapa">
+    <div class="stat-box">
+        <h2 class="counter" data-target="20">0</h2>
+        <p>Concesionarias</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 class="counter" data-target="500">0</h2>
+        <p>Autos disponibles</p>
+    </div>
+
+    <div class="stat-box">
+        <h2 class="counter" data-target="98">0</h2>
+        <p>Clientes felices</p>
+    </div>
+
+</section>
+
+<!-- =========================
+MAPA
+========================= -->
+
+<section class="contenedor-mapa" id="mapa">
 
     <!-- MAPA -->
 
-    <div class="mapa-box">
+    <div class="mapa-box-pro">
 
         <div class="map-top">
 
-            <h2>
-                <i class="fa-solid fa-map-location-dot"></i>
-                Mapa de Concesionarias
-            </h2>
+            <div>
+                <h2>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    Mapa de Concesionarias
+                </h2>
 
-            <button>
+                <p>
+                    Encuentra agencias cerca de ti.
+                </p>
+            </div>
+
+            <button class="ubicacion-btn">
                 <i class="fa-solid fa-location-crosshairs"></i>
                 Mi ubicación
             </button>
 
         </div>
 
-        <iframe 
+        <iframe
         src="https://www.openstreetmap.org/export/embed.html?bbox=-102.2919899225235%2C19.978791268753163%2C-102.28856205940248%2C19.980497835305485&amp;layer=mapnik"
-        allowfullscreen
-        loading="lazy">
+        loading="lazy"
+        allowfullscreen>
         </iframe>
 
     </div>
 
     <!-- TARJETAS -->
 
-    <div class="locales">
+    <div class="locales-grid">
 
-        <div class="card">
+        <!-- CARD -->
 
-            <div class="card-icon">
-                <i class="fa-solid fa-car-side"></i>
+        <article class="card-local">
+
+            <div class="card-top">
+
+                <div class="icon-box">
+                    <i class="fa-solid fa-car-side"></i>
+                </div>
+
+                <span class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    4.9
+                </span>
+
             </div>
 
-            <h2>Nissan</h2>
+            <h2>Nissan Premium</h2>
 
             <p>
                 Agencia premium con deportivos,
                 SUV y autos eléctricos.
             </p>
 
-            <div class="card-info">
-                <span>
-                    <i class="fa-solid fa-star"></i>
-                    4.9
-                </span>
+            <div class="info-local">
 
                 <span>
                     <i class="fa-solid fa-location-dot"></i>
                     Zamora
                 </span>
+
+                <span>
+                    <i class="fa-solid fa-clock"></i>
+                    9AM - 8PM
+                </span>
+
             </div>
 
-            <button>
+            <button class="btn-local">
                 Ver ubicación
             </button>
 
-        </div>
+        </article>
 
-        <div class="card">
+        <!-- CARD -->
 
-            <div class="card-icon">
-                <i class="fa-solid fa-crown"></i>
-            </div>
+        <article class="card-local">
 
-            <h2>Honda</h2>
+            <div class="card-top">
 
-            <p>
-                Vehículos de lujo y seminuevos certificados.
-            </p>
+                <div class="icon-box">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
 
-            <div class="card-info">
-                <span>
+                <span class="rating">
                     <i class="fa-solid fa-star"></i>
                     4.8
                 </span>
+
+            </div>
+
+            <h2>Honda Center</h2>
+
+            <p>
+                Vehículos de lujo y deportivos
+                con atención personalizada.
+            </p>
+
+            <div class="info-local">
 
                 <span>
                     <i class="fa-solid fa-location-dot"></i>
                     Centro
                 </span>
+
+                <span>
+                    <i class="fa-solid fa-clock"></i>
+                    8AM - 7PM
+                </span>
+
             </div>
 
-            <button>
+            <button class="btn-local">
                 Ver ubicación
             </button>
 
-        </div>
+        </article>
 
-        <div class="card">
+        <!-- CARD -->
 
-            <div class="card-icon">
-                <i class="fa-solid fa-warehouse"></i>
-            </div>
+        <article class="card-local">
 
-            <h2>TESLA</h2>
+            <div class="card-top">
 
-            <p>
-                Compra y venta de autos familiares y camionetas.
-            </p>
+                <div class="icon-box">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
 
-            <div class="card-info">
-                <span>
+                <span class="rating">
                     <i class="fa-solid fa-star"></i>
                     4.7
                 </span>
+
+            </div>
+
+            <h2>Tesla Motors</h2>
+
+            <p>
+                Tecnología eléctrica avanzada
+                y camionetas inteligentes.
+            </p>
+
+            <div class="info-local">
 
                 <span>
                     <i class="fa-solid fa-location-dot"></i>
                     Michoacán
                 </span>
+
+                <span>
+                    <i class="fa-solid fa-clock"></i>
+                    10AM - 9PM
+                </span>
+
             </div>
 
-            <button>
+            <button class="btn-local">
                 Ver ubicación
             </button>
 
-        </div>
+        </article>
 
     </div>
 
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================
+BENEFICIOS
+========================= -->
+
+<section class="beneficios-mapa">
+
+    <div class="beneficio-box">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <h3>Ubicación Inteligente</h3>
+        <p>
+            Encuentra agencias fácilmente.
+        </p>
+    </div>
+
+    <div class="beneficio-box">
+        <i class="fa-solid fa-car"></i>
+        <h3>Autos Premium</h3>
+        <p>
+            Vehículos modernos y exclusivos.
+        </p>
+    </div>
+
+    <div class="beneficio-box">
+        <i class="fa-solid fa-headset"></i>
+        <h3>Atención Profesional</h3>
+        <p>
+            Soporte rápido y personalizado.
+        </p>
+    </div>
+
+</section>
+
+<!-- =========================
+CTA
+========================= -->
+
+<section class="cta-section">
+
+    <div class="cta-box">
+
+        <h2>
+            ¿Listo para encontrar tu próximo auto?
+        </h2>
+
+        <p>
+            Explora concesionarias modernas y encuentra
+            vehículos increíbles para ti.
+        </p>
+
+        <a href="COMMPRAR.html" class="btn-principal">
+            Explorar catálogo
+        </a>
+
+    </div>
+
+</section>
+
+<!-- =========================
+FOOTER
+========================= -->
 
 <footer class="footer-pro">
 
@@ -291,8 +471,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
             <p>
                 Innovación en movimiento.
-                Descubre autos premium
-                que se adaptan a tu estilo.
+                Diseño moderno y experiencia premium.
             </p>
         </div>
 
@@ -301,42 +480,59 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             <h3>Navegación</h3>
 
             <ul>
-                <li><a href="ACCEDERR.html">Acceder</a></li>
+                <li><a href="Login.html">Acceder</a></li>
                 <li><a href="COMMPRAR.html">Comprar</a></li>
                 <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
-                <li><a href="NOSOSTROS.html">Nosotros</a></li>
+                <li><a href="equipo.html">Nosotros</a></li>
             </ul>
 
         </div>
 
-    
+        <div class="footer-box">
 
-        
-
-             <div class="footer-box">
             <h3>Síguenos</h3>
+
             <nav class="social-icons">
-                <a href="https://www.facebook.com/careout4am"><img src="facebookpn.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/careout_4am/"><img src="instapn.jpg" alt="Instagram"></a>
-                
+
+                <a href="https://www.facebook.com/careout4am">
+                    <img src="facebookpn.png" alt="Facebook">
+                </a>
+
+                <a href="https://www.instagram.com/careout_4am/">
+                    <img src="instapn.jpg" alt="Instagram">
+                </a>
+
             </nav>
+
         </div>
 
     </div>
 
     <div class="footer-bottom">
-
         <p>
             © 2026 CareOut | Todos los derechos reservados
         </p>
-
     </div>
 
 </footer>
+
+<!-- =========================
+BOTON SCROLL
+========================= -->
+
+<button class="scroll-top" id="scrollTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- =========================
+SCRIPTS
+========================= -->
+
 <script src="darkmode.js"></script>
 <script src="bajar.js"></script>
 <script src="scroll.js"></script>
 <script src="cookies.js"></script>
 <script src="java.js"></script>
+
 </body>
 </html>

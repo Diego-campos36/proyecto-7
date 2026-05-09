@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SOLO UN H1 -->
     <title>Comprar | CareOut</title>
+
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
+
 <header class="header">
 
     <section class="header-container">
 
         <figure class="logo">
+
             <a href="index.html">
-                <img src="nuevo-logo.webp" alt="Logo de CareOut">
+
+                <img src="nuevo-logo.webp"
+                alt="Logo oficial de CareOut">
+
             </a>
+
         </figure>
 
         <nav class="nav" id="nav">
@@ -24,176 +33,359 @@
 
                 <!-- ACCEDER -->
                 <li class="submenu">
+
                     <a href="sigh up.html">
                         Acceder <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="Login.html">Iniciar sesión</a></li>
-                        <li><a href="REGISTROR.html">Crear cuenta</a></li>
+
+                        <li>
+                            <a href="Login.html">
+                                Iniciar sesión
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="REGISTROR.html">
+                                Crear cuenta
+                            </a>
+                        </li>
+
                     </ul>
+
                 </li>
 
                 <!-- COMPRAR -->
                 <li class="submenu">
+
                     <a href="COMMPRAR.html">
                         Comprar <i class="fa-solid fa-angle-down"></i>
                     </a>
+
                     <ul class="dropdown">
-                        <li><a href="CATALOGO.html">catalogo</a></li>
-                        <li><a href="mapa.html">mapa</a></li>
+
+                        <li>
+                            <a href="CATALOGO.html">
+                                Catálogo
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mapa.html">
+                                Mapa
+                            </a>
+                        </li>
+
                     </ul>
 
                 </li>
 
                 <!-- SERVICIOS -->
                 <li class="submenu">
+
                     <a href="AUTOSERVICIOO.html">
                         Servicios <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
-                        <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
-                        <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
-                         <li><a href="TECNOLOGIA.html">Tecnología</a></li>
+
+                        <li>
+                            <a href="MANTENIMIENTO.html">
+                                Mantenimiento
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="DIAGNOSTICO.html">
+                                Diagnóstico
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Hojalatería y pintura.html">
+                                Reparaciones
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="TECNOLOGIA.html">
+                                Tecnología
+                            </a>
+                        </li>
+
                     </ul>
+
                 </li>
 
                 <!-- CONTACTO -->
                 <li class="submenu">
+
                     <a href="CONTACTO.html">
                         Contacto <i class="fa-solid fa-angle-down"></i>
                     </a>
+
                 </li>
 
                 <!-- NOSOTROS -->
                 <li class="submenu">
+
                     <a href="equipo.html">
                         Nosotros <i class="fa-solid fa-angle-down"></i>
                     </a>
 
-    
-        
+                </li>
 
             </ul>
 
         </nav>
 
         <div class="hamburger" id="btn-menu">
+
             <span></span>
             <span></span>
             <span></span>
+
         </div>
 
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
         <button class="favoritos-icono" id="btnFavoritos">
+
             <i class="fa-solid fa-heart"></i>
-            <span id="contadorFav">0</span>
+
+            <span id="contadorFav">
+                0
+            </span>
+
         </button>
 
     </section>
 
 </header>
 
-
 <main>
 
 <!-- INTRO -->
 <section class="comprar-intro">
-    <h1>Compra tu auto</h1>
-    <p>Encuentra el vehículo ideal para ti</p>
+
+    <!-- UNICO H1 -->
+    <h1>
+        Compra tu auto ideal en CareOut
+    </h1>
+
+    <p>
+        Encuentra el vehículo perfecto para ti.
+    </p>
+
 </section>
 
 <!-- BUSCADOR -->
 <section class="buscador">
 
-    <label for="inputBusqueda">Buscar auto</label>
-    <input type="text" id="inputBusqueda" placeholder="Buscar auto...">
+    <label for="inputBusqueda">
+        Buscar auto
+    </label>
 
-    <label for="filtroCategoria">Categoría</label>
+    <input type="text"
+    id="inputBusqueda"
+    placeholder="Buscar auto...">
+
+    <label for="filtroCategoria">
+        Categoría
+    </label>
+
     <select id="filtroCategoria">
-        <option value="all">Todos</option>
-        <option value="suv">SUV</option>
-        <option value="deportivo">Deportivos</option>
-        <option value="sedan">Sedan</option>
+
+        <option value="all">
+            Todos
+        </option>
+
+        <option value="suv">
+            SUV
+        </option>
+
+        <option value="deportivo">
+            Deportivos
+        </option>
+
+        <option value="sedan">
+            Sedan
+        </option>
+
     </select>
 
 </section>
 
 <!-- AUTOS -->
 <section class="autos">
-    <h2>Catálogo de autos</h2>
+
+    <h2>
+        Catálogo de autos
+    </h2>
 
     <div class="grid-autos">
 
+        <!-- AUTO 1 -->
         <article class="card-auto" data-tipo="deportivo">
-            <img src="camaro.webp" alt="Chevrolet Camaro deportivo">
-            <h3>Camaro</h3>
-            <p>$750,000</p>
-            <button class="btn">Comprar</button>
+
+            <img src="camaro.webp"
+            alt="Chevrolet Camaro deportivo color amarillo">
+
+            <h3>
+                Camaro
+            </h3>
+
+            <p>
+                $750,000
+            </p>
+
+            <button class="btn">
+                Comprar
+            </button>
+
         </article>
 
+        <!-- AUTO 2 -->
         <article class="card-auto" data-tipo="suv">
-            <img src="camioneta.webp" alt="Camioneta SUV familiar">
-            <h3>SUV Familiar</h3>
-            <p>$620,000</p>
-            <button class="btn">Comprar</button>
+
+            <img src="camioneta.webp"
+            alt="Camioneta SUV familiar moderna">
+
+            <h3>
+                SUV Familiar
+            </h3>
+
+            <p>
+                $620,000
+            </p>
+
+            <button class="btn">
+                Comprar
+            </button>
+
         </article>
 
+        <!-- AUTO 3 -->
         <article class="card-auto" data-tipo="sedan">
-            <img src="deportivo.webp" alt="Auto sedán moderno">
-            <h3>Sedán</h3>
-            <p>$500,000</p>
-            <button class="btn">Comprar</button>
+
+            <img src="deportivo.webp"
+            alt="Automóvil sedán moderno deportivo">
+
+            <h3>
+                Sedán
+            </h3>
+
+            <p>
+                $500,000
+            </p>
+
+            <button class="btn">
+                Comprar
+            </button>
+
         </article>
 
-<article class="card-auto" data-tipo="desert">
-            <img src="carro desierto.webp" alt="desert deportivo">
-                <h3>desert</h3>
-                <p class="precio">$600,000</p>
-                <button class="btn-ver">Comprar</button>
-</article>
-        </div>
+        <!-- AUTO 4 -->
+        <article class="card-auto" data-tipo="desert">
 
+            <img src="carro desierto.webp"
+            alt="Auto deportivo en carretera del desierto">
 
+            <h3>
+                Desert
+            </h3>
+
+            <p class="precio">
+                $600,000
+            </p>
+
+            <button class="btn-ver">
+                Comprar
+            </button>
+
+        </article>
 
     </div>
+
 </section>
 
 <!-- FINANCIAMIENTO -->
 <section class="financiamiento">
-    <h2>Simula tu pago mensual</h2>
 
-    <label for="precio">Precio del auto</label>
-    <input type="number" id="precio" placeholder="Precio del auto">
+    <h2>
+        Calcula tu pago
+    </h2>
 
-    <label for="enganche">Enganche</label>
-    <input type="number" id="enganche" placeholder="Enganche">
+    <label for="precio">
+        Precio del auto
+    </label>
 
-    <button id="btnCalcular">Calcular</button>
+    <input type="number"
+    id="precio"
+    placeholder="Precio del auto">
+
+    <label for="enganche">
+        Enganche
+    </label>
+
+    <input type="number"
+    id="enganche"
+    placeholder="Enganche">
+
+    <button id="btnCalcular">
+        Calcular
+    </button>
 
     <p id="resultado"></p>
+
 </section>
 
 <!-- PROCESO -->
 <section class="proceso">
-    <h2>¿Cómo comprar?</h2>
+
+    <h2>
+        ¿Cómo comprar?
+    </h2>
+
     <ul>
-        <li>1. Elige tu auto</li>
-        <li>2. Cotiza</li>
-        <li>3. Agenda una prueba</li>
-        <li>4. Finaliza tu compra</li>
+
+        <li>
+            1. Elige tu auto
+        </li>
+
+        <li>
+            2. Cotiza
+        </li>
+
+        <li>
+            3. Agenda una prueba
+        </li>
+
+        <li>
+            4. Finaliza tu compra
+        </li>
+
     </ul>
+
 </section>
 
 <!-- CTA -->
 <section class="cta">
-    <h2>¿Listo para tu auto?</h2>
-    <h3>Encuentra nuestras Concesionarias!</h3>
-    <a href="mapa.html" class="btn">Encuentranos! </a>
+
+    <h2>
+        ¿Listo para tu auto?
+    </h2>
+
+    <h3>
+        Encuentra nuestras concesionarias
+    </h3>
+
+    <a href="mapa.html" class="btn">
+        ¡Encuéntranos!
+    </a>
+
 </section>
 
 </main>
@@ -204,36 +396,88 @@
     <div class="footer-top">
 
         <div class="footer-box">
-            <h2>CareOut</h2>
-            <p>Innovación en movimiento. Descubre autos que se adaptan a tu estilo de vida.</p>
+
+            <h2>
+                CareOut
+            </h2>
+
+            <p>
+                Su mejor opción.
+            </p>
+
         </div>
 
         <div class="footer-box">
-            <h3>Navegación</h3>
+
+            <h3>
+                Navegación
+            </h3>
+
             <ul>
-                <li><a href="ACCEDERR.html">Acceder</a></li>
-                <li><a href="COMMPRAR.html">Comprar</a></li>
-                <li><a href="ACCEDERR.html">Servicios</a></li>
-                <li><a href="NOSOSTROS.html">Contacto</a></li>
+
+                <li>
+                    <a href="ACCEDERR.html">
+                        Acceder
+                    </a>
+                </li>
+
+                <li>
+                    <a href="COMMPRAR.html">
+                        Comprar
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ACCEDERR.html">
+                        Servicios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="NOSOSTROS.html">
+                        Contacto
+                    </a>
+                </li>
+
             </ul>
+
         </div>
 
-         <div class="footer-box">
-            <h3>Síguenos</h3>
+        <div class="footer-box">
+
+            <h3>
+                Síguenos
+            </h3>
+
             <nav class="social-icons">
-                <a href="https://www.facebook.com/careout4am"><img src="facebookpn.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/careout_4am/"><img src="instapn.jpg" alt="Instagram"></a>
-                
-            </nav>
-        </div>
 
-        
+                <a href="https://www.facebook.com/careout4am">
+
+                    <img src="facebookpn.png"
+                    alt="Icono de Facebook de CareOut">
+
+                </a>
+
+                <a href="https://www.instagram.com/careout_4am/">
+
+                    <img src="instapn.jpg"
+                    alt="Icono de Instagram de CareOut">
+
+                </a>
+
+            </nav>
+
+        </div>
 
     </div>
 
-    <button class="footer-bottom">
-        <p>&copy; 2026 CareOut | Todos los derechos reservados</p>
-    </button>
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 CareOut | Todos los derechos reservados
+        </p>
+
+    </div>
 
 </footer>
 
