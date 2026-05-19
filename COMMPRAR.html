@@ -1,486 +1,680 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SOLO UN H1 -->
-    <title>Comprar | CareOut</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="estilos.css">
+<title>CareOut | Comprar Autos</title>
+
+<link rel="stylesheet" href="comprar.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header class="header">
 
-    <section class="header-container">
+<section class="header-container">
 
-        <figure class="logo">
+<figure class="logo">
 
-            <a href="index.html">
+<a href="index.html">
+<img src="nuevo-logo.webp" alt="CareOut">
+</a>
 
-                <img src="nuevo-logo.webp"
-                alt="Logo oficial de CareOut">
+</figure>
 
-            </a>
+<nav class="nav">
 
-        </figure>
+<ul>
 
-        <nav class="nav" id="nav">
+<li class="submenu">
 
-            <ul>
+<a href="#">
+<i class="fa-solid fa-user"></i>
+Acceder
+<i class="fa-solid fa-angle-down"></i>
+</a>
 
-                <!-- ACCEDER -->
-                <li class="submenu">
+<ul class="dropdown">
 
-                    <a href="sigh up.html">
-                        Acceder <i class="fa-solid fa-angle-down"></i>
-                    </a>
+<li><a href="Login.html">Iniciar sesión</a></li>
+<li><a href="REGISTROR.html">Crear cuenta</a></li>
 
-                    <ul class="dropdown">
+</ul>
 
-                        <li>
-                            <a href="Login.html">
-                                Iniciar sesión
-                            </a>
-                        </li>
+</li>
 
-                        <li>
-                            <a href="REGISTROR.html">
-                                Crear cuenta
-                            </a>
-                        </li>
+<li class="submenu">
 
-                    </ul>
+<a href="#">
+<i class="fa-solid fa-car"></i>
+Comprar
+<i class="fa-solid fa-angle-down"></i>
+</a>
 
-                </li>
+<ul class="dropdown">
 
-                <!-- COMPRAR -->
-                <li class="submenu">
+<li><a href="CATALOGO.html">Catálogo</a></li>
+<li><a href="mapa.html">Mapa</a></li>
 
-                    <a href="COMMPRAR.html">
-                        Comprar <i class="fa-solid fa-angle-down"></i>
-                    </a>
+</ul>
 
-                    <ul class="dropdown">
+</li>
 
-                        <li>
-                            <a href="CATALOGO.html">
-                                Catálogo
-                            </a>
-                        </li>
+<li class="submenu">
 
-                        <li>
-                            <a href="mapa.html">
-                                Mapa
-                            </a>
-                        </li>
+<a href="#">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+Servicios
+<i class="fa-solid fa-angle-down"></i>
+</a>
 
-                    </ul>
+<ul class="dropdown">
 
-                </li>
+<li><a href="#">Mantenimiento</a></li>
+<li><a href="#">Diagnóstico</a></li>
+<li><a href="#">Reparaciones</a></li>
+<li><a href="#">Tecnología</a></li>
 
-                <!-- SERVICIOS -->
-                <li class="submenu">
+</ul>
 
-                    <a href="AUTOSERVICIOO.html">
-                        Servicios <i class="fa-solid fa-angle-down"></i>
-                    </a>
+</li>
 
-                    <ul class="dropdown">
+<li>
+<a href="#">
+<i class="fa-solid fa-phone"></i>
+Contacto
+</a>
+</li>
 
-                        <li>
-                            <a href="MANTENIMIENTO.html">
-                                Mantenimiento
-                            </a>
-                        </li>
+<li>
+<a href="#">
+<i class="fa-solid fa-users"></i>
+Nosotros
+</a>
+</li>
 
-                        <li>
-                            <a href="DIAGNOSTICO.html">
-                                Diagnóstico
-                            </a>
-                        </li>
+</ul>
 
-                        <li>
-                            <a href="Hojalatería y pintura.html">
-                                Reparaciones
-                            </a>
-                        </li>
+</nav>
 
-                        <li>
-                            <a href="TECNOLOGIA.html">
-                                Tecnología
-                            </a>
-                        </li>
+<button class="favoritos-icono">
 
-                    </ul>
+<i class="fa-solid fa-heart"></i>
 
-                </li>
+<span>0</span>
 
-                <!-- CONTACTO -->
-                <li class="submenu">
+</button>
 
-                    <a href="CONTACTO.html">
-                        Contacto <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                </li>
-
-                <!-- NOSOTROS -->
-                <li class="submenu">
-
-                    <a href="equipo.html">
-                        Nosotros <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                </li>
-
-            </ul>
-
-        </nav>
-
-        <div class="hamburger" id="btn-menu">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </div>
-
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-        <button class="favoritos-icono" id="btnFavoritos">
-
-            <i class="fa-solid fa-heart"></i>
-
-            <span id="contadorFav">
-                0
-            </span>
-
-        </button>
-
-    </section>
+</section>
 
 </header>
 
-<main>
+<!-- HERO -->
 
-<!-- INTRO -->
-<section class="comprar-intro">
+<section class="hero">
 
-    
+<div class="overlay"></div>
 
-    <p>
-        Encuentra el vehículo perfecto para ti.
-    </p>
+<div class="hero-content">
+
+<span class="tag">
+AUTOS PREMIUM
+</span>
+
+<h1>
+Encuentra el auto perfecto
+</h1>
+
+<p>
+Explora deportivos, SUVs y sedanes modernos con diseño premium y tecnología avanzada.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#autos" class="btn-principal">
+Ver catálogo
+</a>
+
+<a href="mapa.html" class="btn-secundario">
+Concesionarias
+</a>
+
+</div>
+
+</div>
 
 </section>
 
 <!-- BUSCADOR -->
-<section class="buscador">
 
-    <label for="inputBusqueda">
-        Buscar auto
-    </label>
+<section class="busqueda">
 
-    <input type="text"
-    id="inputBusqueda"
-    placeholder="Buscar auto...">
+<div class="search-box">
 
-    <label for="filtroCategoria">
-        Categoría
-    </label>
+<div class="input-group">
 
-    <select id="filtroCategoria">
+<i class="fa-solid fa-magnifying-glass"></i>
 
-        <option value="all">
-            Todos
-        </option>
+<input type="text"
+placeholder="Buscar marca o modelo">
 
-        <option value="suv">
-            SUV
-        </option>
+</div>
 
-        <option value="deportivo">
-            Deportivos
-        </option>
+<div class="input-group">
 
-        <option value="sedan">
-            Sedan
-        </option>
+<i class="fa-solid fa-car-side"></i>
 
-    </select>
+<select>
+
+<option>Todas las categorías</option>
+<option>SUV</option>
+<option>Deportivos</option>
+<option>Sedán</option>
+
+</select>
+
+</div>
+
+<button>
+
+<i class="fa-solid fa-search"></i>
+
+Buscar
+
+</button>
+
+</div>
 
 </section>
 
 <!-- AUTOS -->
-<section class="autos">
 
-    <h2>
-        Catálogo de autos
-    </h2>
+<section class="autos" id="autos">
 
-    <div class="grid-autos">
+<div class="section-title">
 
-        <!-- AUTO 1 -->
-        <article class="card-auto" data-tipo="deportivo">
+<span>CATÁLOGO PREMIUM</span>
 
-            <img src="camaro.webp"
-            alt="Chevrolet Camaro deportivo color amarillo">
+<h2>Autos destacados</h2>
 
-            <h3>
-                Camaro
-            </h3>
+<p>
+Vehículos modernos con diseño elegante, rendimiento y tecnología avanzada.
+</p>
 
-            <p>
-                $750,000
-            </p>
+</div>
 
-            <button class="btn">
-                Comprar
-            </button>
+<div class="autos-grid">
 
-        </article>
+<!-- CARD -->
 
-        <!-- AUTO 2 -->
-        <article class="card-auto" data-tipo="suv">
+<article class="card-auto">
 
-            <img src="camioneta.webp"
-            alt="Camioneta SUV familiar moderna">
+<div class="card-img">
 
-            <h3>
-                SUV Familiar
-            </h3>
+<img src="camaro.webp" alt="Camaro">
 
-            <p>
-                $620,000
-            </p>
+<button class="fav">
+<i class="fa-regular fa-heart"></i>
+</button>
 
-            <button class="btn">
-                Comprar
-            </button>
+</div>
 
-        </article>
+<div class="card-content">
 
-        <!-- AUTO 3 -->
-        <article class="card-auto" data-tipo="sedan">
+<div class="top">
 
-            <img src="deportivo.webp"
-            alt="Automóvil sedán moderno deportivo">
+<h3>Chevrolet Camaro</h3>
 
-            <h3>
-                Sedán
-            </h3>
+<span class="precio">
+$750,000
+</span>
 
-            <p>
-                $500,000
-            </p>
+</div>
 
-            <button class="btn">
-                Comprar
-            </button>
+<p>
+Motor V8, diseño deportivo y potencia premium.
+</p>
 
-        </article>
+<div class="specs">
 
-        <!-- AUTO 4 -->
-        <article class="card-auto" data-tipo="desert">
+<span>
+<i class="fa-solid fa-gauge"></i>
+320 km/h
+</span>
 
-            <img src="carro desierto.webp"
-            alt="Auto deportivo en carretera del desierto">
+<span>
+<i class="fa-solid fa-gas-pump"></i>
+Gasolina
+</span>
 
-            <h3>
-                Desert
-            </h3>
+</div>
 
-            <p class="precio">
-                $600,000
-            </p>
+<a href="#">
+Ver detalles
+</a>
 
-            <button class="btn-ver">
-                Comprar
-            </button>
+</div>
 
-        </article>
+</article>
 
-    </div>
+<!-- CARD -->
+
+<article class="card-auto">
+
+<div class="card-img">
+
+<img src="camioneta.webp" alt="SUV">
+
+<button class="fav">
+<i class="fa-regular fa-heart"></i>
+</button>
+
+</div>
+
+<div class="card-content">
+
+<div class="top">
+
+<h3>SUV Premium</h3>
+
+<span class="precio">
+$620,000
+</span>
+
+</div>
+
+<p>
+Espacio, seguridad y comodidad para toda la familia.
+</p>
+
+<div class="specs">
+
+<span>
+<i class="fa-solid fa-users"></i>
+7 pasajeros
+</span>
+
+<span>
+<i class="fa-solid fa-gas-pump"></i>
+Híbrida
+</span>
+
+</div>
+
+<a href="#">
+Ver detalles
+</a>
+
+</div>
+
+</article>
+
+<!-- CARD -->
+
+<article class="card-auto">
+
+<div class="card-img">
+
+<img src="deportivo.webp" alt="Sedan">
+
+<button class="fav">
+<i class="fa-regular fa-heart"></i>
+</button>
+
+</div>
+
+<div class="card-content">
+
+<div class="top">
+
+<h3>Sedán Sport</h3>
+
+<span class="precio">
+$500,000
+</span>
+
+</div>
+
+<p>
+Elegancia y rendimiento con tecnología inteligente.
+</p>
+
+<div class="specs">
+
+<span>
+<i class="fa-solid fa-gauge"></i>
+260 km/h
+</span>
+
+<span>
+<i class="fa-solid fa-bolt"></i>
+Turbo
+</span>
+
+</div>
+
+<a href="#">
+Ver detalles
+</a>
+
+</div>
+
+</article>
+
+<!-- CARD -->
+
+<article class="card-auto">
+
+<div class="card-img">
+
+<img src="carro desierto.webp" alt="Desert">
+
+<button class="fav">
+<i class="fa-regular fa-heart"></i>
+</button>
+
+</div>
+
+<div class="card-content">
+
+<div class="top">
+
+<h3>Desert Racer</h3>
+
+<span class="precio">
+$600,000
+</span>
+
+</div>
+
+<p>
+Diseñado para aventura extrema y terrenos difíciles.
+</p>
+
+<div class="specs">
+
+<span>
+<i class="fa-solid fa-road"></i>
+4x4
+</span>
+
+<span>
+<i class="fa-solid fa-fire"></i>
+450 HP
+</span>
+
+</div>
+
+<a href="#">
+Ver detalles
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<!-- BENEFICIOS -->
+
+<section class="beneficios">
+
+<div class="beneficio">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Seguridad</h3>
+
+<p>
+Vehículos certificados y revisados profesionalmente.
+</p>
+
+</div>
+
+<div class="beneficio">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>Rendimiento</h3>
+
+<p>
+Potencia y velocidad en cada experiencia.
+</p>
+
+</div>
+
+<div class="beneficio">
+
+<i class="fa-solid fa-star"></i>
+
+<h3>Calidad premium</h3>
+
+<p>
+Diseños exclusivos y acabados modernos.
+</p>
+
+</div>
 
 </section>
 
 <!-- FINANCIAMIENTO -->
-<section class="financiamiento">
 
-    <h2>
-        Calcula tu pago
-    </h2>
+<section class="finance">
 
-    <label for="precio">
-        Precio del auto
-    </label>
+<div class="finance-box">
 
-    <input type="number"
-    id="precio"
-    placeholder="Precio del auto">
+<div class="finance-info">
 
-    <label for="enganche">
-        Enganche
-    </label>
+<span>FINANCIAMIENTO</span>
 
-    <input type="number"
-    id="enganche"
-    placeholder="Enganche">
+<h2>
+Calcula tu pago mensual
+</h2>
 
-    <button id="btnCalcular">
-        Calcular
-    </button>
+<p>
+Cotiza fácilmente tu próximo vehículo con nuestros planes personalizados.
+</p>
 
-    <p id="resultado"></p>
+</div>
+
+<div class="finance-form">
+
+<input type="number" placeholder="Precio del auto">
+
+<input type="number" placeholder="Enganche">
+
+<button>
+Calcular
+</button>
+
+<p>
+Pago estimado:
+<strong>$12,500 MXN</strong>
+</p>
+
+</div>
+
+</div>
 
 </section>
 
 <!-- PROCESO -->
+
 <section class="proceso">
 
-    <h2>
-        ¿Cómo comprar?
-    </h2>
+<div class="section-title">
 
-    <ul>
+<span>PROCESO</span>
 
-        <li>
-            1. Elige tu auto
-        </li>
+<h2>¿Cómo comprar?</h2>
 
-        <li>
-            2. Cotiza
-        </li>
+</div>
 
-        <li>
-            3. Agenda una prueba
-        </li>
+<div class="pasos">
 
-        <li>
-            4. Finaliza tu compra
-        </li>
+<div class="paso">
 
-    </ul>
+<div class="numero">1</div>
+
+<h3>Explora</h3>
+
+<p>
+Descubre autos premium y compara modelos.
+</p>
+
+</div>
+
+<div class="paso">
+
+<div class="numero">2</div>
+
+<h3>Cotiza</h3>
+
+<p>
+Obtén financiamiento personalizado fácilmente.
+</p>
+
+</div>
+
+<div class="paso">
+
+<div class="numero">3</div>
+
+<h3>Agenda</h3>
+
+<p>
+Programa una prueba de manejo rápidamente.
+</p>
+
+</div>
+
+<div class="paso">
+
+<div class="numero">4</div>
+
+<h3>Compra</h3>
+
+<p>
+Finaliza tu compra de forma segura.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
 <!-- CTA -->
+
 <section class="cta">
 
-    <h2>
-        ¿Listo para tu auto?
-    </h2>
+<div class="cta-overlay"></div>
 
-    <h3>
-        Encuentra nuestras concesionarias
-    </h3>
+<div class="cta-content">
 
-    <a href="mapa.html" class="btn">
-        ¡Encuéntranos!
-    </a>
+<h2>
+¿Listo para tu próximo auto?
+</h2>
+
+<p>
+Visita nuestras concesionarias y vive la experiencia CareOut.
+</p>
+
+<a href="mapa.html">
+Encuéntranos
+</a>
+
+</div>
 
 </section>
 
-</main>
-
 <!-- FOOTER -->
-<footer class="footer-pro">
 
-    <div class="footer-top">
+<footer class="footer">
 
-        <div class="footer-box">
+<div class="footer-grid">
 
-            <h2>
-                CareOut
-            </h2>
+<div class="footer-box">
 
-            <p>
-                Su mejor opción.
-            </p>
+<img src="nuevo-logo.webp" alt="CareOut">
 
-        </div>
+<p>
+Innovación en movimiento. Descubre autos premium y tecnología avanzada.
+</p>
 
-        <div class="footer-box">
+</div>
 
-            <h3>
-                Navegación
-            </h3>
+<div class="footer-box">
 
-            <ul>
+<h3>Navegación</h3>
 
-                <li>
-                    <a href="sigh up.html">
-                        Acceder
-                    </a>
-                </li>
+<ul>
 
-                <li>
-                    <a href="COMMPRAR.html">
-                        Comprar
-                    </a>
-                </li>
+<li><a href="#">Acceder</a></li>
+<li><a href="#">Comprar</a></li>
+<li><a href="#">Servicios</a></li>
+<li><a href="#">Contacto</a></li>
 
-                <li>
-                    <a href="AUTOSERVICIOO.html">
-                        Servicios
-                    </a>
-                </li>
+</ul>
 
-                <li>
-                    <a href="equipo.html">
-                        Contacto
-                    </a>
-                </li>
+</div>
 
-            </ul>
+<div class="footer-box">
 
-        </div>
+<h3>Servicios</h3>
 
-        <div class="footer-box">
+<ul>
 
-            <h3>
-                Síguenos
-            </h3>
+<li><a href="#">Mantenimiento</a></li>
+<li><a href="#">Diagnóstico</a></li>
+<li><a href="#">Reparaciones</a></li>
+<li><a href="#">Tecnología</a></li>
 
-            <nav class="social-icons">
+</ul>
 
-                <a href="https://www.facebook.com/careout4am">
+</div>
 
-                    <img src="facebookpn.png"
-                    alt="Icono de Facebook de CareOut">
+<div class="footer-box">
 
-                </a>
+<h3>Síguenos</h3>
 
-                <a href="https://www.instagram.com/careout_4am/">
+<div class="social">
 
-                    <img src="instapn.jpg"
-                    alt="Icono de Instagram de CareOut">
+<a href="#">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
 
-                </a>
+<a href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
 
-            </nav>
+<a href="#">
+<i class="fa-brands fa-x-twitter"></i>
+</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
-    <div class="footer-bottom">
+</div>
 
-        <p>
-            &copy; 2026 CareOut | Todos los derechos reservados
-        </p>
+<div class="footer-bottom">
 
-    </div>
+© 2026 CareOut | Todos los derechos reservados
+
+</div>
 
 </footer>
-
-<script src="java.js"></script>
-<script src="darkmode.js"></script>
-<script src="scroll.js"></script>
 
 </body>
 </html>

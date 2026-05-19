@@ -1,384 +1,483 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="nuevo-logo.webp" type="image/webp">
-    <title>CareOut | Autos</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CareOut | Autos</title>
+
+<link rel="icon" href="nuevo-logo.webp" type="image/webp">
+
+<link rel="stylesheet" href="inicio.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
-
 <body>
+
+<!-- HEADER -->
+
 <header class="header">
 
-    <section class="header-container">
+<section class="header-container">
 
-        <figure class="logo">
-            <a href="index.html">
-                <img src="nuevo-logo.webp" alt="Logo de CareOut">
-            </a>
-        </figure>
+<figure class="logo">
+<a href="index.html">
+<img src="nuevo-logo.webp" alt="CareOut">
+</a>
+</figure>
 
-        <nav class="nav" id="nav">
+<nav class="nav">
 
-            <ul>
+<ul>
 
-                <!-- ACCEDER -->
-                <li class="submenu">
-                    <a href="sigh up.html">
-                        Acceder <i class="fa-solid fa-angle-down"></i>
-                    </a>
+<li class="submenu">
+<a href="#">
+<i class="fa-solid fa-user"></i>
+Acceder
+<i class="fa-solid fa-angle-down"></i>
+</a>
 
-                    <ul class="dropdown">
-                        <li><a href="Login.html">Iniciar sesión</a></li>
-                        <li><a href="REGISTROR.html">Crear cuenta</a></li>
-                    </ul>
-                </li>
+<ul class="dropdown">
+<li><a href="Login.html">Iniciar sesión</a></li>
+<li><a href="REGISTROR.html">Crear cuenta</a></li>
+</ul>
+</li>
 
-                <!-- COMPRAR -->
-                <li class="submenu">
-                    <a href="COMMPRAR.html">
-                        Comprar <i class="fa-solid fa-angle-down"></i>
-                    </a>
-                    <ul class="dropdown">
-                        <li><a href="CATALOGO.html">catalogo</a></li>
-                        <li><a href="mapa.html">mapa</a></li>
-                    </ul>
+<li class="submenu">
+<a href="#">
+<i class="fa-solid fa-cart-shopping"></i>
+Comprar
+<i class="fa-solid fa-angle-down"></i>
+</a>
 
-                </li>
+<ul class="dropdown">
+<li><a href="CATALOGO.html">Catálogo</a></li>
+<li><a href="mapa.html">Mapa</a></li>
+</ul>
+</li>
 
-                <!-- SERVICIOS -->
-                <li class="submenu">
-                    <a href="AUTOSERVICIOO.html">
-                        Servicios <i class="fa-solid fa-angle-down"></i>
-                    </a>
+<li class="submenu">
+<a href="#">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+Servicios
+<i class="fa-solid fa-angle-down"></i>
+</a>
 
-                    <ul class="dropdown">
-                        <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
-                        <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
-                        <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
-                         <li><a href="TECNOLOGIA.html">Tecnología</a></li>
-                    </ul>
-                </li>
+<ul class="dropdown">
+<li><a href="#">Mantenimiento</a></li>
+<li><a href="#">Diagnóstico</a></li>
+<li><a href="#">Reparaciones</a></li>
+<li><a href="#">Tecnología</a></li>
+</ul>
+</li>
 
-                <!-- CONTACTO -->
-                <li class="submenu">
-                    <a href="CONTACTO.html">
-                        Contacto <i class="fa-solid fa-angle-down"></i>
-                    </a>
-                </li>
+<li>
+<a href="#">
+<i class="fa-solid fa-phone"></i>
+Contacto
+</a>
+</li>
 
-                <!-- NOSOTROS -->
-                <li class="submenu">
-                    <a href="equipo.html">
-                        Nosotros <i class="fa-solid fa-angle-down"></i>
-                    </a>
+<li>
+<a href="#">
+<i class="fa-solid fa-users"></i>
+Nosotros
+</a>
+</li>
 
-    
-        
+</ul>
 
-            </ul>
+</nav>
 
-        </nav>
+<div class="header-icons">
 
-        <div class="hamburger" id="btn-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+<button class="dark-btn">
+<i class="fa-solid fa-moon"></i>
+</button>
 
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<button class="favoritos-icono">
 
-        <button class="favoritos-icono" id="btnFavoritos">
-            <i class="fa-solid fa-heart"></i>
-            <span id="contadorFav">0</span>
-        </button>
+<i class="fa-solid fa-heart"></i>
 
-    </section>
-
-</header>
-
-<main>
-<!-- ===========================
-BOTON DARK MODE
-=========================== -->
-
-<button class="btn-dark-mode" id="darkModeBtn">
-
-    <i class="fa-solid fa-moon"></i>
+<span>0</span>
 
 </button>
-<!-- HERO PRO MAX -->
-<section class="hero hero-pro">
 
-    <div class="hero-bg"></div>
-
-    <section class="contenido-hero">
-        <h1>Encuentra el auto perfecto</h1>
-        <p>Diseño bonito</p>
-
-        <nav class="hero-botones">
-            <a href="CATALOGO.html" class="btn">Ver catálogo</a>
-            <a href="AUTOSERVICIOO.html" class="btn-secundario">Ver servicios</a>
-        </nav>
-    </section>
+</div>
 
 </section>
 
-<!-- BUSCADOR PRO -->
-<section class="buscador buscador-pro">
+</header>
 
-    <h2>Encuentra tu auto</h2>
+<!-- HERO -->
 
-    <from class="barra-busqueda">
+<section class="hero">
 
-        <input type="text" id="inputBusqueda" placeholder="Buscar marca o modelo...">
+<div class="hero-overlay"></div>
 
-        <select id="filtroCategoria">
-            <option value="all">Todas las categorías</option>
-            <option value="suv">SUV</option>
-            <option value="deportivo">Deportivos</option>
-            <option value="sedan">Sedan</option>
-        </select>
+<div class="hero-content">
 
-        <button class="btn-buscar">Buscar</button>
+<span class="tag">
+INNOVACIÓN EN MOVIMIENTO
+</span>
 
-    </from>
+<h1>
+Encuentra el auto perfecto para tu estilo
+</h1>
+
+<p>
+Explora vehículos premium, deportivos y SUVs con tecnología moderna y diseño increíble.
+</p>
+
+<div class="hero-buttons">
+
+<a href="CATALOGO.html" class="btn-principal">
+Ver catálogo
+</a>
+
+<a href="AUTOSERVICIOO.html" class="btn-secundario">
+Ver servicios
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BUSCADOR -->
+
+<section class="buscador">
+
+<div class="buscador-box">
+
+<h2>Encuentra tu auto ideal</h2>
+
+<form class="barra-busqueda">
+
+<div class="input-group">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input type="text" placeholder="Buscar marca o modelo...">
+</div>
+
+<select>
+<option>Todas las categorías</option>
+<option>SUV</option>
+<option>Deportivos</option>
+<option>Sedán</option>
+</select>
+
+<button type="submit">
+Buscar
+</button>
+
+</form>
+
+</div>
 
 </section>
 
 <!-- AUTOS -->
+
 <section class="autos">
 
-    <h2 class="titulo">Autos Destacados</h2>
+<div class="section-title">
 
-    <section class="autos-grid">
+<span>CATÁLOGO PREMIUM</span>
 
-        <!-- CARD -->
-        <article class="card-auto" data-tipo="deportivo">
-            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
-            <img src="camaro.webp" alt="Chevrolet Camaro deportivo">
-            <div class="info">
-                <h3>Camaro</h3>
-                <p class="precio">$750,000</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
-        </article>
+<h2>Autos Destacados</h2>
 
-        <article class="card-auto" data-tipo="suv">
-            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
-            <img src="camioneta.webp" alt="SUV moderna">
-            <div class="info">
-                <h3>SUV</h3>
-                <p class="precio">$620,000</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
-        </article>
+</div>
 
-        <article class="card-auto" data-tipo="sedan">
-            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
-            <img src="deportivo.webp" alt="Sedán deportivo">
-            <div class="info">
-                <h3>Sedán</h3>
-                <p class="precio">$500,000</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
-        </article>
+<div class="autos-grid">
 
- <article class="card-auto" data-tipo="desert">
-            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
-            <img src="carro desierto.webp" alt="desert deportivo">
-            <div class="info">
-                <h3>desert</h3>
-                <p class="precio">$600,000</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
- </article>
+<!-- CARD -->
 
-<article class="card-auto" data-tipo="bmw">
-            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
-            <img src="carro-verde.webp" alt="bmw ">
-            <div class="info">
-                <h3>bmw</h3>
-                <p class="precio">$900,000</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
+<article class="card-auto">
+
+<div class="card-img">
+
+<button class="btn-fav">
+<i class="fa-regular fa-heart"></i>
+</button>
+
+<img src="camaro.webp" alt="Camaro">
+
+</div>
+
+<div class="card-info">
+
+<h3>Chevrolet Camaro</h3>
+
+<p class="descripcion">
+Motor V8 · Deportivo · Automático
+</p>
+
+<div class="precio-box">
+
+<h4>$750,000</h4>
+
+<button>
+Ver más
+</button>
+
+</div>
+
+</div>
+
 </article>
 
-<article class="card-auto" data-tipo="lambo">
-            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
-            <img src="lambo-calle.webp" alt="lambo ">
-            <div class="info">
-                <h3>lambo</h3>
-                <p class="precio">$1,000,000</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
+<!-- CARD -->
+
+<article class="card-auto">
+
+<div class="card-img">
+
+<button class="btn-fav">
+<i class="fa-regular fa-heart"></i>
+</button>
+
+<img src="camioneta.webp" alt="SUV">
+
+</div>
+
+<div class="card-info">
+
+<h3>BMW SUV</h3>
+
+<p class="descripcion">
+SUV premium · Tecnología avanzada
+</p>
+
+<div class="precio-box">
+
+<h4>$620,000</h4>
+
+<button>
+Ver más
+</button>
+
+</div>
+
+</div>
+
 </article>
 
+<!-- CARD -->
 
-        <article class="card-auto" data-tipo="gtr">
-            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
-            <img src="carro_ciudad-de-frente.webp" alt="gtr ">
-            <div class="info">
-                <h3>gtr</h3>
-                <p class="precio">$1,000,000</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
-        </article>
+<article class="card-auto">
 
- <article class="card-auto" data-tipo="camioneta">
-            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
-            <img src="camioneta blanca.webp" alt="camioneta ">
-            <div class="info">
-                <h3>camioneta</h3>
-                <p class="precio">$600,000</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
-        </article>
+<div class="card-img">
 
-<article class="card-auto" data-tipo="blanc">
-            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
-            <img src="carro azulblanc.webp" alt="blanc ">
-            <div class="info">
-                <h3>blanc</h3>
-                <p class="precio">$700,000</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
-        </article>
+<button class="btn-fav">
+<i class="fa-regular fa-heart"></i>
+</button>
 
-<article class="card-auto" data-tipo="cv">
-            <button class="btn-fav"><i class="fa-regular fa-heart"></i></button>
-            <img src="carro gris.webp" alt="cv">
-            <div class="info">
-                <h3>cv</h3>
-                <p class="precio">$700,000</p>
-                <button class="btn-ver">Ver más</button>
-            </div>
-        </article>
+<img src="lambo-calle.webp" alt="Lambo">
 
+</div>
 
+<div class="card-info">
 
-    </section>
+<h3>Lamborghini</h3>
+
+<p class="descripcion">
+Super deportivo · Alto rendimiento
+</p>
+
+<div class="precio-box">
+
+<h4>$1,000,000</h4>
+
+<button>
+Ver más
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+<!-- CARD -->
+
+<article class="card-auto">
+
+<div class="card-img">
+
+<button class="btn-fav">
+<i class="fa-regular fa-heart"></i>
+</button>
+
+<img src="carro-verde.webp" alt="BMW">
+
+</div>
+
+<div class="card-info">
+
+<h3>BMW M4</h3>
+
+<p class="descripcion">
+Diseño elegante · Potencia premium
+</p>
+
+<div class="precio-box">
+
+<h4>$900,000</h4>
+
+<button>
+Ver más
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+</div>
 
 </section>
 
 <!-- BENEFICIOS -->
-<section class="beneficios-home">
 
-    <article class="beneficio">
-        <i class="fa-solid fa-car"></i>
-        <h2>Variedad</h2>
-        <p>Autos buenos</p>
-    </article>
+<section class="beneficios">
 
-    <article class="beneficio">
-        <i class="fa-solid fa-shield"></i>
-        <h2>Seguridad</h2>
-        <p>Vehículos certificados y revisados</p>
-    </article>
+<div class="beneficio">
 
-    <article class="beneficio">
-        <i class="fa-solid fa-bolt"></i>
-        <h2>Rendimiento</h2>
-        <p>potencia</p>
-    </article>
+<i class="fa-solid fa-car-side"></i>
+
+<h3>Gran variedad</h3>
+
+<p>
+Autos deportivos, SUVs y vehículos premium.
+</p>
+
+</div>
+
+<div class="beneficio">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Seguridad</h3>
+
+<p>
+Vehículos certificados y revisados profesionalmente.
+</p>
+
+</div>
+
+<div class="beneficio">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>Rendimiento</h3>
+
+<p>
+Motores potentes y tecnología avanzada.
+</p>
+
+</div>
 
 </section>
 
-</main>
+<!-- BANNER -->
 
-<!-- FOOTER -->
-<footer class="footer-pro">
+<section class="banner">
 
-    <div class="footer-top">
+<div class="banner-content">
 
-        <div class="footer-box">
-            <h2>CareOut</h2>
-            <p>su mejor opcion.</p>
-        </div>
+<h2>
+Conduce el futuro con CareOut
+</h2>
 
-        <div class="footer-box">
-            <h3>Navegación</h3>
-            <ul>
-                <li><a href="sigh up.html">Acceder</a></li>
-                <li><a href="COMMPRAR.html">Comprar</a></li>
-                <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
-                <li><a href="equipo.html">Contacto</a></li>
-            </ul>
-        </div>
+<p>
+Tecnología, diseño y velocidad en un solo lugar.
+</p>
 
-        <div class="footer-box">
-            <h3>Síguenos</h3>
-            <nav class="social-icons">
-                <a href="https://www.facebook.com/careout4am"><img src="facebookpn.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/careout_4am/"><img src="instapn.jpg" alt="Instagram"></a>
-                
-            </nav>
-        </div>
-
-       
-
-    </div>
-
-    <div class="footer-bottom">
-        <p>&copy; 2026 CareOut | Todos los derechos reservados</p>
-    </div>
-
-</footer>
-<!-- ===========================
-SCRIPT
-=========================== -->
-<script src="darkmode.js"></script>
-<script src="bajar.js"></script>
-<script src="scroll.js"></script>
-<script src="cookies.js"></script>
-<script src="java.js"></script>
-
-<!-- MODAL -->
-<div id="modal-auto" class="modal">
-
-    <section class="modal-content">
-
-        <span class="close" id="cerrar-modal">&times;</span>
-
-        <article class="modal-body">
-
-            <figure class="modal-img">
-                <img id="img-modal" src="camaro.webp" alt="Chevrolet Camaro vista principal">
-                <section class="galeria">
-                    <img src="camaro.webp" alt="Camaro vista 1" onclick="cambiarFoto(this)">
-                    <img src="camaro.webp" alt="Camaro vista 2" onclick="cambiarFoto(this)">
-                    <img src="camaro.webp" alt="Camaro vista 3" onclick="cambiarFoto(this)">
-                </section>
-            </figure>
-
-            <section class="modal-info">
-                <h3 id="titulo-modal">Chevrolet Camaro</h3>
-                <p>
-                    Auto deportivo con motor V8
-                    
-                </p>
-
-                <h3 class="precio">$750,000 MXN</h3>
-
-                <button class="btn-cotizar">Cotizar</button>
-            </section>
-
-        </article>
-
-    </section>
+<a href="CATALOGO.html">
+Explorar ahora
+</a>
 
 </div>
-<!-- ===========================
-BOTON DARK MODE
-=========================== -->
 
+</section>
 
-</button>
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-grid">
+
+<div class="footer-box">
+
+<img src="nuevo-logo.webp" alt="Logo">
+
+<p>
+En CareOut conectamos personas con los mejores autos y servicios automotrices.
+</p>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Navegación</h3>
+
+<ul>
+<li><a href="#">Acceder</a></li>
+<li><a href="#">Comprar</a></li>
+<li><a href="#">Servicios</a></li>
+<li><a href="#">Contacto</a></li>
+</ul>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Servicios</h3>
+
+<ul>
+<li><a href="#">Mantenimiento</a></li>
+<li><a href="#">Diagnóstico</a></li>
+<li><a href="#">Reparaciones</a></li>
+<li><a href="#">Tecnología</a></li>
+</ul>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Síguenos</h3>
+
+<div class="social">
+
+<a href="#">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-x-twitter"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 CareOut | Todos los derechos reservados
+</div>
+
+</footer>
 
 </body>
 </html>

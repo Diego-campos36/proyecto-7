@@ -1,261 +1,426 @@
-
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareOut | Acceso</title>
-    <link rel="stylesheet" href="estilos.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CareOut | Acceso</title>
+
+<link rel="stylesheet" href="acceso.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header class="header">
 
-    <section class="header-container">
+<section class="header-container">
 
-        <figure class="logo">
-            <a href="index.html">
-                <img src="nuevo-logo.webp" alt="Logo de CareOut">
-            </a>
-        </figure>
+<figure class="logo">
 
-        <nav class="nav" id="nav">
+<a href="index.html">
+<img src="nuevo-logo.webp" alt="CareOut">
+</a>
 
-            <ul>
+</figure>
 
-                <!-- ACCEDER -->
-                <li class="submenu">
-                    <a href="sigh up.html">
-                        Acceder <i class="fa-solid fa-angle-down"></i>
-                    </a>
+<nav class="nav">
 
-                    <ul class="dropdown">
-                        <li><a href="Login.html">Iniciar sesión</a></li>
-                        <li><a href="REGISTROR.html">Crear cuenta</a></li>
-                    </ul>
-                </li>
+<ul>
 
-                <!-- COMPRAR -->
-                <li class="submenu">
-                    <a href="COMMPRAR.html">
-                        Comprar <i class="fa-solid fa-angle-down"></i>
-                    </a>
-                    <ul class="dropdown">
-                        <li><a href="CATALOGO.html">catalogo</a></li>
-                        <li><a href="mapa.html">mapa</a></li>
-                    </ul>
+<li class="submenu">
 
-                </li>
+<a href="#">
+<i class="fa-solid fa-user"></i>
+Acceder
+<i class="fa-solid fa-angle-down"></i>
+</a>
 
-                <!-- SERVICIOS -->
-                <li class="submenu">
-                    <a href="AUTOSERVICIOO.html">
-                        Servicios <i class="fa-solid fa-angle-down"></i>
-                    </a>
+<ul class="dropdown">
 
-                    <ul class="dropdown">
-                        <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
-                        <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
-                        <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
-                         <li><a href="TECNOLOGIA.html">Tecnología</a></li>
-                    </ul>
-                </li>
+<li><a href="Login.html">Iniciar sesión</a></li>
 
-                <!-- CONTACTO -->
-                <li class="submenu">
-                    <a href="CONTACTO.html">
-                        Contacto <i class="fa-solid fa-angle-down"></i>
-                    </a>
-                </li>
+<li><a href="REGISTROR.html">Crear cuenta</a></li>
 
-                <!-- NOSOTROS -->
-                <li class="submenu">
-                    <a href="equipo.html">
-                        Nosotros <i class="fa-solid fa-angle-down"></i>
-                    </a>
+</ul>
 
-    
-        
+</li>
 
-            </ul>
+<li class="submenu">
 
-        </nav>
+<a href="#">
+<i class="fa-solid fa-cart-shopping"></i>
+Comprar
+<i class="fa-solid fa-angle-down"></i>
+</a>
 
-        <div class="hamburger" id="btn-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+<ul class="dropdown">
 
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<li><a href="CATALOGO.html">Catálogo</a></li>
 
-        <button class="favoritos-icono" id="btnFavoritos">
-            <i class="fa-solid fa-heart"></i>
-            <span id="contadorFav">0</span>
-        </button>
+<li><a href="mapa.html">Mapa</a></li>
 
-    </section>
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="#">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+Servicios
+<i class="fa-solid fa-angle-down"></i>
+</a>
+
+<ul class="dropdown">
+
+<li><a href="#">Mantenimiento</a></li>
+
+<li><a href="#">Diagnóstico</a></li>
+
+<li><a href="#">Reparaciones</a></li>
+
+<li><a href="#">Tecnología</a></li>
+
+</ul>
+
+</li>
+
+<li>
+<a href="#">
+<i class="fa-solid fa-phone"></i>
+Contacto
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="fa-solid fa-users"></i>
+Nosotros
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+<div class="header-icons">
+
+<button class="favoritos-icono">
+
+<i class="fa-solid fa-heart"></i>
+
+<span>0</span>
+
+</button>
+
+</div>
+
+</section>
 
 </header>
-<main>
 
-<!-- SECCIÓN REGISTRO -->
-<section class="registro">
+<!-- HERO -->
 
-    <h2>Crear Cuenta o Acceder</h2>
+<section class="hero">
 
-    <p>
-        Únete a nuestra plataforma automotriz y disfruta de una experiencia
-        moderna, rápida y segura para explorar vehículos y servicios.
-    </p>
+<div class="hero-overlay"></div>
 
-    <p>
-        Nuestro sistema está diseñado para brindar una navegación sencilla,
-        organizada y adaptada a diferentes dispositivos y tamaños de pantalla.
-    </p>
+<div class="hero-content">
 
-    <p>
-        Regístrate para guardar tus autos favoritos, acceder a funciones
-        exclusivas y mantener toda tu información organizada desde cualquier dispositivo.
-    </p>
+<span class="tag">
+BIENVENIDO A CAREOUT
+</span>
 
-    <p>
-        También podrás explorar contenido actualizado, revisar vehículos destacados
-        y mantener un acceso más rápido a las opciones de la plataforma.
-    </p>
+<h1>
+Accede o crea tu cuenta
+</h1>
 
-    <p>
-        Si ya cuentas con una cuenta, inicia sesión para continuar explorando
-        nuestro catálogo y descubrir nuevas opciones disponibles.
-    </p>
+<p>
+Explora vehículos premium, guarda tus favoritos y disfruta una experiencia automotriz moderna y segura.
+</p>
 
-    <section class="cards">
+<div class="hero-buttons">
 
-        <!-- CARD REGISTRO -->
-        <article class="carda">
+<a href="REGISTROR.html" class="btn-principal">
+Crear cuenta
+</a>
 
-            <figure>
-                <img src="carro en la ciudad.webp" alt="Auto en la ciudad">
-            </figure>
+<a href="Login.html" class="btn-secundario">
+Iniciar sesión
+</a>
 
-            <h2>Registrarse</h2>
+</div>
 
-            <p>
-                Crea una cuenta personal para acceder a todos nuestros servicios,
-                guardar vehículos favoritos y disfrutar de una experiencia más completa.
-            </p>
-
-            <p>
-                El registro es rápido, sencillo y te permitirá acceder
-                a nuevas funciones dentro de la plataforma automotriz.
-            </p>
-
-            <p>
-                Podrás personalizar tu perfil y mantener organizada
-                tu información de manera segura y eficiente.
-            </p>
-
-            <a href="REGISTROR.html">Crear Cuenta</a>
-
-        </article>
-
-        <!-- CARD ACCESO -->
-        <article class="carda">
-
-            <figure>
-                <img src="carro_ciudad-de-frente.webp" alt="Auto de frente en ciudad">
-            </figure>
-
-            <h2>Acceder</h2>
-
-            <p>
-                Ingresa a tu cuenta para revisar tus autos favoritos,
-                consultar información guardada y continuar tu experiencia.
-            </p>
-
-            <p>
-                Mantén acceso rápido a tu perfil y explora fácilmente
-                todas las herramientas y opciones disponibles.
-            </p>
-
-            <p>
-                Accede de forma segura desde cualquier lugar y continúa
-                navegando dentro de nuestra plataforma automotriz.
-            </p>
-
-            <a href="Login.html">Ir a mi cuenta</a>
-
-        </article>
-
-    </section>
+</div>
 
 </section>
 
-</main>
+<!-- INFO -->
+
+<section class="info-section">
+
+<div class="info-title">
+
+<span>EXPERIENCIA PREMIUM</span>
+
+<h2>Todo en un solo lugar</h2>
+
+<p>
+Con CareOut puedes explorar autos, guardar favoritos y acceder a herramientas exclusivas desde cualquier dispositivo.
+</p>
+
+</div>
+
+<div class="cards">
+
+<!-- CARD -->
+
+<article class="card-acceso">
+
+<div class="card-img">
+<img src="carro en la ciudad.webp" alt="Registro">
+</div>
+
+<div class="card-content">
+
+<div class="icon">
+<i class="fa-solid fa-user-plus"></i>
+</div>
+
+<h3>Crear cuenta</h3>
+
+<p>
+Regístrate para acceder a funciones exclusivas, guardar autos favoritos y personalizar tu experiencia.
+</p>
+
+<ul>
+
+<li>
+<i class="fa-solid fa-check"></i>
+Acceso rápido
+</li>
+
+<li>
+<i class="fa-solid fa-check"></i>
+Favoritos sincronizados
+</li>
+
+<li>
+<i class="fa-solid fa-check"></i>
+Perfil personalizado
+</li>
+
+</ul>
+
+<a href="REGISTROR.html">
+Crear cuenta
+</a>
+
+</div>
+
+</article>
+
+<!-- CARD -->
+
+<article class="card-acceso">
+
+<div class="card-img">
+<img src="carro_ciudad-de-frente.webp" alt="Acceder">
+</div>
+
+<div class="card-content">
+
+<div class="icon">
+<i class="fa-solid fa-right-to-bracket"></i>
+</div>
+
+<h3>Iniciar sesión</h3>
+
+<p>
+Ingresa a tu cuenta para continuar explorando vehículos y acceder a toda tu información guardada.
+</p>
+
+<ul>
+
+<li>
+<i class="fa-solid fa-check"></i>
+Acceso seguro
+</li>
+
+<li>
+<i class="fa-solid fa-check"></i>
+Historial guardado
+</li>
+
+<li>
+<i class="fa-solid fa-check"></i>
+Experiencia rápida
+</li>
+
+</ul>
+
+<a href="Login.html">
+Ir a mi cuenta
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<!-- BENEFICIOS -->
+
+<section class="beneficios">
+
+<div class="beneficio">
+
+<i class="fa-solid fa-car-side"></i>
+
+<h3>Autos premium</h3>
+
+<p>
+Explora deportivos, SUVs y vehículos modernos.
+</p>
+
+</div>
+
+<div class="beneficio">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Seguridad</h3>
+
+<p>
+Protección y navegación segura en toda la plataforma.
+</p>
+
+</div>
+
+<div class="beneficio">
+
+<i class="fa-solid fa-mobile-screen-button"></i>
+
+<h3>Multiplataforma</h3>
+
+<p>
+Accede desde computadora, tablet o celular.
+</p>
+
+</div>
+
+</section>
+
 <!-- CTA -->
+
 <section class="cta">
-    <h2>¿Listo para tu auto?</h2>
-    <h3>Encuentra nuestras Concesionarias!
-        y descubre la experiencia de comprar un auto con nosotros.</h3>
-    <a href="mapa.html" class="btn">Encuentranos! </a>
+
+<div class="cta-overlay"></div>
+
+<div class="cta-content">
+
+<h2>
+¿Listo para encontrar tu próximo auto?
+</h2>
+
+<p>
+Visita nuestras concesionarias y descubre la experiencia CareOut.
+</p>
+
+<a href="mapa.html">
+Encuéntranos
+</a>
+
+</div>
+
 </section>
 
-
-
-
-
-
-</section>
 <!-- FOOTER -->
-<footer class="footer-pro">
 
-    <div class="footer-top">
+<footer class="footer">
 
-        <div class="footer-box">
-            <h2>CareOut</h2>
-            <p>Innovación en movimiento. Descubre autos que se adaptan a tu estilo de vida.</p>
-        </div>
+<div class="footer-grid">
 
-        <div class="footer-box">
-            <h3>Navegación</h3>
-            <ul>
-                <li><a href="sigh up.html">Acceder</a></li>
-                <li><a href="COMMPRAR.html">Comprar</a></li>
-                <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
-                <li><a href="equipo.html">Contacto</a></li>
-            </ul>
-        </div>
+<div class="footer-box">
 
-         <div class="footer-box">
-            <h3>Síguenos</h3>
-            <nav class="social-icons">
-                <a href="https://www.facebook.com/careout4am"><img src="facebookpn.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/careout_4am/"><img src="instapn.jpg" alt="Instagram"></a>
-                
-            </nav>
-        </div>
+<img src="nuevo-logo.webp" alt="Logo CareOut">
 
+<p>
+Innovación en movimiento. Descubre autos que se adaptan a tu estilo de vida.
+</p>
 
-        
+</div>
 
-    </div>
+<div class="footer-box">
 
-    <div class="footer-bottom">
-        <p>&copy; 2026 CareOut | Todos los derechos reservados</p>
-    </div>
+<h3>Navegación</h3>
+
+<ul>
+
+<li><a href="#">Acceder</a></li>
+<li><a href="#">Comprar</a></li>
+<li><a href="#">Servicios</a></li>
+<li><a href="#">Contacto</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Servicios</h3>
+
+<ul>
+
+<li><a href="#">Mantenimiento</a></li>
+<li><a href="#">Diagnóstico</a></li>
+<li><a href="#">Reparaciones</a></li>
+<li><a href="#">Tecnología</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Síguenos</h3>
+
+<div class="social">
+
+<a href="#">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-x-twitter"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 CareOut | Todos los derechos reservados
+
+</div>
 
 </footer>
-<!-- ===========================
-SCRIPT
-=========================== -->
-<script src="darkmode.js"></script>
-<script src="bajar.js"></script>
-<script src="scroll.js"></script>
-<script src="cookies.js"></script>
-<script src="java.js"></script>
-
 
 </body>
 </html>

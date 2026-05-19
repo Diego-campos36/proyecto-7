@@ -1,196 +1,420 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login | CareOut</title>
-<link rel="stylesheet" href="estilos.css">
+
+<title>CareOut | Iniciar sesión</title>
+
+<link rel="stylesheet" href="login.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header class="header">
 
-    <section class="header-container">
+<section class="header-container">
 
-        <figure class="logo">
-            <a href="index.html">
-                <img src="nuevo-logo.webp" alt="Logo principal de CareOut">
-            </a>
-        </figure>
+<figure class="logo">
 
-        <nav class="nav" id="nav">
+<a href="index.html">
+<img src="nuevo-logo.webp" alt="CareOut">
+</a>
 
-            <ul>
+</figure>
 
-                <!-- ACCEDER -->
-                <li class="submenu">
-                    <a href="sigh up.html">
-                        Acceder <i class="fa-solid fa-angle-down"></i>
-                    </a>
+<nav class="nav">
 
-                    <ul class="dropdown">
-                        <li><a href="Login.html">Iniciar sesión</a></li>
-                        <li><a href="REGISTROR.html">Crear cuenta</a></li>
-                    </ul>
-                </li>
+<ul>
 
-                <!-- COMPRAR -->
-                <li class="submenu">
-                    <a href="COMMPRAR.html">
-                        Comprar <i class="fa-solid fa-angle-down"></i>
-                    </a>
+<li class="submenu">
 
-                    <ul class="dropdown">
-                        <li><a href="CATALOGO.html">catalogo</a></li>
-                        <li><a href="mapa.html">mapa</a></li>
-                    </ul>
+<a href="#">
+<i class="fa-solid fa-user"></i>
+Acceder
+<i class="fa-solid fa-angle-down"></i>
+</a>
 
-                </li>
+<ul class="dropdown">
 
-                <!-- SERVICIOS -->
-                <li class="submenu">
-                    <a href="AUTOSERVICIOO.html">
-                        Servicios <i class="fa-solid fa-angle-down"></i>
-                    </a>
+<li><a href="Login.html">Iniciar sesión</a></li>
 
-                    <ul class="dropdown">
-                        <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
-                        <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
-                        <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
-                        <li><a href="TECNOLOGIA.html">Tecnología</a></li>
-                    </ul>
-                </li>
+<li><a href="REGISTROR.html">Crear cuenta</a></li>
 
-                <!-- CONTACTO -->
-                <li class="submenu">
-                    <a href="CONTACTO.html">
-                        Contacto <i class="fa-solid fa-angle-down"></i>
-                    </a>
-                </li>
+</ul>
 
-                <!-- NOSOTROS -->
-                <li class="submenu">
-                    <a href="equipo.html">
-                        Nosotros <i class="fa-solid fa-angle-down"></i>
-                    </a>
-                </li>
+</li>
 
-            </ul>
+<li class="submenu">
 
-        </nav>
+<a href="#">
+<i class="fa-solid fa-cart-shopping"></i>
+Comprar
+<i class="fa-solid fa-angle-down"></i>
+</a>
 
-        <div class="hamburger" id="btn-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+<ul class="dropdown">
 
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<li><a href="CATALOGO.html">Catálogo</a></li>
 
-        <button class="favoritos-icono" id="btnFavoritos">
-            <i class="fa-solid fa-heart"></i>
-            <span id="contadorFav">0</span>
-        </button>
+<li><a href="mapa.html">Mapa</a></li>
 
-    </section>
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="#">
+<i class="fa-solid fa-screwdriver-wrench"></i>
+Servicios
+<i class="fa-solid fa-angle-down"></i>
+</a>
+
+<ul class="dropdown">
+
+<li><a href="#">Mantenimiento</a></li>
+
+<li><a href="#">Diagnóstico</a></li>
+
+<li><a href="#">Reparaciones</a></li>
+
+<li><a href="#">Tecnología</a></li>
+
+</ul>
+
+</li>
+
+<li>
+<a href="#">
+<i class="fa-solid fa-phone"></i>
+Contacto
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="fa-solid fa-users"></i>
+Nosotros
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+<button class="favoritos-icono">
+
+<i class="fa-solid fa-heart"></i>
+
+<span>0</span>
+
+</button>
+
+</section>
 
 </header>
 
-<main class="logins">
+<!-- HERO -->
 
-    <div class="login">
+<section class="hero-login">
 
-        
-        <form id="loginForm">
+<div class="hero-overlay"></div>
 
-            <label for="usuario">Usuario o correo</label>
-            <input type="text" id="usuario" placeholder="Usuario o correo" required>
+<div class="hero-content">
 
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" placeholder="Contraseña" required>
+<span class="tag">
+PLATAFORMA CAREOUT
+</span>
 
-            <button type="submit">Entrar</button>
+<h1>
+Accede a tu cuenta
+</h1>
 
-            <p id="mensaje"></p>
+<p>
+Gestiona tus favoritos, explora vehículos premium y disfruta una experiencia moderna y segura.
+</p>
 
-            <p>¿No tienes cuenta?</p>
+</div>
 
-            <button type="button"
-            onclick="window.location.href='REGISTROR.html'">
-                Registrarse
-            </button>
+</section>
 
-        </form>
+<!-- LOGIN -->
 
-    </div>
+<main class="login-main">
+
+<section class="login-container">
+
+<!-- FORMULARIO -->
+
+<div class="login-box">
+
+<div class="login-title">
+
+<i class="fa-solid fa-user-lock"></i>
+
+<h2>Iniciar sesión</h2>
+
+<p>
+Ingresa tus datos para continuar en CareOut.
+</p>
+
+</div>
+
+<form id="loginForm">
+
+<div class="input-box">
+
+<label>Usuario o correo</label>
+
+<div class="input-content">
+
+<i class="fa-solid fa-envelope"></i>
+
+<input type="text"
+id="usuario"
+placeholder="Ingresa tu correo o usuario"
+required>
+
+</div>
+
+</div>
+
+<div class="input-box">
+
+<label>Contraseña</label>
+
+<div class="input-content">
+
+<i class="fa-solid fa-lock"></i>
+
+<input type="password"
+id="password"
+placeholder="Ingresa tu contraseña"
+required>
+
+</div>
+
+</div>
+
+<div class="extras-login">
+
+<label class="remember">
+
+<input type="checkbox">
+
+Recordarme
+
+</label>
+
+<a href="#">
+¿Olvidaste tu contraseña?
+</a>
+
+</div>
+
+<button type="submit" class="btn-login">
+
+<i class="fa-solid fa-right-to-bracket"></i>
+
+Entrar
+
+</button>
+
+<p id="mensaje"></p>
+
+<div class="linea">
+<span>o</span>
+</div>
+
+<p class="registro-texto">
+¿No tienes cuenta?
+</p>
+
+<a href="REGISTROR.html" class="btn-register">
+
+<i class="fa-solid fa-user-plus"></i>
+
+Crear cuenta
+
+</a>
+
+</form>
+
+</div>
+
+<!-- BENEFICIOS -->
+
+<div class="login-info">
+
+<h3>
+Al iniciar sesión obtienes:
+</h3>
+
+<div class="beneficio">
+
+<div class="icono">
+<i class="fa-solid fa-car-side"></i>
+</div>
+
+<div>
+
+<h4>Autos exclusivos</h4>
+
+<p>
+Accede a nuestro catálogo premium.
+</p>
+
+</div>
+
+</div>
+
+<div class="beneficio">
+
+<div class="icono">
+<i class="fa-solid fa-heart"></i>
+</div>
+
+<div>
+
+<h4>Favoritos guardados</h4>
+
+<p>
+Guarda tus vehículos favoritos fácilmente.
+</p>
+
+</div>
+
+</div>
+
+<div class="beneficio">
+
+<div class="icono">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+
+<div>
+
+<h4>Seguridad garantizada</h4>
+
+<p>
+Protección avanzada para tus datos.
+</p>
+
+</div>
+
+</div>
+
+<div class="beneficio">
+
+<div class="icono">
+<i class="fa-solid fa-bolt"></i>
+</div>
+
+<div>
+
+<h4>Experiencia rápida</h4>
+
+<p>
+Navegación moderna y optimizada.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 </main>
 
-<footer class="footer-pro">
+<!-- FOOTER -->
 
-    <div class="footer-top">
+<footer class="footer">
 
-        <div class="footer-box">
+<div class="footer-grid">
 
-            <!-- CAMBIADO A H3 PARA NO REPETIR H1 -->
-            <h3>CareOut</h3>
+<div class="footer-box">
 
-            <p>
-                Innovación en movimiento.
-                Descubre autos que se adaptan a tu estilo de vida.
-            </p>
+<img src="nuevo-logo.webp" alt="CareOut">
 
-        </div>
+<p>
+Innovación en movimiento. Descubre autos que se adaptan a tu estilo de vida.
+</p>
 
-        <div class="footer-box">
+</div>
 
-            <h3>Navegación</h3>
+<div class="footer-box">
 
-            <ul>
-                <li><a href="sigh up.html">Acceder</a></li>
-                <li><a href="COMMPRAR.html">Comprar</a></li>
-                <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
-                <li><a href="equipo.html">Contacto</a></li>
-            </ul>
+<h3>Navegación</h3>
 
-        </div>
+<ul>
 
-        <div class="footer-box">
+<li><a href="#">Acceder</a></li>
+<li><a href="#">Comprar</a></li>
+<li><a href="#">Servicios</a></li>
+<li><a href="#">Contacto</a></li>
 
-            <h3>Síguenos</h3>
+</ul>
 
-            <nav class="social-icons">
+</div>
 
-                <a href="https://www.facebook.com/careout4am">
-                    <img src="facebookpn.png"
-                    alt="Logo oficial de Facebook">
-                </a>
+<div class="footer-box">
 
-                <a href="https://www.instagram.com/careout_4am/">
-                    <img src="instapn.jpg"
-                    alt="Logo oficial de Instagram">
-                </a>
+<h3>Servicios</h3>
 
-            </nav>
+<ul>
 
-        </div>
+<li><a href="#">Mantenimiento</a></li>
+<li><a href="#">Diagnóstico</a></li>
+<li><a href="#">Reparaciones</a></li>
+<li><a href="#">Tecnología</a></li>
 
-    </div>
+</ul>
 
-    <div class="footer-bottom">
-        <p>&copy; 2026 CareOut | Todos los derechos reservados</p>
-    </div>
+</div>
+
+<div class="footer-box">
+
+<h3>Síguenos</h3>
+
+<div class="social">
+
+<a href="#">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fa-brands fa-x-twitter"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 CareOut | Todos los derechos reservados
+
+</div>
 
 </footer>
 
 <script src="login.js"></script>
-<script src="darkmode.js"></script>
-<script src="bajar.js"></script>
-<script src="scroll.js"></script>
-<script src="cookies.js"></script>
-<script src="java.js"></script>
 
 </body>
 </html>
