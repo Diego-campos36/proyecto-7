@@ -1,461 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<title>CareOut | Nosotros</title>
 
-<link rel="icon"
-href="nuevo-logo.webp"
-type="image/webp">
+<link rel="icon" href="nuevo-logo.webp" type="image/webp">
 
-<!-- SOLO UN H1 -->
-<title>Nosotros | CareOut</title>
+<link rel="stylesheet" href="nosotros.css">
 
-<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Fuente -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
 rel="stylesheet">
 
 </head>
 
 <body>
 
+<!-- LOADER -->
+<div class="loader">
+    <div class="loader-car">
+        <i class="fa-solid fa-car-side"></i>
+    </div>
+</div>
+
+<!-- HEADER -->
 <header class="header">
 
     <section class="header-container">
 
         <figure class="logo">
-
             <a href="index.html">
-
-                <img src="nuevo-logo.webp"
-                alt="Logo oficial de CareOut">
-
+                <img src="nuevo-logo.webp" alt="Logo CareOut">
             </a>
-
         </figure>
 
         <nav class="nav" id="nav">
 
             <ul>
 
-                <!-- ACCEDER -->
                 <li class="submenu">
-
-                    <a href="sigh up.html">
-                        Acceder <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                    <ul class="dropdown">
-
-                        <li>
-                            <a href="Login.html">
-                                Iniciar sesión
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="REGISTROR.html">
-                                Crear cuenta
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </li>
-
-                <!-- COMPRAR -->
-                <li class="submenu">
-
-                    <a href="COMMPRAR.html">
-                        Comprar <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                    <ul class="dropdown">
-
-                        <li>
-                            <a href="CATALOGO.html">
-                                Catálogo
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="mapa.html">
-                                Mapa
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </li>
-
-                <!-- SERVICIOS -->
-                <li class="submenu">
-
-                    <a href="AUTOSERVICIOO.html">
-                        Servicios <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                    <ul class="dropdown">
-
-                        <li>
-                            <a href="MANTENIMIENTO.html">
-                                Mantenimiento
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="DIAGNOSTICO.html">
-                                Diagnóstico
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="Hojalatería y pintura.html">
-                                Reparaciones
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="TECNOLOGIA.html">
-                                Tecnología
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </li>
-
-                <!-- CONTACTO -->
-                <li class="submenu">
-
-                    <a href="CONTACTO.html">
-                        Contacto <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                </li>
-
-                <!-- NOSOTROS -->
-                <li class="submenu">
-
-                    <a href="equipo.html">
-                        Nosotros <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                </li>
-
-            </ul>
-
-        </nav>
-
-        <div class="hamburger" id="btn-menu">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </div>
-
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-        <button class="favoritos-icono" id="btnFavoritos">
-
-            <i class="fa-solid fa-heart"></i>
-
-            <span id="contadorFav">
-                0
-            </span>
-
-        </button>
-
-    </section>
-
-</header>
-
-<main>
-
-<!-- HERO -->
-<section class="hero-nosotros">
-
-    <div class="overlay">
-
-       
-        <p>
-            Desarrollo web automotriz moderno
-        </p>
-
-    </div>
-
-</section>
-
-<!-- NOSOTROS -->
-<section class="seccion contenedor">
-
-    <p class="descripcion">
-
-        Somos estudiantes del CBT No. 52 enfocados
-        en crear soluciones digitales modernas para
-        el mundo automotriz.
-
-    </p>
-
-    <p class="descripcion">
-
-        Nuestro objetivo es diseñar una plataforma
-        visualmente atractiva, fácil de usar y
-        optimizada para mejorar la experiencia
-        del usuario.
-
-    </p>
-
-    <p class="descripcion">
-
-        Este proyecto combina diseño web,
-        programación y trabajo en equipo para
-        desarrollar una página moderna y funcional.
-
-    </p>
-
-    <p class="descripcion">
-
-        Cada integrante aporta conocimientos en
-        frontend, backend, diseño UI y gestión
-        de contenido.
-
-    </p>
-
-    <p class="descripcion">
-
-        Buscamos crear una experiencia profesional
-        que refleje esfuerzo, dedicación y aprendizaje
-        tecnológico.
-
-    </p>
-
-    <h2 class="subtitulo">
-        Nuestro equipo
-    </h2>
-
-</section>
-
-<!-- EQUIPO -->
-<div class="equipo">
-
-    <!-- CARD 1 -->
-    <div class="card">
-
-        <h2>
-            Diego Alemán
-        </h2>
-
-        <span>
-            Jefe de equipo
-        </span>
-
-        <p>
-            Encargado de supervisar el proyecto
-            completo y coordinar al equipo.
-        </p>
-
-        <p>
-            Revisa constantemente el código
-            y detecta errores importantes.
-        </p>
-
-        <p>
-            También administra tareas y verifica
-            que los objetivos se cumplan.
-        </p>
-
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="card">
-
-        <h2>
-            Luis Guerrero
-        </h2>
-
-        <span>
-            Desarrollador
-        </span>
-
-        <p>
-            Responsable de desarrollar funciones
-            importantes del sitio web.
-        </p>
-
-        <p>
-            Participa en la creación de herramientas
-            y corrección de errores.
-        </p>
-
-        <p>
-            Optimiza la velocidad y la experiencia
-            de navegación.
-        </p>
-
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="card">
-
-        <h2>
-            Alan Pulido
-        </h2>
-
-        <span>
-            Diseño UI
-        </span>
-
-        <p>
-            Encargado del diseño visual y de crear
-            interfaces modernas y atractivas.
-        </p>
-
-        <p>
-            Organiza colores, tipografías y
-            elementos gráficos.
-        </p>
-
-        <p>
-            También adapta el diseño para
-            dispositivos móviles.
-        </p>
-
-    </div>
-
-    <!-- CARD 4 -->
-    <div class="card">
-
-        <h2>
-            Oscar Ramirez Mendoza
-        </h2>
-
-        <span>
-            Backend
-        </span>
-
-        <p>
-            Responsable de la lógica interna
-            y funcionamiento del sistema.
-        </p>
-
-        <p>
-            Trabaja con bases de datos y
-            conexiones del servidor.
-        </p>
-
-        <p>
-            Optimiza procesos para mejorar
-            el rendimiento del sistema.
-        </p>
-
-    </div>
-
-    <!-- CARD 5 -->
-    <div class="card">
-
-        <h2>
-            Jazmín Magdaleno
-        </h2>
-
-        <span>
-            Contenido
-        </span>
-
-        <p>
-            Encargada de redactar textos claros
-            y organizar la información.
-        </p>
-
-        <p>
-            Supervisa ortografía, presentación
-            y coherencia visual.
-        </p>
-
-        <p>
-            También colabora en ideas creativas
-            para el sitio web.
-        </p>
-
-    </div>
-
-</div>
-
-<!-- CTA -->
-<section class="cta">
-
-    <h2>
-        ¿Listo para tu auto?
-    </h2>
-
-    <h3>
-        Encuentra nuestras concesionarias
-    </h3>
-
-    <a href="mapa.html"
-    class="btn">
-
-        ¡Encuéntranos!
-
-    </a>
-
-</section>
-
-</main>
-
-<!-- FOOTER -->
-<footer class="footer-pro">
-
-    <div class="footer-top">
-
-        <div class="footer-box">
-
-            <h2>
-                CareOut
-            </h2>
-
-            <p>
-                Su mejor opción.
-            </p>
-
-        </div>
-
-        <nav class="footer-box">
-
-            <h3>
-                Navegación
-            </h3>
-
-            <ul>
-
-                <li>
                     <a href="sigh up.html">
                         Acceder
+                        <i class="fa-solid fa-angle-down"></i>
                     </a>
+
+                    <ul class="dropdown">
+                        <li><a href="Login.html">Iniciar sesión</a></li>
+                        <li><a href="REGISTROR.html">Crear cuenta</a></li>
+                    </ul>
                 </li>
 
-                <li>
+                <li class="submenu">
                     <a href="COMMPRAR.html">
                         Comprar
+                        <i class="fa-solid fa-angle-down"></i>
                     </a>
+
+                    <ul class="dropdown">
+                        <li><a href="CATALOGO.html">Catálogo</a></li>
+                        <li><a href="mapa.html">Mapa</a></li>
+                    </ul>
                 </li>
 
-                <li>
+                <li class="submenu">
                     <a href="AUTOSERVICIOO.html">
                         Servicios
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                    <ul class="dropdown">
+                        <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
+                        <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
+                        <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
+                        <li><a href="TECNOLOGIA.html">Tecnología</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="CONTACTO.html">
+                        Contacto
                     </a>
                 </li>
 
                 <li>
-                    <a href="equipo.html">
+                    <a href="equipo.html" class="active">
                         Nosotros
                     </a>
                 </li>
@@ -464,49 +97,391 @@ rel="stylesheet">
 
         </nav>
 
+        <div class="header-actions">
+
+            <button class="btn-dark">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="favoritos-icono">
+                <i class="fa-solid fa-heart"></i>
+                <span>0</span>
+            </button>
+
+        </div>
+
+        <div class="hamburger" id="btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </section>
+
+</header>
+
+<!-- HERO -->
+<section class="hero-nosotros">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="mini-tag">
+            <i class="fa-solid fa-users"></i>
+            Equipo CareOut
+        </span>
+
+        <h1>
+            Innovación automotriz y desarrollo web moderno
+        </h1>
+
+        <p>
+            Somos un equipo apasionado por el diseño,
+            la programación y la tecnología automotriz.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#equipo" class="btn-principal">
+                Ver equipo
+            </a>
+
+            <a href="CONTACTO.html" class="btn-secundario">
+                Contactarnos
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+
+    <div class="stat-box">
+        <h2>5+</h2>
+        <p>Integrantes</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>100%</h2>
+        <p>Creatividad</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>24/7</h2>
+        <p>Ideas nuevas</p>
+    </div>
+
+</section>
+
+<!-- INFO -->
+<section class="about-section">
+
+    <div class="about-image">
+        <img src="carro blanco.webp" alt="Equipo CareOut">
+    </div>
+
+    <div class="about-text">
+
+        <span class="tag">
+            Sobre nosotros
+        </span>
+
+        <h2>
+            Creamos experiencias digitales modernas
+        </h2>
+
+        <p>
+            Nuestro proyecto combina diseño web,
+            experiencia de usuario y desarrollo
+            automotriz para construir una plataforma
+            visualmente moderna y funcional.
+        </p>
+
+        <div class="about-features">
+
+            <div class="feature">
+                <i class="fa-solid fa-code"></i>
+                <span>Frontend moderno</span>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-palette"></i>
+                <span>Diseño UI/UX</span>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-server"></i>
+                <span>Backend optimizado</span>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-car"></i>
+                <span>Temática automotriz</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EQUIPO -->
+<section class="team-section" id="equipo">
+
+    <div class="section-title">
+
+        <span>Nuestro equipo</span>
+
+        <h2>
+            Personas detrás de CareOut
+        </h2>
+
+    </div>
+
+    <div class="team-grid">
+
+        <!-- CARD -->
+        <article class="team-card">
+
+            <div class="team-top">
+                <img src="https://i.pravatar.cc/300?img=12" alt="Diego Alemán">
+            </div>
+
+            <div class="team-content">
+
+                <h3>Diego Alemán</h3>
+
+                <span class="role">
+                    Jefe de equipo
+                </span>
+
+                <p>
+                    Coordina el proyecto completo,
+                    supervisa el desarrollo y verifica
+                    la calidad del sistema.
+                </p>
+
+                <div class="team-icons">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- CARD -->
+        <article class="team-card">
+
+            <div class="team-top">
+                <img src="https://i.pravatar.cc/300?img=15" alt="Luis Guerrero">
+            </div>
+
+            <div class="team-content">
+
+                <h3>Luis Guerrero</h3>
+
+                <span class="role">
+                    Desarrollador
+                </span>
+
+                <p>
+                    Desarrolla herramientas importantes,
+                    mejora el rendimiento y optimiza
+                    la experiencia del usuario.
+                </p>
+
+                <div class="team-icons">
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- CARD -->
+        <article class="team-card">
+
+            <div class="team-top">
+                <img src="https://i.pravatar.cc/300?img=18" alt="Alan Pulido">
+            </div>
+
+            <div class="team-content">
+
+                <h3>Alan Pulido</h3>
+
+                <span class="role">
+                    Diseño UI
+                </span>
+
+                <p>
+                    Diseña interfaces modernas,
+                    organiza colores y mejora
+                    la apariencia visual del sitio.
+                </p>
+
+                <div class="team-icons">
+                    <i class="fa-solid fa-palette"></i>
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <i class="fa-brands fa-figma"></i>
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- CARD -->
+        <article class="team-card">
+
+            <div class="team-top">
+                <img src="https://i.pravatar.cc/300?img=20" alt="Oscar Ramírez">
+            </div>
+
+            <div class="team-content">
+
+                <h3>Oscar Ramírez</h3>
+
+                <span class="role">
+                    Backend
+                </span>
+
+                <p>
+                    Gestiona bases de datos,
+                    conexiones y optimización
+                    interna del sistema.
+                </p>
+
+                <div class="team-icons">
+                    <i class="fa-solid fa-database"></i>
+                    <i class="fa-solid fa-server"></i>
+                    <i class="fa-solid fa-shield"></i>
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- CARD -->
+        <article class="team-card">
+
+            <div class="team-top">
+                <img src="https://i.pravatar.cc/300?img=25" alt="Jazmín Magdaleno">
+            </div>
+
+            <div class="team-content">
+
+                <h3>Jazmín Magdaleno</h3>
+
+                <span class="role">
+                    Contenido
+                </span>
+
+                <p>
+                    Redacta textos claros,
+                    organiza contenido y mejora
+                    la comunicación visual.
+                </p>
+
+                <div class="team-icons">
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-book"></i>
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+
+    <div class="cta-box">
+
+        <h2>
+            Construyendo el futuro automotriz digital
+        </h2>
+
+        <p>
+            Descubre nuestros servicios y forma parte
+            de la experiencia CareOut.
+        </p>
+
+        <a href="COMMPRAR.html" class="btn-principal">
+            Explorar autos
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-pro">
+
+    <div class="footer-top">
+
         <div class="footer-box">
 
-            <h3>
-                Síguenos
-            </h3>
+            <h2>CareOut</h2>
 
-            <nav class="social-icons">
+            <p>
+                Innovación en movimiento y diseño
+                automotriz moderno.
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Navegación</h3>
+
+            <ul>
+                <li><a href="COMMPRAR.html">Comprar</a></li>
+                <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
+                <li><a href="CONTACTO.html">Contacto</a></li>
+                <li><a href="equipo.html">Nosotros</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Síguenos</h3>
+
+            <div class="social-icons">
 
                 <a href="https://www.facebook.com/careout4am">
-
-                    <img src="facebookpn.png"
-                    alt="Icono de Facebook de CareOut">
-
+                    <i class="fa-brands fa-facebook-f"></i>
                 </a>
 
                 <a href="https://www.instagram.com/careout_4am/">
-
-                    <img src="instapn.jpg"
-                    alt="Icono de Instagram de CareOut">
-
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
 
-            </nav>
+            </div>
 
         </div>
 
     </div>
 
     <div class="footer-bottom">
-
         <p>
-            &copy; 2026 CareOut | Todos los derechos reservados
+            © 2026 CareOut | Todos los derechos reservados
         </p>
-
     </div>
 
 </footer>
 
-<!-- SCRIPTS -->
-<script src="darkmode.js"></script>
-<script src="bajar.js"></script>
-<script src="scroll.js"></script>
-<script src="cookies.js"></script>
 <script src="java.js"></script>
 
 </body>

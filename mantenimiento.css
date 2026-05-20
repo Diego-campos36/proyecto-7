@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+
+/* HEADER */
+
+.header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    backdrop-filter:blur(18px);
+    background:rgba(10,10,15,.75);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.header-container{
+    max-width:1400px;
+    margin:auto;
+    padding:18px 5%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo img{
+    width:140px;
+}
+
+.nav ul{
+    display:flex;
+    gap:30px;
+}
+
+.nav ul li{
+    position:relative;
+}
+
+.nav ul li a{
+    color:white;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active{
+    color:#00bfff;
+}
+
+.dropdown{
+    position:absolute;
+    top:40px;
+    left:0;
+    background:#121826;
+    min-width:220px;
+    padding:15px;
+    border-radius:16px;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+}
+
+.submenu:hover .dropdown{
+    opacity:1;
+    visibility:visible;
+}
+
+.dropdown li{
+    margin:12px 0;
+}
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.btn-dark,
+.favoritos-icono{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-dark:hover,
+.favoritos-icono:hover{
+    background:#00bfff;
+    transform:translateY(-4px);
+}
+
+.hamburger{
+    display:none;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-mantenimiento{
+    min-height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url("lambo-calle.webp") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 120px 20px;
+}
+
+.hero-content{
+    max-width: 850px;
+    z-index: 2;
+}
+
+.mini-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: rgba(56,189,248,.15);
+    border: 1px solid rgba(56,189,248,.3);
+    border-radius: 40px;
+    margin-bottom: 25px;
+    color: #38bdf8;
+}
+
+.hero-content h1{
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    color: #d1d5db;
+    margin-bottom: 40px;
+}
+
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-principal,
+.btn-secundario{
+    padding: 16px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-principal{
+    background: #38bdf8;
+    color: white;
+}
+
+.btn-principal:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(56,189,248,.4);
+}
+
+.btn-secundario{
+    border: 1px solid rgba(255,255,255,.2);
+    color: white;
+}
+
+.btn-secundario:hover{
+    background: rgba(255,255,255,.1);
+}
+
+.floating-card{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 25px;
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #38bdf8;
+    animation: flotar 4s infinite ease-in-out;
+}
+
+.card-1{
+    top: 25%;
+    left: 10%;
+}
+
+.card-2{
+    top: 65%;
+    left: 15%;
+}
+
+.card-3{
+    top: 30%;
+    right: 10%;
+}
+
+@keyframes flotar{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* ================= STATS ================= */
+
+.stats-section{
+    width: 90%;
+    margin: auto;
+    margin-top: -70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+    position: relative;
+    z-index: 5;
+}
+
+.stat-box{
+    background: #111827;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.stat-box h2{
+    font-size: 3rem;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* ================= BENEFICIOS ================= */
+
+.beneficios-servicio{
+    width: 90%;
+    margin: 120px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+}
+
+.beneficio-card{
+    background: #111827;
+    padding: 40px;
+    border-radius: 30px;
+    transition: .4s;
+    border: 1px solid rgba(255,255,255,.05);
+}
+
+.beneficio-card:hover{
+    transform: translateY(-10px);
+    border-color: #38bdf8;
+}
+
+.beneficio-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: rgba(56,189,248,.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #38bdf8;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.beneficio-card h2{
+    margin-bottom: 15px;
+}
+
+/* ================= SERVICIOS ================= */
+
+.servicios-detalle{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.servicio-img img{
+    width: 100%;
+    border-radius: 35px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.4);
+}
+
+.tag-servicio{
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.servicio-info h2{
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.servicio-info p{
+    color: #d1d5db;
+    line-height: 1.8;
+}
+
+.checklist{
+    margin: 35px 0;
+    display: grid;
+    gap: 18px;
+}
+
+.check-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #111827;
+    padding: 18px;
+    border-radius: 18px;
+}
+
+.check-item i{
+    color: #38bdf8;
+}
+
+/* ================= GALERIA ================= */
+
+.galeria-servicio{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+    margin-bottom: 120px;
+}
+
+.galeria-card{
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.galeria-card img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.galeria-card:hover img{
+    transform: scale(1.1);
+}
+
+/* ================= CTA ================= */
+
+.cta-section{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 120px;
+}
+
+.cta-box{
+    background: linear-gradient(135deg,#0ea5e9,#2563eb);
+    padding: 80px 40px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.cta-box h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.cta-box p{
+    margin-bottom: 30px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer-pro{
+    background: #020617;
+    padding-top: 80px;
+}
+
+.footer-top{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.footer-box h2,
+.footer-box h3{
+    margin-bottom: 20px;
+}
+
+.footer-box p,
+.footer-box a{
+    color: #94a3b8;
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footer-box ul{
+    list-style: none;
+}
+
+.social-icons{
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.footer-bottom{
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid rgba(255,255,255,.08);
+    color: #94a3b8;
+}
+
+/* ================= SCROLL ================= */
+
+.scroll-top{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background: #38bdf8;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(56,189,248,.4);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:950px){
+
+    .nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .hero-content h1{
+        font-size: 3rem;
+    }
+
+    .floating-card{
+        display: none;
+    }
+
+    .servicio-info h2{
+        font-size: 2.3rem;
+    }
+
+    .cta-box h2{
+        font-size: 2.2rem;
+    }
+
+}

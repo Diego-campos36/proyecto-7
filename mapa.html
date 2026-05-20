@@ -19,44 +19,94 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <body>
 
 <!-- HEADER -->
-
 <header class="header">
 
-<div class="header-container">
+    <section class="header-container">
 
-<a href="index.html" class="logo">
+        <figure class="logo">
+            <a href="index.html">
+                <img src="nuevo-logo.webp" alt="Logo CareOut">
+            </a>
+        </figure>
 
-<img src="nuevo-logo.webp" alt="CareOut">
+        <nav class="nav" id="nav">
 
-</a>
+            <ul>
 
-<nav class="nav">
+                <li class="submenu">
+                    <a href="sigh up.html">
+                        Acceder
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
 
-<ul>
+                    <ul class="dropdown">
+                        <li><a href="Login.html">Iniciar sesión</a></li>
+                        <li><a href="REGISTROR.html">Crear cuenta</a></li>
+                    </ul>
+                </li>
 
-<li><a href="#">Inicio</a></li>
-<li><a href="#">Comprar</a></li>
-<li><a href="#">Servicios</a></li>
-<li><a href="#">Concesionarias</a></li>
-<li><a href="#">Contacto</a></li>
+                <li class="submenu">
+                    <a href="COMMPRAR.html">
+                        Comprar
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
 
-</ul>
+                    <ul class="dropdown">
+                        <li><a href="CATALOGO.html">Catálogo</a></li>
+                        <li><a href="mapa.html">Mapa</a></li>
+                    </ul>
+                </li>
 
-</nav>
+                <li class="submenu">
+                    <a href="AUTOSERVICIOO.html">
+                        Servicios
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
 
-<div class="header-buttons">
+                    <ul class="dropdown">
+                        <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
+                        <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
+                        <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
+                        <li><a href="TECNOLOGIA.html">Tecnología</a></li>
+                    </ul>
+                </li>
 
-<button class="btn-header">
-<i class="fa-solid fa-heart"></i>
-</button>
+                <li>
+                    <a href="CONTACTO.html">
+                        Contacto
+                    </a>
+                </li>
 
-<button class="btn-header">
-<i class="fa-solid fa-user"></i>
-</button>
+                <li>
+                    <a href="equipo.html" class="active">
+                        Nosotros
+                    </a>
+                </li>
 
-</div>
+            </ul>
 
-</div>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="btn-dark">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="favoritos-icono">
+                <i class="fa-solid fa-heart"></i>
+                <span>0</span>
+            </button>
+
+        </div>
+
+        <div class="hamburger" id="btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </section>
 
 </header>
 

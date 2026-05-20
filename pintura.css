@@ -1,0 +1,545 @@
+/* =========================
+GENERAL
+========================= */
+/* =========================
+IMPORTAR FUENTE
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =========================
+RESET
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #0b0b0f;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+.header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    backdrop-filter:blur(18px);
+    background:rgba(10,10,15,.75);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.header-container{
+    max-width:1400px;
+    margin:auto;
+    padding:18px 5%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo img{
+    width:140px;
+}
+
+.nav ul{
+    display:flex;
+    gap:30px;
+}
+
+.nav ul li{
+    position:relative;
+}
+
+.nav ul li a{
+    color:white;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active{
+    color:#00bfff;
+}
+
+.dropdown{
+    position:absolute;
+    top:40px;
+    left:0;
+    background:#121826;
+    min-width:220px;
+    padding:15px;
+    border-radius:16px;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+}
+
+.submenu:hover .dropdown{
+    opacity:1;
+    visibility:visible;
+}
+
+.dropdown li{
+    margin:12px 0;
+}
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.btn-dark,
+.favoritos-icono{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-dark:hover,
+.favoritos-icono:hover{
+    background:#00bfff;
+    transform:translateY(-4px);
+}
+
+.hamburger{
+    display:none;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero-pintura{
+    position: relative;
+    min-height: 100vh;
+    background:
+    linear-gradient(to right,
+    rgba(0,0,0,.8),
+    rgba(0,0,0,.4)),
+    url("carro-verde.webp") center/cover;
+    
+    display: flex;
+    align-items: center;
+    padding: 120px 10%;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+    180deg,
+    rgba(0,0,0,.3),
+    rgba(0,0,0,.8)
+    );
+}
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.mini-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.15);
+    backdrop-filter: blur(10px);
+    padding: 12px 22px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    font-size: .9rem;
+}
+
+.hero-content h1{
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.hero-content p{
+    color: #d1d1d1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-principal,
+.btn-secundario{
+    text-decoration: none;
+    padding: 16px 34px;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: .4s;
+}
+
+.btn-principal{
+    background: #00bfff;
+    color: white;
+}
+
+.btn-principal:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,191,255,.4);
+}
+
+.btn-secundario{
+    border: 1px solid rgba(255,255,255,.2);
+    color: white;
+    background: rgba(255,255,255,.05);
+}
+
+.btn-secundario:hover{
+    background: rgba(255,255,255,.15);
+}
+
+/* =========================
+BENEFICIOS
+========================= */
+
+.beneficios{
+    padding: 100px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 30px;
+    background: #111116;
+}
+
+.beneficio-card{
+    background: #17171f;
+    padding: 40px 30px;
+    border-radius: 24px;
+    transition: .4s;
+    border: 1px solid rgba(255,255,255,.05);
+}
+
+.beneficio-card:hover{
+    transform: translateY(-10px);
+    border-color: #00bfff;
+}
+
+.beneficio-card i{
+    font-size: 3rem;
+    color: #00bfff;
+    margin-bottom: 25px;
+}
+
+.beneficio-card h2{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.beneficio-card p{
+    color: #cfcfcf;
+    line-height: 1.7;
+}
+
+/* =========================
+TITULOS
+========================= */
+
+.titulo-section{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.titulo-section span{
+    color: #00bfff;
+    letter-spacing: 3px;
+    font-size: .9rem;
+}
+
+.titulo-section h2{
+    font-size: 3rem;
+    margin-top: 15px;
+}
+
+/* =========================
+GALERIA
+========================= */
+
+.galeria{
+    padding: 110px 10%;
+    background: #0d0d12;
+}
+
+.grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.img-box{
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    min-height: 320px;
+}
+
+.grande{
+    grid-column: span 2;
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.img-box:hover img{
+    transform: scale(1.1);
+}
+
+.img-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+    to top,
+    rgba(0,0,0,.85),
+    transparent
+    );
+
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+.img-overlay h3{
+    font-size: 1.5rem;
+}
+
+/* =========================
+PROCESO
+========================= */
+
+.proceso{
+    padding: 110px 10%;
+    background: #121218;
+}
+
+.pasos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 30px;
+}
+
+.paso{
+    background: #1a1a22;
+    border-radius: 24px;
+    padding: 40px 30px;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.paso:hover{
+    transform: translateY(-10px);
+}
+
+.paso span{
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgba(255,255,255,.08);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.paso h3{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.paso p{
+    color: #d2d2d2;
+    line-height: 1.7;
+}
+
+/* =========================
+STATS
+========================= */
+
+.stats{
+    padding: 100px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 25px;
+    background: linear-gradient(135deg,#00bfff,#0077ff);
+}
+
+.stat-box{
+    text-align: center;
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 40px;
+}
+
+.stat-box h2{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.stat-box p{
+    font-size: 1rem;
+}
+
+/* =========================
+CTA
+========================= */
+
+.cta-final{
+    padding: 120px 10%;
+    background:
+    linear-gradient(rgba(0,0,0,.8),
+    rgba(0,0,0,.8)),
+    url("lambo-calle.webp") center/cover;
+    
+    text-align: center;
+}
+
+.cta-content h2{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p{
+    color: #d7d7d7;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.footer-pro{
+    background: #09090c;
+    padding-top: 80px;
+}
+
+.footer-top{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.footer-box h2,
+.footer-box h3{
+    margin-bottom: 20px;
+}
+
+.footer-box p{
+    color: #bdbdbd;
+    line-height: 1.8;
+}
+
+.footer-box ul{
+    list-style: none;
+}
+
+.footer-box ul li{
+    margin-bottom: 15px;
+}
+
+.footer-box ul li a{
+    color: #d4d4d4;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-box ul li a:hover{
+    color: #00bfff;
+}
+
+.social-icons{
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.social-icons img:hover{
+    transform: scale(1.1);
+}
+
+.footer-bottom{
+    border-top: 1px solid rgba(255,255,255,.08);
+    text-align: center;
+    padding: 25px;
+    color: #a7a7a7;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .hero-content h1{
+        font-size: 3rem;
+    }
+
+    .grid-galeria{
+        grid-template-columns: 1fr;
+    }
+
+    .grande{
+        grid-column: span 1;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero-pintura{
+        padding: 140px 7%;
+    }
+
+    .hero-content h1{
+        font-size: 2.4rem;
+    }
+
+    .titulo-section h2{
+        font-size: 2rem;
+    }
+
+    .cta-content h2{
+        font-size: 2.2rem;
+    }
+
+}
