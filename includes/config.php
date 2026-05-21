@@ -23,7 +23,7 @@ declare(strict_types=1);
 define('DB_HOST', 'localhost');           
 define('DB_NAME', 'admin_4am7');   
 define('DB_USER', 'admin4am7');      
-define('DB_PASS', 'contraseña_segura');
+define('DB_PASS', 'HVqA5qm@od#r5jg7');
 
 // === Configuración general del sitio ===
 define('SITE_NAME', 'Código Activo - Portal Privado');
