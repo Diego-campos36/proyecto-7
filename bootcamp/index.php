@@ -21,6 +21,70 @@ rel="stylesheet">
 
 <body>
 
+<?php
+/* =========================
+CONFIGURACIÓN SIMPLE
+========================= */
+
+$autos = [
+
+[
+"imagen" => "lambo-calle.webp",
+"nombre" => "Lamborghini Huracán",
+"descripcion" => "640 HP · V10 · 325 km/h",
+"precio" => "$1,000,000",
+"badge" => "Premium",
+"clase" => "premium"
+],
+
+[
+"imagen" => "camaro.webp",
+"nombre" => "Chevrolet Camaro",
+"descripcion" => "V8 · Deportivo · Automático",
+"precio" => "$750,000",
+"badge" => "Sport",
+"clase" => "sport"
+],
+
+[
+"imagen" => "carro-verde.webp",
+"nombre" => "BMW M4",
+"descripcion" => "503 HP · Coupé premium",
+"precio" => "$900,000",
+"badge" => "Nuevo",
+"clase" => "electric"
+],
+
+[
+"imagen" => "camioneta.webp",
+"nombre" => "BMW X6",
+"descripcion" => "SUV inteligente · Tecnología premium",
+"precio" => "$620,000",
+"badge" => "SUV",
+"clase" => "suv"
+],
+
+[
+"imagen" => "carro blanco.webp",
+"nombre" => "Tesla Model S",
+"descripcion" => "600 km · 100% eléctrico",
+"precio" => "$1,200,000",
+"badge" => "Eléctrico",
+"clase" => "electric"
+],
+
+[
+"imagen" => "jeep gris.webp",
+"nombre" => "Jeep Wrangler",
+"descripcion" => "Off Road · Resistencia extrema",
+"precio" => "$680,000",
+"badge" => "4x4",
+"clase" => "suv"
+]
+
+];
+?>
+
 <!-- LOADER -->
 <div class="loader">
     <div class="loader-car">
@@ -28,14 +92,13 @@ rel="stylesheet">
     </div>
 </div>
 
-
 <!-- HEADER -->
 <header class="header">
 
     <section class="header-container">
 
         <figure class="logo">
-            <a href="index.html">
+            <a href="index.php">
                 <img src="logochad.webp" alt="Logo CareOut">
             </a>
         </figure>
@@ -45,51 +108,51 @@ rel="stylesheet">
             <ul>
 
                 <li class="submenu">
-                    <a href="sigh up.html">
+                    <a href="sigh up.php">
                         Acceder
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="Login.html">Iniciar sesión</a></li>
-                        <li><a href="REGISTROR.html">Crear cuenta</a></li>
+                        <li><a href="Login.php">Iniciar sesión</a></li>
+                        <li><a href="REGISTROR.php">Crear cuenta</a></li>
                     </ul>
                 </li>
 
                 <li class="submenu">
-                    <a href="COMMPRAR.html">
+                    <a href="COMMPRAR.php">
                         Comprar
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="CATALOGO.html">Catálogo</a></li>
-                        <li><a href="mapa.html">Mapa</a></li>
+                        <li><a href="CATALOGO.php">Catálogo</a></li>
+                        <li><a href="mapa.php">Mapa</a></li>
                     </ul>
                 </li>
 
                 <li class="submenu">
-                    <a href="AUTOSERVICIOO.html">
+                    <a href="AUTOSERVICIOO.php">
                         Servicios
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
-                        <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
-                        <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
-                        <li><a href="TECNOLOGIA.html">Tecnología</a></li>
+                        <li><a href="MANTENIMIENTO.php">Mantenimiento</a></li>
+                        <li><a href="DIAGNOSTICO.php">Diagnóstico</a></li>
+                        <li><a href="Hojalateria.php">Reparaciones</a></li>
+                        <li><a href="TECNOLOGIA.php">Tecnología</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="CONTACTO.html">
+                    <a href="CONTACTO.php">
                         Contacto
                     </a>
                 </li>
 
                 <li>
-                    <a href="equipo.html" class="active">
+                    <a href="equipo.php" class="active">
                         Nosotros
                     </a>
                 </li>
@@ -151,7 +214,7 @@ Superdeportivos, SUVs premium y tecnología automotriz inspirada en marcas como 
 
 <div class="hero-buttons">
 
-<a href="CATALOGO.html" class="btn-principal">
+<a href="CATALOGO.php" class="btn-principal">
 Explorar autos
 </a>
 
@@ -211,14 +274,14 @@ Ver colección
 
 <h2>Encuentra tu auto ideal</h2>
 
-<form class="barra-busqueda">
+<form class="barra-busqueda" method="GET">
 
 <div class="input-group">
 <i class="fa-solid fa-magnifying-glass"></i>
-<input type="text" placeholder="Buscar marca o modelo...">
+<input type="text" name="buscar" placeholder="Buscar marca o modelo...">
 </div>
 
-<select>
+<select name="categoria">
 <option>Todas las categorías</option>
 <option>SUV</option>
 <option>Deportivos</option>
@@ -250,30 +313,39 @@ Buscar
 
 <div class="autos-grid">
 
-<!-- CARD -->
+<?php foreach($autos as $auto): ?>
+
 <article class="card-auto">
 
 <div class="card-img">
 
-<img src="lambo-calle.webp" alt="Lamborghini">
+<img src="<?php echo $auto['imagen']; ?>" alt="<?php echo $auto['nombre']; ?>">
 
 <div class="overlay-card">
 <button>Ver más</button>
 </div>
 
-<span class="badge premium">Premium</span>
+<span class="badge <?php echo $auto['clase']; ?>">
+<?php echo $auto['badge']; ?>
+</span>
 
 </div>
 
 <div class="card-info">
 
-<h3>Lamborghini Huracán</h3>
+<h3>
+<?php echo $auto['nombre']; ?>
+</h3>
 
-<p>640 HP · V10 · 325 km/h</p>
+<p>
+<?php echo $auto['descripcion']; ?>
+</p>
 
 <div class="precio-box">
 
-<h4>$1,000,000</h4>
+<h4>
+<?php echo $auto['precio']; ?>
+</h4>
 
 <button class="fav-btn">
 <i class="fa-regular fa-heart"></i>
@@ -285,180 +357,7 @@ Buscar
 
 </article>
 
-<!-- CARD -->
-<article class="card-auto">
-
-<div class="card-img">
-
-<img src="camaro.webp" alt="Camaro">
-
-<div class="overlay-card">
-<button>Ver más</button>
-</div>
-
-<span class="badge sport">Sport</span>
-
-</div>
-
-<div class="card-info">
-
-<h3>Chevrolet Camaro</h3>
-
-<p>V8 · Deportivo · Automático</p>
-
-<div class="precio-box">
-
-<h4>$750,000</h4>
-
-<button class="fav-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-</div>
-
-</div>
-
-</article>
-
-<!-- CARD -->
-<article class="card-auto">
-
-<div class="card-img">
-
-<img src="carro-verde.webp" alt="BMW M4">
-
-<div class="overlay-card">
-<button>Ver más</button>
-</div>
-
-<span class="badge electric">Nuevo</span>
-
-</div>
-
-<div class="card-info">
-
-<h3>BMW M4</h3>
-
-<p>503 HP · Coupé premium</p>
-
-<div class="precio-box">
-
-<h4>$900,000</h4>
-
-<button class="fav-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-</div>
-
-</div>
-
-</article>
-
-<!-- CARD -->
-<article class="card-auto">
-
-<div class="card-img">
-
-<img src="camioneta.webp" alt="BMW SUV">
-
-<div class="overlay-card">
-<button>Ver más</button>
-</div>
-
-<span class="badge suv">SUV</span>
-
-</div>
-
-<div class="card-info">
-
-<h3>BMW X6</h3>
-
-<p>SUV inteligente · Tecnología premium</p>
-
-<div class="precio-box">
-
-<h4>$620,000</h4>
-
-<button class="fav-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-</div>
-
-</div>
-
-</article>
-
-<!-- CARD -->
-<article class="card-auto">
-
-<div class="card-img">
-
-<img src="carro blanco.webp" alt="Tesla">
-
-<div class="overlay-card">
-<button>Ver más</button>
-</div>
-
-<span class="badge electric">Eléctrico</span>
-
-</div>
-
-<div class="card-info">
-
-<h3>Tesla Model S</h3>
-
-<p>600 km · 100% eléctrico</p>
-
-<div class="precio-box">
-
-<h4>$1,200,000</h4>
-
-<button class="fav-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-</div>
-
-</div>
-
-</article>
-
-<!-- CARD -->
-<article class="card-auto">
-
-<div class="card-img">
-
-<img src="jeep gris.webp" alt="Jeep">
-
-<div class="overlay-card">
-<button>Ver más</button>
-</div>
-
-<span class="badge suv">4x4</span>
-
-</div>
-
-<div class="card-info">
-
-<h3>Jeep Wrangler</h3>
-
-<p>Off Road · Resistencia extrema</p>
-
-<div class="precio-box">
-
-<h4>$680,000</h4>
-
-<button class="fav-btn">
-<i class="fa-regular fa-heart"></i>
-</button>
-
-</div>
-
-</div>
-
-</article>
+<?php endforeach; ?>
 
 </div>
 
@@ -532,7 +431,7 @@ Conduce algo extraordinario
 Descubre vehículos que combinan lujo, tecnología y velocidad.
 </p>
 
-<a href="CATALOGO.html">
+<a href="CATALOGO.php">
 Explorar colección
 </a>
 
@@ -561,10 +460,10 @@ En CareOut conectamos personas con autos premium y experiencias modernas.
 <h3>Navegación</h3>
 
 <ul>
-<li><a href="sigh up.html">Acceder</a></li>
-<li><a href="COMMPRAR.html">Comprar</a></li>
-<li><a href="AUTOSERVICIOO.html">Servicios</a></li>
-<li><a href="CONTACTO.html">Contacto</a></li>
+<li><a href="sigh up.php">Acceder</a></li>
+<li><a href="COMMPRAR.php">Comprar</a></li>
+<li><a href="AUTOSERVICIOO.php">Servicios</a></li>
+<li><a href="CONTACTO.php">Contacto</a></li>
 </ul>
 
 </div>
@@ -574,10 +473,10 @@ En CareOut conectamos personas con autos premium y experiencias modernas.
 <h3>Servicios</h3>
 
 <ul>
-<li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
-<li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
-<li><a href="REPARACIONES.html">Reparaciones</a></li>
-<li><a href="TECNOLOGIA.html">Tecnología</a></li>
+<li><a href="MANTENIMIENTO.php">Mantenimiento</a></li>
+<li><a href="DIAGNOSTICO.php">Diagnóstico</a></li>
+<li><a href="REPARACIONES.php">Reparaciones</a></li>
+<li><a href="TECNOLOGIA.php">Tecnología</a></li>
 </ul>
 
 </div>
@@ -596,7 +495,6 @@ En CareOut conectamos personas con autos premium y experiencias modernas.
 <i class="fa-brands fa-instagram"></i>
 </a>
 
-
 </div>
 
 </div>
@@ -604,14 +502,13 @@ En CareOut conectamos personas con autos premium y experiencias modernas.
 </div>
 
 <div class="footer-bottom">
-© 2026 CareOut | Todos los derechos reservados
+© <?php echo date("Y"); ?> CareOut | Todos los derechos reservados
 </div>
 
 </footer>
 
 <!-- JAVASCRIPT -->
 <script src="script.js"></script>
-
 
 </body>
 </html>
