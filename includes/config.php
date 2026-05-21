@@ -49,4 +49,4 @@ function conectarDB() {
         // En desarrollo mostramos el error; en producción se oculta.
         die("Error de conexión: " . $e->getMessage());
     }
-}
+}?>
