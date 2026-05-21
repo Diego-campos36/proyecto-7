@@ -2,7 +2,7 @@
 --azul:#00aeff;
 --azul-oscuro:#0077ff;
 --negro:#050505;
---gris:#111;
+--gris:#484444;
 --blanco:#ffffff;
 }
 
@@ -27,7 +27,7 @@ transition:1s;
 
 .loader-car{
 font-size:4rem;
-color:#00aeff;
+color:#ddff00;
 animation:car 1s infinite alternate;
 }
 
@@ -130,7 +130,7 @@ transform:translateX(20px);
 }
 
 .hamburger{
-    display:none;
+    display:none
 }
 
 /* HERO */
@@ -894,4 +894,315 @@ color:#777;
     background: rgba(0,0,0,0.9);
     backdrop-filter: blur(10px);
     transition: 0.4s;
+}
+
+/* =========================================
+RESPONSIVE COMPLETO PARA CELULAR 📱
+AGREGA ESTO AL FINAL DE TU CSS
+========================================= */
+
+@media(max-width:1200px){
+
+    .hero-content h1{
+        font-size:4rem;
+    }
+
+    .banner-content h2{
+        font-size:3rem;
+    }
+
+}
+
+
+/* =========================
+TABLETS
+========================= */
+
+@media(max-width:900px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    /* HEADER */
+
+    .header-container{
+        padding:15px 20px;
+    }
+
+    .logo img{
+        width:120px;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+    .nav{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:280px;
+        height:100vh;
+        background:#0b0f19;
+        padding:120px 30px;
+        transition:.5s;
+        z-index:999;
+    }
+
+    .nav.active{
+        right:0;
+    }
+
+    .nav ul{
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .nav ul li a{
+        font-size:1rem;
+    }
+
+    .dropdown{
+        position:relative;
+        top:10px;
+        opacity:1;
+        visibility:visible;
+        display:none;
+        background:transparent;
+        padding:10px 0 0 15px;
+        min-width:100%;
+    }
+
+    .submenu:hover .dropdown{
+        display:block;
+    }
+
+    .header-actions{
+        margin-left:auto;
+        margin-right:15px;
+    }
+
+    /* HERO */
+
+    .hero{
+        height:auto;
+        min-height:100vh;
+        padding:150px 20px 100px;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn-principal,
+    .btn-secundario{
+        width:100%;
+        max-width:320px;
+        text-align:center;
+    }
+
+    .hero-stats{
+        position:relative;
+        bottom:auto;
+        margin-top:50px;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:30px;
+    }
+
+    /* BRANDS */
+
+    .brand-track{
+        gap:40px;
+    }
+
+    .brand-track h2{
+        font-size:1.5rem;
+    }
+
+    /* BUSCADOR */
+
+    .buscador{
+        padding:70px 20px;
+    }
+
+    .buscador-box{
+        padding:30px 20px;
+        border-radius:25px;
+    }
+
+    .barra-busqueda{
+        flex-direction:column;
+    }
+
+    .input-group{
+        width:100%;
+    }
+
+    select,
+    .barra-busqueda button{
+        width:100%;
+    }
+
+    /* AUTOS */
+
+    .autos{
+        padding:70px 20px;
+    }
+
+    .section-title h2{
+        font-size:2.3rem;
+    }
+
+    .autos-grid{
+        grid-template-columns:1fr;
+    }
+
+    .card-img img{
+        height:220px;
+    }
+
+    /* EXPERIENCE */
+
+    .experience{
+        padding:70px 20px;
+        grid-template-columns:1fr;
+        gap:40px;
+        text-align:center;
+    }
+
+    .experience-text h2{
+        font-size:2.3rem;
+    }
+
+    /* BENEFICIOS */
+
+    .beneficios{
+        padding:70px 20px;
+        grid-template-columns:1fr;
+    }
+
+    /* CTA */
+
+    .banner{
+        padding:90px 20px;
+    }
+
+    .banner-content h2{
+        font-size:2.5rem;
+    }
+
+    /* FOOTER */
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        padding:0 20px 50px;
+        text-align:center;
+    }
+
+    .social{
+        justify-content:center;
+    }
+
+}
+
+
+/* =========================
+CELULARES PEQUEÑOS
+========================= */
+
+@media(max-width:600px){
+
+    .hero-content h1{
+        font-size:2.2rem;
+        line-height:1.2;
+    }
+
+    .hero-content p{
+        font-size:.95rem;
+    }
+
+    .tag{
+        font-size:.8rem;
+        padding:8px 16px;
+    }
+
+    .hero-stats{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .stat h2{
+        font-size:1.7rem;
+    }
+
+    .section-title h2{
+        font-size:2rem;
+    }
+
+    .experience-text h2{
+        font-size:2rem;
+    }
+
+    .banner-content h2{
+        font-size:2rem;
+    }
+
+    .banner-content p{
+        font-size:.95rem;
+    }
+
+    .card-info{
+        padding:20px;
+    }
+
+    .card-info h3{
+        font-size:1.3rem;
+    }
+
+    .precio-box{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .beneficio{
+        padding:30px 20px;
+    }
+
+    .beneficio i{
+        font-size:2.5rem;
+    }
+
+}
+
+
+/* =========================
+ARREGLA OVERFLOW
+========================= */
+
+img,
+video{
+    max-width:100%;
+    display:block;
+}
+
+html,
+body{
+    overflow-x:hidden;
 }
