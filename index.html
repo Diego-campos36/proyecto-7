@@ -588,11 +588,11 @@ En CareOut conectamos personas con autos premium y experiencias modernas.
 
 <div class="social">
 
-<a href="#">
+<a href="https://www.facebook.com/share/1B2d41HwW8/">
 <i class="fa-brands fa-facebook-f"></i>
 </a>
 
-<a href="#">
+<a href="https://www.instagram.com/careout_4am/">
 <i class="fa-brands fa-instagram"></i>
 </a>
 
@@ -610,33 +610,8 @@ En CareOut conectamos personas con autos premium y experiencias modernas.
 </footer>
 
 <!-- JAVASCRIPT -->
+<script src="script.js"></script>
 
-<script>
-
-window.addEventListener("load", () => {
-    document.querySelector(".loader").classList.add("hidden");
-});
-
-
-const favBtns = document.querySelectorAll(".fav-btn");
-
-favBtns.forEach(btn => {
-
-    btn.addEventListener("click", () => {
-
-        btn.classList.toggle("active");
-
-        if(btn.classList.contains("active")){
-            btn.innerHTML = `<i class="fa-solid fa-heart"></i>`;
-        } else {
-            btn.innerHTML = `<i class="fa-regular fa-heart"></i>`;
-        }
-
-    });
-
-});
-
-</script>
 
 </body>
 </html>
