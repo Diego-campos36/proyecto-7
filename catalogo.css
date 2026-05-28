@@ -498,3 +498,13 @@ body{
     }
 
 }
+.card-auto{
+opacity:0;
+transform:translateY(40px);
+transition:0.6s ease;
+}
+
+.card-auto.show{
+opacity:1;
+transform:translateY(0);
+}

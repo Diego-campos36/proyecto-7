@@ -1,18 +1,22 @@
-
-// =========================
+// ==========================
 // LOADER
-// =========================
-// LOADER
+// ==========================
 
 window.addEventListener("load", () => {
 
-    document.querySelector(".loader")
-    .classList.add("hidden");
+    const loader = document.querySelector(".loader");
+
+    setTimeout(() => {
+        loader.style.opacity = "0";
+        loader.style.visibility = "hidden";
+    }, 1200);
 
 });
 
 
+// ==========================
 // MENU HAMBURGUESA
+// ==========================
 
 const btnMenu = document.getElementById("btn-menu");
 const nav = document.getElementById("nav");
@@ -25,51 +29,100 @@ btnMenu.addEventListener("click", () => {
 });
 
 
-// CERRAR MENU AL DAR CLICK
+// ==========================
+// MODO OSCURO
+// ==========================
 
-document.querySelectorAll(".nav a").forEach(link => {
+const btnDark = document.querySelector(".btn-dark");
 
-    link.addEventListener("click", () => {
+btnDark.addEventListener("click", () => {
 
-        nav.classList.remove("active");
-        btnMenu.classList.remove("active");
+    document.body.classList.toggle("dark-mode");
+
+    const icon = btnDark.querySelector("i");
+
+    if(document.body.classList.contains("dark-mode")){
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }
+
+});
+
+
+// ==========================
+// FAVORITOS
+// ==========================
+
+const favButtons = document.querySelectorAll(".fav-btn");
+const contadorFavoritos = document.querySelector(".favoritos-icono span");
+
+let favoritos = 0;
+
+favButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const icon = button.querySelector("i");
+
+        if(icon.classList.contains("fa-regular")){
+
+            icon.classList.remove("fa-regular");
+            icon.classList.add("fa-solid");
+
+            favoritos++;
+
+        } else {
+
+            icon.classList.remove("fa-solid");
+            icon.classList.add("fa-regular");
+
+            favoritos--;
+
+        }
+
+        contadorFavoritos.textContent = favoritos;
 
     });
 
 });
 
 
-// FAVORITOS
+// ==========================
+// SCROLL HEADER
+// ==========================
 
-const favBtns = document.querySelectorAll(".fav-btn");
-const contador = document.querySelector(".favoritos-icono span");
+window.addEventListener("scroll", () => {
 
-let total = 0;
+    const header = document.querySelector(".header");
 
-favBtns.forEach(btn => {
+    if(window.scrollY > 50){
+        header.classList.add("scroll-header");
+    } else {
+        header.classList.remove("scroll-header");
+    }
 
-    btn.addEventListener("click", () => {
+});
 
-        btn.classList.toggle("active");
 
-        if(btn.classList.contains("active")){
+// ==========================
+// BUSCADOR
+// ==========================
 
-            btn.innerHTML =
-            `<i class="fa-solid fa-heart"></i>`;
+const buscador = document.querySelector(".barra-busqueda");
 
-            total++;
+buscador.addEventListener("submit", (e) => {
 
-        } else {
+    e.preventDefault();
 
-            btn.innerHTML =
-            `<i class="fa-regular fa-heart"></i>`;
+    const input = buscador.querySelector("input").value;
 
-            total--;
-
-        }
-
-        contador.textContent = total;
-
-    });
+    if(input.trim() === ""){
+        alert("Escribe una marca o modelo");
+    } else {
+        alert(`Buscando: ${input}`);
+    }
 
 });
