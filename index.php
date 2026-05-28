@@ -1,3 +1,8 @@
+<?php
+declare(strict_types=1);
+require_once "header.php";
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -539,6 +544,7 @@ Explorar colección
 </div>
 
 </section>
+<?php include("footer.php"); ?>
 
 <!-- FOOTER -->
 
