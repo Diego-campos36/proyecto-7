@@ -134,84 +134,64 @@ Crear cuenta
 
 <p>Completa tus datos para comenzar</p>
 
-<form>
+<form method="POST" action="registro.php">
 
 <div class="form-group">
-
 <label>Nombre completo</label>
-
 <div class="input-box">
 <i class="fa-regular fa-user"></i>
-<input type="text" placeholder="Ingresa tu nombre completo">
+<input type="text" name="nombre" placeholder="Ingresa tu nombre completo" required>
 </div>
-
 </div>
 
 <div class="form-group">
-
 <label>Correo electrónico</label>
-
 <div class="input-box">
 <i class="fa-regular fa-envelope"></i>
-<input type="email" placeholder="ejemplo@correo.com">
+<input type="email" name="correo" placeholder="ejemplo@correo.com" required>
 </div>
-
 </div>
 
 <div class="form-group">
-
 <label>Usuario</label>
-
 <div class="input-box">
 <i class="fa-regular fa-circle-user"></i>
-<input type="text" placeholder="Elige un nombre de usuario">
+<input type="text" name="usuario" placeholder="Elige un nombre de usuario" required>
 </div>
-
 </div>
 
 <div class="form-group">
-
 <label>Contraseña</label>
-
 <div class="input-box">
 <i class="fa-solid fa-lock"></i>
-<input type="password" placeholder="Crea una contraseña segura">
+<input type="password" name="contrasena" placeholder="Crea una contraseña segura" required>
 </div>
-
 </div>
 
 <div class="form-group">
-
 <label>Confirmar contraseña</label>
-
 <div class="input-box">
 <i class="fa-solid fa-lock"></i>
-<input type="password" placeholder="Confirma tu contraseña">
+<input type="password" name="confirmar" placeholder="Confirma tu contraseña" required>
 </div>
-
 </div>
 
 <div class="form-group">
-
 <label>Fecha de nacimiento</label>
-
 <div class="input-box">
 <i class="fa-regular fa-calendar"></i>
-<input type="date">
+<input type="date" name="fecha" required>
+</div>
 </div>
 
-</div>
-
-<button class="btn-registro">
+<button type="submit" class="btn-registro">
 <i class="fa-solid fa-user-plus"></i>
 Registrarse
 </button>
 
-<div class="divisor">
-ó
-</div>
+<div class="divisor">ó</div>
 
-<button type="button" class="btn-login">
+<button type="button" class="btn-login" onclick="window.location.href='Login.html'">
 <i class="fa-solid fa-right-to-bracket"></i>
 Iniciar sesión
 </button>
@@ -222,8 +202,6 @@ Iniciar sesión
 </div>
 
 </form>
-
-</div>
 
 <div class="registro-right">
 

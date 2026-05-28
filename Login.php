@@ -154,8 +154,7 @@ Ingresa tus datos para continuar en CareOut.
 
 </div>
 
-<form id="loginForm">
-
+<form method="POST" action="registro.php">
 <div class="input-box">
 
 <label>Usuario o correo</label>
