@@ -1,7 +1,8 @@
-<?php
-declare(strict_types=1);
-require_once "header.php";
+<?php 
+echo "hola mundo";
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="es">
