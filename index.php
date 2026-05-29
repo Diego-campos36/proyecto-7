@@ -16,7 +16,7 @@ echo "hola mundo";
 <link rel="icon" href="logochad.webp" type="image/webp">
 
 <link rel="stylesheet" href="inicio.css">
-
+<link rel="stylesheet" href="nosotros.css">
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
