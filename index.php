@@ -54,6 +54,7 @@ rel="stylesheet">
                     <a href="sigh up.html">
                         Acceder
                         <i class="fa-solid fa-angle-down"></i>
+                        <a href="admin.php" style="color: #c9a84c; font-size: 12px;"> Panel Admin</a>
                     </a>
 
                     <ul class="dropdown">

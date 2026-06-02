@@ -62,7 +62,7 @@ $autos = mysqli_query($conexion, "SELECT * FROM autos ORDER BY id DESC");
 </head>
 <body>
 
-<h1>⚙️ Panel de Administración - CareOut</h1>
+<h1> Panel de Administración - CareOut</h1>
 
 <!-- FORMULARIO -->
 <h2><?= $editar ? 'Editar Auto' : 'Agregar Auto' ?></h2>

@@ -1,7 +1,6 @@
 <?php
 session_start();
-
-$conexion = mysqli_connect("localhost", "root", "", "careout");
+$conexion = mysqli_connect("campus.4am7.codigoactivo.mx", "root", "", "careout");
 
 if (!$conexion) {
     die("Error de conexión");
