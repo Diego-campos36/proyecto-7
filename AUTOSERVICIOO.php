@@ -22,7 +22,7 @@
     <section class="header-container">
 
         <figure class="logo">
-            <a href="index.html">
+            <a href="index.php">
                 <img src="logochad.webp" alt="Logo CareOut">
             </a>
         </figure>
@@ -32,51 +32,51 @@
             <ul>
 
                 <li class="submenu">
-                    <a href="sigh up.html">
+                    <a href="sigh up.php">
                         Acceder
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="Login.html">Iniciar sesión</a></li>
-                        <li><a href="REGISTROR.html">Crear cuenta</a></li>
+                        <li><a href="Login.php">Iniciar sesión</a></li>
+                        <li><a href="REGISTROR.php">Crear cuenta</a></li>
                     </ul>
                 </li>
 
                 <li class="submenu">
-                    <a href="COMMPRAR.html">
+                    <a href="COMMPRAR.php">
                         Comprar
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="CATALOGO.html">Catálogo</a></li>
-                        <li><a href="mapa.html">Mapa</a></li>
+                        <li><a href="CATALOGO.php">Catálogo</a></li>
+                        <li><a href="mapa.php">Mapa</a></li>
                     </ul>
                 </li>
 
                 <li class="submenu">
-                    <a href="AUTOSERVICIOO.html">
+                    <a href="AUTOSERVICIOO.php">
                         Servicios
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
-                        <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
-                        <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
-                        <li><a href="TECNOLOGIA.html">Tecnología</a></li>
+                        <li><a href="MANTENIMIENTO.php">Mantenimiento</a></li>
+                        <li><a href="DIAGNOSTICO.php">Diagnóstico</a></li>
+                        <li><a href="Hojalatería y pintura.php">Reparaciones</a></li>
+                        <li><a href="TECNOLOGIA.php">Tecnología</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="CONTACTO.html">
+                    <a href="CONTACTO.php">
                         Contacto
                     </a>
                 </li>
 
                 <li>
-                    <a href="equipo.html" class="active">
+                    <a href="equipo.php" class="active">
                         Nosotros
                     </a>
                 </li>
@@ -135,7 +135,7 @@
                 Explorar servicios
             </a>
 
-            <a href="COMMPRAR.html" class="btn-secundario">
+            <a href="COMMPRAR.php" class="btn-secundario">
                 Ver autos
             </a>
 
@@ -182,7 +182,7 @@
                     cambio de aceite y chequeo profesional.
                 </p>
 
-                <a href="MANTENIMIENTO.html">
+                <a href="MANTENIMIENTO.php">
                     Ver servicio
                 </a>
 
@@ -211,7 +211,7 @@
                     pintura profesional y acabados premium.
                 </p>
 
-                <a href="Hojalatería y pintura.html">
+                <a href="Hojalatería y pintura.php">
                     Ver servicio
                 </a>
 
@@ -240,7 +240,7 @@
                     problemas electrónicos y mecánicos.
                 </p>
 
-                <a href="DIAGNOSTICO.html">
+                <a href="DIAGNOSTICO.php">
                     Ver servicio
                 </a>
 
@@ -313,12 +313,12 @@
 <section class="stats">
 
     <div class="stat-box">
-        <h2>+500</h2>
+        <h2>10</h2>
         <p>Autos reparados</p>
     </div>
 
     <div class="stat-box">
-        <h2>98%</h2>
+        <h2>67%</h2>
         <p>Clientes satisfechos</p>
     </div>
 
@@ -344,7 +344,7 @@
             la experiencia premium de CareOut.
         </p>
 
-        <a href="CONTACTO.html">
+        <a href="CONTACTO.php">
             Agendar ahora
         </a>
 
@@ -374,9 +374,9 @@ En CareOut conectamos personas con autos premium y experiencias modernas.
 
 <ul>
 <li><a href="INDEX.html">Inicio</a></li>
-<li><a href="COMMPRAR.html">Comprar</a></li>
-<li><a href="AUTOSERVICIOO.html">Servicios</a></li>
-<li><a href="CONTACTO.html">Contacto</a></li>
+<li><a href="COMMPRAR.php">Comprar</a></li>
+<li><a href="AUTOSERVICIOO.php">Servicios</a></li>
+<li><a href="CONTACTO.php">Contacto</a></li>
 </ul>
 
 </div>
@@ -386,10 +386,10 @@ En CareOut conectamos personas con autos premium y experiencias modernas.
 <h3>Servicios</h3>
 
 <ul>
-<li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
-<li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
-<li><a href="REPARACIONES.html">Reparaciones</a></li>
-<li><a href="TECNOLOGIA.html">Tecnología</a></li>
+<li><a href="MANTENIMIENTO.php">Mantenimiento</a></li>
+<li><a href="DIAGNOSTICO.php">Diagnóstico</a></li>
+<li><a href="REPARACIONES.php">Reparaciones</a></li>
+<li><a href="TECNOLOGIA.php">Tecnología</a></li>
 </ul>
 
 </div>

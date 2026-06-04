@@ -1,19 +1,10 @@
-:root{
---azul:#00aeff;
---azul-oscuro:#0077ff;
---negro:#050505;
---gris:#484444;
---blanco:#ffffff;
-}
-
 /* ============================================================
    CAREOUT | LUXURY CARS — CSS PRINCIPAL
-   Organizado, sin duplicados, sin errores
    ============================================================ */
 
 
 /* ============================================================
-   1. VARIABLES GLOBALES
+   1. VARIABLES GLOBALES (una sola vez)
    ============================================================ */
 
 :root {
@@ -24,7 +15,7 @@
   --gris: #484444;
   --blanco: #ffffff;
 
-  /* Colores de fondo */
+  /* Fondos */
   --fondo-base: #050505;
   --fondo-card: #111111;
   --fondo-card-hover: #1a1a1a;
@@ -113,10 +104,10 @@ button {
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-/* Clase que JS debe agregar para ocultar el loader */
 .loader.hidden {
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
 }
 
 .loader-car {
@@ -204,6 +195,7 @@ button {
   opacity: 0;
   visibility: hidden;
   transition: var(--transicion);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .submenu:hover .dropdown {
@@ -226,7 +218,7 @@ button {
 
 
 /* ============================================================
-   6. HEADER ACTIONS (botones dark mode y favoritos)
+   6. HEADER ACTIONS
    ============================================================ */
 
 .header-actions {
@@ -246,6 +238,9 @@ button {
   cursor: pointer;
   transition: var(--transicion);
   font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-dark:hover,
@@ -254,7 +249,6 @@ button {
   transform: translateY(-4px);
 }
 
-/* Contador de favoritos */
 .favoritos-icono {
   position: relative;
 }
@@ -272,6 +266,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
 }
 
 
@@ -285,6 +280,7 @@ button {
   gap: 5px;
   cursor: pointer;
   z-index: 1001;
+  padding: 5px;
 }
 
 .hamburger span {
@@ -293,6 +289,7 @@ button {
   background: white;
   border-radius: 10px;
   transition: var(--transicion);
+  display: block;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -379,7 +376,6 @@ button {
   flex-wrap: wrap;
 }
 
-/* Botones hero */
 .btn-principal,
 .btn-secundario {
   padding: 15px 35px;
@@ -409,7 +405,6 @@ button {
   color: black;
 }
 
-/* Stats hero */
 .hero-stats {
   position: absolute;
   bottom: 50px;
@@ -430,7 +425,7 @@ button {
 
 
 /* ============================================================
-   9. BRANDS (marquee)
+   9. BRANDS (marquee — loop continuo corregido)
    ============================================================ */
 
 .brands {
@@ -443,8 +438,9 @@ button {
   display: flex;
   gap: 80px;
   white-space: nowrap;
+  width: max-content;          /* ← necesario para el loop */
   will-change: transform;
-  animation: scroll-brands 20s linear infinite;
+  animation: scroll-brands 25s linear infinite;
 }
 
 .brand-track h2 {
@@ -455,7 +451,7 @@ button {
 
 @keyframes scroll-brands {
   from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  to   { transform: translateX(-50%); }   /* 50% porque duplicamos los items */
 }
 
 
@@ -569,14 +565,12 @@ button {
   margin-top: 10px;
 }
 
-/* Grid de cards */
 .autos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
 }
 
-/* Card */
 .card-auto {
   background: var(--fondo-card);
   border-radius: var(--radio-md);
@@ -606,7 +600,6 @@ button {
   transform: scale(1.1);
 }
 
-/* Overlay de la card */
 .overlay-card {
   position: absolute;
   inset: 0;
@@ -638,7 +631,6 @@ button {
   background: var(--azul-oscuro);
 }
 
-/* Badges */
 .badge {
   position: absolute;
   top: 20px;
@@ -655,7 +647,6 @@ button {
 .badge.sport    { background: #6c5ce7; }
 .badge.electric { background: #0984e3; }
 
-/* Info de la card */
 .card-info {
   padding: 25px;
 }
@@ -683,7 +674,6 @@ button {
   font-weight: 700;
 }
 
-/* Botón favorito */
 .fav-btn {
   width: 45px;
   height: 45px;
@@ -908,7 +898,6 @@ button {
   color: var(--azul);
 }
 
-/* Redes sociales */
 .social {
   display: flex;
   gap: 15px;
@@ -944,7 +933,7 @@ button {
 
 
 /* ============================================================
-   16. DARK MODE (toggle adicional si la página fuera clara)
+   16. DARK MODE
    ============================================================ */
 
 .dark-mode .card-auto,
@@ -982,7 +971,6 @@ button {
 
 @media (max-width: 900px) {
 
-  /* Header */
   .header-container {
     padding: 15px 20px;
   }
@@ -1000,7 +988,7 @@ button {
     margin-right: 15px;
   }
 
-  /* Nav mobile */
+  /* Nav mobile — panel lateral */
   .nav {
     position: fixed;
     top: 0;
@@ -1008,7 +996,7 @@ button {
     width: 280px;
     height: 100vh;
     background: var(--fondo-nav);
-    padding: 120px 30px 30px;
+    padding: 100px 30px 30px;
     transition: var(--transicion-lenta);
     z-index: 999;
     overflow-y: auto;
@@ -1027,6 +1015,7 @@ button {
     font-size: 1rem;
   }
 
+  /* Dropdown en mobile: siempre visible al hover */
   .dropdown {
     position: relative;
     top: 10px;
@@ -1040,7 +1029,8 @@ button {
     min-width: 100%;
   }
 
-  .submenu:hover .dropdown {
+  .submenu:hover .dropdown,
+  .submenu:focus-within .dropdown {
     display: block;
   }
 

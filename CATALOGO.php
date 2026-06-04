@@ -22,7 +22,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     <section class="header-container">
 
         <figure class="logo">
-            <a href="index.html">
+            <a href="index.php">
                 <img src="logochad.webp" alt="Logo CareOut">
             </a>
         </figure>
@@ -32,51 +32,51 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
             <ul>
 
                 <li class="submenu">
-                    <a href="sigh up.html">
+                    <a href="sigh up.php">
                         Acceder
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="Login.html">Iniciar sesión</a></li>
-                        <li><a href="REGISTROR.html">Crear cuenta</a></li>
+                        <li><a href="Login.php">Iniciar sesión</a></li>
+                        <li><a href="REGISTROR.php">Crear cuenta</a></li>
                     </ul>
                 </li>
 
                 <li class="submenu">
-                    <a href="COMMPRAR.html">
+                    <a href="COMMPRAR.php">
                         Comprar
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="CATALOGO.html">Catálogo</a></li>
-                        <li><a href="mapa.html">Mapa</a></li>
+                        <li><a href="CATALOGO.php">Catálogo</a></li>
+                        <li><a href="mapa.php">Mapa</a></li>
                     </ul>
                 </li>
 
                 <li class="submenu">
-                    <a href="AUTOSERVICIOO.html">
+                    <a href="AUTOSERVICIOO.php">
                         Servicios
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
-                        <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
-                        <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
-                        <li><a href="TECNOLOGIA.html">Tecnología</a></li>
+                        <li><a href="MANTENIMIENTO.php">Mantenimiento</a></li>
+                        <li><a href="DIAGNOSTICO.php">Diagnóstico</a></li>
+                        <li><a href="Hojalatería y pintura.php">Reparaciones</a></li>
+                        <li><a href="TECNOLOGIA.php">Tecnología</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="CONTACTO.html">
+                    <a href="CONTACTO.php">
                         Contacto
                     </a>
                 </li>
 
                 <li>
-                    <a href="equipo.html" class="active">
+                    <a href="equipo.php" class="active">
                         Nosotros
                     </a>
                 </li>
@@ -212,7 +212,7 @@ $750,000
 </div>
 
 <p>
-Diseño agresivo, motor V8 y velocidad extrema para los amantes del rendimiento.
+Diseño agresivo,para los amantes del rendimiento.
 </p>
 
 <div class="detalles">
@@ -229,7 +229,7 @@ Gasolina
 
 <span>
 <i class="fa-solid fa-fire"></i>
-450 HP
+300km
 </span>
 
 </div>
@@ -338,7 +338,7 @@ $1,450,000
 </div>
 
 <p>
-Tecnología futurista, conducción inteligente y aceleración impresionante.
+Tecnología futurista aceleración impresionante.
 </p>
 
 <div class="detalles">
@@ -401,14 +401,14 @@ $2,100,000
 </div>
 
 <p>
-Superdeportivo premium con diseño aerodinámico y potencia extrema.
+Superdeportivo premium 
 </p>
 
 <div class="detalles">
 
 <span>
 <i class="fa-solid fa-fire"></i>
-610 HP
+300km
 </span>
 
 <span>
