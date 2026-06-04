@@ -422,8 +422,10 @@ En CareOut conectamos personas con autos premium y experiencias modernas.
 </footer>
 
 <!-- JAVASCRIPT -->
-<script src="script.js"></script>
-
+<script>
+   <javascript src="java.js"></javascript>
+    <javascript src="script.js"></javascript>
+</script>
 
 </body>
 </html>

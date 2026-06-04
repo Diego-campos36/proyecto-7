@@ -666,3 +666,49 @@ body{
     }
 
 }
+@media(max-width:768px){
+
+    .nav{
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        width: 280px;
+        height: calc(100vh - 80px);
+        background: #111;
+        transition: .4s;
+        padding: 20px;
+    }
+
+    .nav.active{
+        right: 0;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hamburger{
+        display:flex;
+        flex-direction:column;
+        gap:5px;
+        cursor:pointer;
+    }
+
+    .hamburger span{
+        width:25px;
+        height:3px;
+        background:#fff;
+    }
+}
+
+.dark-mode{
+    background:#111;
+    color:white;
+}
+
+.dark-mode .card-auto,
+.dark-mode .finance-box,
+.dark-mode .beneficio{
+    background:#1d1d1d;
+}

@@ -114,20 +114,17 @@
 
     <div class="hero-video">
         <video autoplay muted loop playsinline>
-            <source src="carro video.mp4" type="video/mp4">
+            <source src="bww.mp4" type="video/mp4">
         </video>
     </div>
 
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
-        <span class="tag">LUXURY PERFORMANCE</span>
+        <span class="tag">PREMIUM</span>
         <h1>Conduce el futuro con elegancia extrema</h1>
         <p>Superdeportivos, SUVs premium y tecnología automotriz inspirada en marcas como McLaren, Ferrari y Lamborghini.</p>
-        <div class="hero-buttons">
-            <a href="CATALOGO.html" class="btn-principal">Explorar autos</a>
-            <a href="#autos" class="btn-secundario">Ver colección</a>
-        </div>
+       
     </div>
 
     <div class="hero-stats">
@@ -411,74 +408,9 @@
 
 
 <!-- JAVASCRIPT -->
-<script>
-    // ── 1. LOADER: ocultar al terminar de cargar ──────────────────────────
-    window.addEventListener('load', () => {
-        const loader = document.getElementById('loader');
-        if (loader) {
-            setTimeout(() => {
-                loader.classList.add('hidden');
-            }, 600); // pequeño delay para que se vea el loader
-        }
-    });
 
-    // ── 2. HEADER: cambiar estilo al hacer scroll ─────────────────────────
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scroll-header');
-        } else {
-            header.classList.remove('scroll-header');
-        }
-    });
+  <script src="java.js"></script>
 
-    // ── 3. MENÚ HAMBURGUESA ───────────────────────────────────────────────
-    const btnMenu = document.getElementById('btn-menu');
-    const nav     = document.getElementById('nav');
-
-    btnMenu.addEventListener('click', () => {
-        btnMenu.classList.toggle('active');
-        nav.classList.toggle('active');
-    });
-
-    // Cerrar menú al hacer clic en un enlace (mobile)
-    document.querySelectorAll('.nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            btnMenu.classList.remove('active');
-            nav.classList.remove('active');
-        });
-    });
-
-    // ── 4. FAVORITOS: contador funcional ─────────────────────────────────
-    let favCount = 0;
-    const favCountEl = document.getElementById('fav-count');
-
-    document.querySelectorAll('.fav-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const icon = btn.querySelector('i');
-            const isActive = btn.classList.toggle('active');
-
-            if (isActive) {
-                icon.classList.replace('fa-regular', 'fa-solid');
-                favCount++;
-            } else {
-                icon.classList.replace('fa-solid', 'fa-regular');
-                favCount--;
-            }
-
-            favCountEl.textContent = favCount;
-        });
-    });
-
-    // ── 5. DARK MODE TOGGLE ───────────────────────────────────────────────
-    const btnDark = document.getElementById('btn-dark');
-    btnDark.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        const icon = btnDark.querySelector('i');
-        icon.classList.toggle('fa-moon');
-        icon.classList.toggle('fa-sun');
-    });
-</script>
 
 
 </body>
