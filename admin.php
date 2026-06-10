@@ -1,5 +1,7 @@
 <?php
-$conexion = mysqli_connect("localhost", "root", "", "careout");
+require_once('config.php');
+
+$conexion = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 if (!$conexion) die("Error de conexión");
 
 // ELIMINAR
@@ -28,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     exit();
 }
 
-// EDITAR - cargar datos
+// EDITAR
 $editar = null;
 if (isset($_GET['editar'])) {
     $id = $_GET['editar'];
@@ -36,7 +38,6 @@ if (isset($_GET['editar'])) {
     $editar = mysqli_fetch_assoc($res);
 }
 
-// LEER todos los autos
 $autos = mysqli_query($conexion, "SELECT * FROM autos ORDER BY id DESC");
 ?>
 
@@ -45,102 +46,11 @@ $autos = mysqli_query($conexion, "SELECT * FROM autos ORDER BY id DESC");
 <head>
 <meta charset="UTF-8">
 <title>Admin | CareOut</title>
+<link rel="stylesheet" href="inicio.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
-    
-<!-- HEADER -->
-<header class="header">
-
-    <section class="header-container">
-
-        <figure class="logo">
-            <a href="index.php">
-                <img src="logochad.webp" alt="Logo CareOut">
-            </a>
-        </figure>
-
-        <nav class="nav" id="nav">
-
-            <ul>
-
-                <li class="submenu">
-                    <a href="sigh up.php">
-                        Acceder
-                        <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                    <ul class="dropdown">
-                        <li><a href="Login.php">Iniciar sesión</a></li>
-                        <li><a href="REGISTROR.php">Crear cuenta</a></li>
-                    </ul>
-                </li>
-
-                <li class="submenu">
-                    <a href="COMMPRAR.php">
-                        Comprar
-                        <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                    <ul class="dropdown">
-                        <li><a href="CATALOGO.php">Catálogo</a></li>
-                        <li><a href="mapa.php">Mapa</a></li>
-                    </ul>
-                </li>
-
-                <li class="submenu">
-                    <a href="AUTOSERVICIOO.php">
-                        Servicios
-                        <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                    <ul class="dropdown">
-                        <li><a href="MANTENIMIENTO.php">Mantenimiento</a></li>
-                        <li><a href="DIAGNOSTICO.php">Diagnóstico</a></li>
-                        <li><a href="Hojalatería y pintura.php">Reparaciones</a></li>
-                        <li><a href="TECNOLOGIA.php">Tecnología</a></li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a href="CONTACTO.php">
-                        Contacto
-                    </a>
-                </li>
-
-                <li>
-                    <a href="equipo.php" class="active">
-                        Nosotros
-                    </a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-        <div class="header-actions">
-
-            <button class="btn-dark">
-                <i class="fa-solid fa-moon"></i>
-            </button>
-
-            <button class="favoritos-icono">
-                <i class="fa-solid fa-heart"></i>
-                <span>0</span>
-            </button>
-
-        </div>
-
-        <div class="hamburger" id="btn-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-    </section>
-
-</header>
     body { font-family: Poppins, sans-serif; background: #0a0a0a; color: white; padding: 30px; }
-    h1 { color: #c9a84c; }
-    h2 { color: #c9a84c; margin-top: 40px; }
+    h1, h2 { color: #c9a84c; margin-top: 40px; }
     form { background: #1a1a1a; padding: 20px; border-radius: 10px; max-width: 500px; }
     input, select { width: 100%; padding: 10px; margin: 8px 0; border-radius: 6px; border: 1px solid #333; background: #111; color: white; }
     button { background: #c9a84c; color: black; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 10px; }
@@ -156,7 +66,6 @@ $autos = mysqli_query($conexion, "SELECT * FROM autos ORDER BY id DESC");
 
 <h1>⚙️ Panel de Administración - CareOut</h1>
 
-<!-- FORMULARIO -->
 <h2><?= $editar ? 'Editar Auto' : 'Agregar Auto' ?></h2>
 
 <form method="POST" action="admin.php">
@@ -168,40 +77,3 @@ $autos = mysqli_query($conexion, "SELECT * FROM autos ORDER BY id DESC");
         <option value="Premium" <?= ($editar['categoria'] ?? '') == 'Premium' ? 'selected' : '' ?>>Premium</option>
         <option value="Sport" <?= ($editar['categoria'] ?? '') == 'Sport' ? 'selected' : '' ?>>Sport</option>
         <option value="SUV" <?= ($editar['categoria'] ?? '') == 'SUV' ? 'selected' : '' ?>>SUV</option>
-        <option value="Eléctrico" <?= ($editar['categoria'] ?? '') == 'Eléctrico' ? 'selected' : '' ?>>Eléctrico</option>
-    </select>
-    <input type="text" name="imagen" placeholder="Nombre de la imagen (ej: lambo.webp)" value="<?= $editar['imagen'] ?? '' ?>">
-    <button type="submit"><?= $editar ? 'Actualizar Auto' : 'Agregar Auto' ?></button>
-</form>
-
-<!-- TABLA -->
-<h2>Autos registrados</h2>
-
-<table>
-    <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-        <th>Descripción</th>
-        <th>Precio</th>
-        <th>Categoría</th>
-        <th>Imagen</th>
-        <th>Acciones</th>
-    </tr>
-    <?php while ($auto = mysqli_fetch_assoc($autos)): ?>
-    <tr>
-        <td><?= $auto['id'] ?></td>
-        <td><?= $auto['nombre'] ?></td>
-        <td><?= $auto['descripcion'] ?></td>
-        <td>$<?= number_format($auto['precio'], 2) ?></td>
-        <td><?= $auto['categoria'] ?></td>
-        <td><?= $auto['imagen'] ?></td>
-        <td>
-            <a href="admin.php?editar=<?= $auto['id'] ?>" class="btn-editar">Editar</a>
-            <a href="admin.php?eliminar=<?= $auto['id'] ?>" class="btn-eliminar" onclick="return confirm('¿Eliminar este auto?')">Eliminar</a>
-        </td>
-    </tr>
-    <?php endwhile; ?>
-</table>
-
-</body>
-</html>
