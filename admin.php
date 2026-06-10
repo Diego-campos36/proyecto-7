@@ -46,6 +46,98 @@ $autos = mysqli_query($conexion, "SELECT * FROM autos ORDER BY id DESC");
 <meta charset="UTF-8">
 <title>Admin | CareOut</title>
 <style>
+    
+<!-- HEADER -->
+<header class="header">
+
+    <section class="header-container">
+
+        <figure class="logo">
+            <a href="index.php">
+                <img src="logochad.webp" alt="Logo CareOut">
+            </a>
+        </figure>
+
+        <nav class="nav" id="nav">
+
+            <ul>
+
+                <li class="submenu">
+                    <a href="sigh up.php">
+                        Acceder
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                    <ul class="dropdown">
+                        <li><a href="Login.php">Iniciar sesión</a></li>
+                        <li><a href="REGISTROR.php">Crear cuenta</a></li>
+                    </ul>
+                </li>
+
+                <li class="submenu">
+                    <a href="COMMPRAR.php">
+                        Comprar
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                    <ul class="dropdown">
+                        <li><a href="CATALOGO.php">Catálogo</a></li>
+                        <li><a href="mapa.php">Mapa</a></li>
+                    </ul>
+                </li>
+
+                <li class="submenu">
+                    <a href="AUTOSERVICIOO.php">
+                        Servicios
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                    <ul class="dropdown">
+                        <li><a href="MANTENIMIENTO.php">Mantenimiento</a></li>
+                        <li><a href="DIAGNOSTICO.php">Diagnóstico</a></li>
+                        <li><a href="Hojalatería y pintura.php">Reparaciones</a></li>
+                        <li><a href="TECNOLOGIA.php">Tecnología</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="CONTACTO.php">
+                        Contacto
+                    </a>
+                </li>
+
+                <li>
+                    <a href="equipo.php" class="active">
+                        Nosotros
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="btn-dark">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="favoritos-icono">
+                <i class="fa-solid fa-heart"></i>
+                <span>0</span>
+            </button>
+
+        </div>
+
+        <div class="hamburger" id="btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </section>
+
+</header>
     body { font-family: Poppins, sans-serif; background: #0a0a0a; color: white; padding: 30px; }
     h1 { color: #c9a84c; }
     h2 { color: #c9a84c; margin-top: 40px; }

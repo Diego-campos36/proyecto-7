@@ -42,7 +42,7 @@
 
                 <li class="submenu">
                     <a href="sigh up.php">
-                        Acceder
+                        Accederuu
                         <i class="fa-solid fa-angle-down"></i>
                         <a href="admin.php" style="color: #c9a84c; font-size: 12px;"> Panel Admin</a>
                     </a>
