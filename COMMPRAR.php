@@ -581,7 +581,7 @@ Finaliza tu compra de forma segura.
 Visita nuestras concesionarias y vive la experiencia CareOut.
 </p>
 
-<a href="mapa.html">
+<a href="mapa.php">
 Encuéntranos
 </a>
 
@@ -611,10 +611,10 @@ En CareOut conectamos personas con autos premium y experiencias modernas.
 <h3>Navegación</h3>
 
 <ul>
-<li><a href="INDEX.html">Inicio</a></li>
-<li><a href="COMMPRAR.html">Comprar</a></li>
-<li><a href="AUTOSERVICIOO.html">Servicios</a></li>
-<li><a href="CONTACTO.html">Contacto</a></li>
+<li><a href="index.php">Inicio</a></li>
+<li><a href="COMPRAR.php">Comprar</a></li>
+<li><a href="AUTOSERVICIOO.php">Servicios</a></li>
+<li><a href="CONTACTO.php">Contacto</a></li>
 </ul>
 
 </div>
@@ -624,10 +624,10 @@ En CareOut conectamos personas con autos premium y experiencias modernas.
 <h3>Servicios</h3>
 
 <ul>
-<li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
-<li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
-<li><a href="REPARACIONES.html">Reparaciones</a></li>
-<li><a href="TECNOLOGIA.html">Tecnología</a></li>
+<li><a href="MANTENIMIENTO.php">Mantenimiento</a></li>
+<li><a href="DIAGNOSTICO.php">Diagnóstico</a></li>
+<li><a href="REPARACIONES.php">Reparaciones</a></li>
+<li><a href="TECNOLOGIA.php">Tecnología</a></li>
 </ul>
 
 </div>

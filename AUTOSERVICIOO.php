@@ -15,7 +15,6 @@
 
 <body>
 
-
 <!-- HEADER -->
 <header class="header">
 
@@ -107,13 +106,15 @@
     </section>
 
 </header>
+
 <!-- HERO -->
+<section class="hero">
 
-<section class="hero-servicios">
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
+    <div class="hero-video">
+        <video autoplay muted loop playsinline>
+            <source src="bww.mp4" type="video/mp4">
+        </video>
+    </div>
 
         <span class="tag">
             SERVICIOS PREMIUM
@@ -373,7 +374,7 @@ En CareOut conectamos personas con autos premium y experiencias modernas.
 <h3>Navegación</h3>
 
 <ul>
-<li><a href="INDEX.html">Inicio</a></li>
+<li><a href="index.php">Inicio</a></li>
 <li><a href="COMMPRAR.php">Comprar</a></li>
 <li><a href="AUTOSERVICIOO.php">Servicios</a></li>
 <li><a href="CONTACTO.php">Contacto</a></li>

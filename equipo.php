@@ -34,7 +34,7 @@ rel="stylesheet">
     <section class="header-container">
 
         <figure class="logo">
-            <a href="index.html">
+            <a href="index.php">
                 <img src="logochad.webp" alt="Logo CareOut">
             </a>
         </figure>
@@ -44,51 +44,51 @@ rel="stylesheet">
             <ul>
 
                 <li class="submenu">
-                    <a href="sigh up.html">
+                    <a href="sigh up.php">
                         Acceder
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="Login.html">Iniciar sesión</a></li>
-                        <li><a href="REGISTROR.html">Crear cuenta</a></li>
+                        <li><a href="Login.php">Iniciar sesión</a></li>
+                        <li><a href="REGISTROR.php">Crear cuenta</a></li>
                     </ul>
                 </li>
 
                 <li class="submenu">
-                    <a href="COMMPRAR.html">
+                    <a href="COMMPRAR.php">
                         Comprar
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="CATALOGO.html">Catálogo</a></li>
-                        <li><a href="mapa.html">Mapa</a></li>
+                        <li><a href="CATALOGO.php">Catálogo</a></li>
+                        <li><a href="mapa.php">Mapa</a></li>
                     </ul>
                 </li>
 
                 <li class="submenu">
-                    <a href="AUTOSERVICIOO.html">
+                    <a href="AUTOSERVICIOO.php">
                         Servicios
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
 
                     <ul class="dropdown">
-                        <li><a href="MANTENIMIENTO.html">Mantenimiento</a></li>
-                        <li><a href="DIAGNOSTICO.html">Diagnóstico</a></li>
-                        <li><a href="Hojalatería y pintura.html">Reparaciones</a></li>
-                        <li><a href="TECNOLOGIA.html">Tecnología</a></li>
+                        <li><a href="MANTENIMIENTO.php">Mantenimiento</a></li>
+                        <li><a href="DIAGNOSTICO.php">Diagnóstico</a></li>
+                        <li><a href="REPARACIONES.php">Reparaciones</a></li>
+                        <li><a href="TECNOLOGIA.php">Tecnología</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="CONTACTO.html">
+                    <a href="CONTACTO.php">
                         Contacto
                     </a>
                 </li>
 
                 <li>
-                    <a href="equipo.html" class="active">
+                    <a href="equipo.php" class="active">
                         Nosotros
                     </a>
                 </li>
@@ -147,7 +147,7 @@ rel="stylesheet">
                 Ver equipo
             </a>
 
-            <a href="CONTACTO.html" class="btn-secundario">
+            <a href="CONTACTO.php" class="btn-secundario">
                 Contactarnos
             </a>
 
@@ -248,9 +248,9 @@ rel="stylesheet">
         <article class="team-card">
 
             <div class="team-top">
-                <img src="" alt="Diego Alemán">
+               
+<img src="img/chad.jpg" alt="Diego Alemán">
             </div>
-
             <div class="team-content">
 
                 <h3>Diego Alemán</h3>
@@ -279,7 +279,7 @@ rel="stylesheet">
         <article class="team-card">
 
             <div class="team-top">
-                <img src="" alt="Luis Guerrero">
+                <img src="bastardo.jpg" alt="Luis Guerrero">
             </div>
 
             <div class="team-content">
@@ -310,7 +310,7 @@ rel="stylesheet">
         <article class="team-card">
 
             <div class="team-top">
-                <img src="" alt="Alan Pulido">
+                <img src="alan.jpg" alt="Alan Pulido">
             </div>
 
             <div class="team-content">
@@ -341,7 +341,7 @@ rel="stylesheet">
         <article class="team-card">
 
             <div class="team-top">
-                <img src="" alt="Oscar Ramírez">
+                <img src="elon.jpg" alt="Oscar Ramírez">
             </div>
 
             <div class="team-content">
@@ -372,7 +372,7 @@ rel="stylesheet">
         <article class="team-card">
 
             <div class="team-top">
-                <img src="" alt="Jazmín Magdaleno">
+                <img src="roca.jpg" alt="Jazmín Magdaleno">
             </div>
 
             <div class="team-content">
@@ -417,7 +417,7 @@ rel="stylesheet">
             de la experiencia CareOut.
         </p>
 
-        <a href="COMMPRAR.html" class="btn-principal">
+        <a href="COMMPRAR.php" class="btn-principal">
             Explorar autos
         </a>
 
@@ -446,10 +446,10 @@ rel="stylesheet">
             <h3>Navegación</h3>
 
             <ul>
-                <li><a href="COMMPRAR.html">Comprar</a></li>
-                <li><a href="AUTOSERVICIOO.html">Servicios</a></li>
-                <li><a href="CONTACTO.html">Contacto</a></li>
-                <li><a href="equipo.html">Nosotros</a></li>
+                <li><a href="COMMPRAR.php">Comprar</a></li>
+                <li><a href="AUTOSERVICIOO.php">Servicios</a></li>
+                <li><a href="CONTACTO.php">Contacto</a></li>
+                <li><a href="equipo.php">Nosotros</a></li>
             </ul>
 
         </div>

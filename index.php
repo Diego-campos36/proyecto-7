@@ -275,7 +275,7 @@
 
         <article class="card-auto">
             <div class="card-img">
-                <img src="carro blanco.webp" alt="Tesla">
+                <img src="carro azulblanc.webp" alt="Tesla">
                 <div class="overlay-card"><button>Ver más</button></div>
                 <span class="badge electric">Eléctrico</span>
             </div>
@@ -323,7 +323,7 @@
         <a href="CATALOGO.php">Descubrir más</a>
     </div>
     <div class="experience-image">
-        <img src="carro blanco.webp" alt="Luxury Car">
+        <img src="carro azulblanc.webp" alt="Luxury Car">
     </div>
 </section>
 

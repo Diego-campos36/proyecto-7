@@ -65,9 +65,9 @@ $autos = $stmt->fetchAll();
 
 // Mensaje flash
 $msgMap = [
-    'creado'    => ['texto' => '✅ Auto agregado correctamente.',   'tipo' => 'success'],
-    'actualizado'=> ['texto' => '✏️ Auto actualizado correctamente.', 'tipo' => 'info'],
-    'eliminado' => ['texto' => '🗑️ Auto eliminado.',                'tipo' => 'danger'],
+    'creado'    => ['texto' => ' Auto agregado correctamente.',   'tipo' => 'success'],
+    'actualizado'=> ['texto' => ' Auto actualizado correctamente.', 'tipo' => 'info'],
+    'eliminado' => ['texto' => ' Auto eliminado.',                'tipo' => 'danger'],
 ];
 $flash = $msgMap[$_GET['msg'] ?? ''] ?? null;
 ?>
